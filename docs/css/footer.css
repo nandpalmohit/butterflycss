@@ -1,0 +1,89 @@
+:root {
+  --bc-default: #e0e1e2;
+  --bc-link: #1f4bdb;
+  --bc-primary: #0053db;
+  --bc-secondary: #778899 ;
+  --bc-dark: #393939;
+  --bc-light: #f7f7f7;
+  --bc-danger: #fa2349;
+  --bc-warning: #ffa500;
+  --bc-info: #07a9df;
+  --bc-success: #3ab509;
+  --bc-black: #000;
+  --bc-white: #fff;
+  --bc-muted:#636363;
+  --bc-grey: #AAAAAA;
+  --bc-silver: #DDDDDD;
+  --bc-maroon: #85144b;
+  --bc-navy: #03045e;
+  --bc-orange: #FF851B;
+  --bc-pink: #ffafcc;
+  --bc-purple: #B10DC9;
+  --bc-red: #FF4136;
+  --bc-teal: #008080;
+  --bc-green: #008000;
+  --bc-yellow: #FFDC00;
+  --bc-light-default: rgba(237, 240, 240,0.3);
+  --bc-light-primary: #dcf0f5;
+  --bc-light-secondary: #f2f4f5;
+  --bc-light-warning: #ffedcc;
+  --bc-light-danger: #fce9ec;
+  --bc-light-info: #d9f5ff;
+  --bc-light-success: #d1ffbf;
+  --bc-light-extreme: #e6e6e6;
+  --bc-transparent-black:rgba(0, 0, 0, 0.01);
+}
+
+footer {
+  padding: 10px;
+}
+
+.footer a, p {
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.footer a.link-data {
+  opacity: 0.8;
+  text-decoration: none;
+  color: var(--bc-dark);
+  display: block;
+}
+
+.footer a.link-data:hover {
+  opacity: 1;
+}
+
+.footer h3, .footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer hr {
+  margin: 10px 0px;
+  border: none;
+  width: 100%;
+  height: 1px;
+}
+
+.footer.box {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.footer.box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

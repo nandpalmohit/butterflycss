@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>floating Input · Butterfly</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterfly.css</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="Components">
+				<h3>Components</h3>
+				<a href="/docs/standard/alert/">Alert</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				<a href="/docs/standard/grid/">Grid</a>
+				
+				<a href="/docs/standard/inputs/">Input Types</a>
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="forms">
+				<h3>Forms</h3>
+				<a href="/docs/forms/overview/">Overview</a>
+				<a href="/docs/forms/examples/">Examples</a>
+				<a href="/docs/forms/checks-radios/">Checks & Radios</a>
+				<a href="/docs/forms/file/">File</a>
+				<a href="/docs/forms/float-input/" class="active">Floating Input</a>
+				<a href="/docs/forms/input-group/">Input Group</a>
+				<a href="/docs/forms/picker/">Picker</a>
+				<a href="/docs/forms/range/">Range</a>
+				<a href="/docs/forms/select/">Select</a>
+				<a href="/docs/forms/switch/">Switch</a>
+				<a href="/docs/forms/textarea/">Textarea</a>
+			</div>
+			<div class="link" id="Elements">
+				<h3>Elements</h3>
+				<a href="/docs/elements/align/">Alignment</a>
+				<a href="/docs/elements/border/">Border</a>
+				<a href="/docs/elements/color/">Color</a>
+				<a href="/docs/elements/heading/">Heading</a>
+				<a href="/docs/elements/list/">List</a>
+				<a href="/docs/elements/margin/">Margin</a>
+				<a href="/docs/elements/padding/">Padding</a>
+				<a href="/docs/elements/textstyle/">Text Styles</a>
+			</div>
+				<div class="link" id="Layout">
+				<h3>Layout</h3>
+				<a href="/docs/layout/container/">Container</a>
+			</div>
+			<div class="link" id="Modules">
+				<h3>Modules</h3>
+				<a href="/docs/modules/bojo/">Bojo</a>
+				<a href="/docs/modules/contact/">Contact</a>
+				<a href="/docs/modules/forms/">Forms</a>
+				<a href="/docs/modules/footers/">Footers</a>
+				<a href="/docs/modules/headers/">Headers</a>
+				<a href="/docs/modules/services/">Services</a>
+				<a href="/docs/modules/skills/">Skills</a>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="float-input">
+					<h1>Floating Input</h1>
+					<p>Butterfly Forms are designed modern input fileds as a new generation form controls. Input fields are covered with multiple colors, sizes, layouts and more.</p>
+					<p class="cl">You need to apply <span>.float-group</span> class.</p>
+				</div>
+				<!-- example float -->
+				<div class="doc-data" id="example-float">
+					<hr class="type-1">
+					<h3>Example</h3>
+					<p>Floating Input is combination of <span>&lt;input&gt;</span> tag and <span>&lt;label&gt;</span> tag with its own classes and it is designed with the newer inputs.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.float-group</span> class first. Add <span>.float-input</span> to the <span>&lt;input&gt;</span> tag and apply <span>.float-label</span> to the <span>&lt;label&gt;</span> tag.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="float-group">
+								<input type="text" id="floatText" name="fullname" class="float-input" required>
+								<label class="float-label" for="floatText">Your Full Name</label>
+							</div>
+							<div class="float-group">
+								<input type="text" id="floatText2" name="fullname" class="float-input">
+								<label class="float-label" for="floatText2">Your Full Name</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- required input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">floatName</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">floatName</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- not-required input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">floatName2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">floatName2</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- input types float -->
+				<div class="doc-data" id="input-types-float">
+					<hr class="type-1">
+					<h3>Input Types</h3>
+					<p>Floating Input supports all the input types with custom design.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.float-group</span> class first. Add <span>.float-input</span> to the <span>&lt;input&gt;</span> tag and apply <span>.float-label</span> to the <span>&lt;label&gt;</span> tag.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="float-group">
+								<input type="text" id="inputText" name="textmame" class="float-input" placeholder="Enter Name" required>
+								<label class="float-label" for="inputText">Text Input</label>
+							</div>
+							<div class="float-group">
+								<input type="email" id="inputEmail" name="emailid" class="float-input" placeholder="Enter Email" required>
+								<label class="float-label" for="inputEmail">Email Input</label>
+							</div>
+							<div class="float-group">
+								<input type="date" id="inputDate" name="date" class="float-input" placeholder="Enter Birth Date" required>
+								<label class="float-label" for="inputDate">Date Input</label>
+							</div>
+							<div class="float-group">
+								<input type="datetime-local" id="inputDatetime" name="datetime" class="float-input" placeholder="Enter Date and Time" required>
+								<label class="float-label" for="inputDatetime">Datetime Input</label>
+							</div>
+							<div class="float-group">
+								<input type="number" id="inputNumber" name="number" class="float-input" placeholder="" required>
+								<label class="float-label" for="inputNumber">Number Input</label>
+							</div>
+							<div class="float-group">
+								<input type="password" id="inputPassword" name="password" class="float-input" placeholder="Enter Password" required>
+								<label class="float-label" for="inputPassword">Password Input</label>
+							</div>
+							<div class="float-group">
+								<input type="tel" id="inputTel" name="tel" class="float-input" placeholder="Enter Mobile Number" required>
+								<label class="float-label" for="inputTel">Tel Input</label>
+							</div>
+							<div class="float-group">
+								<input type="time" id="inputTime" name="time" class="float-input" placeholder="Enter Appointment Time" required>
+								<label class="float-label" for="inputTime">Time Input</label>
+							</div>
+							<div class="float-group">
+								<input type="url" id="inputUrl" name="url" class="float-input" placeholder="Enter Your Link" required>
+								<label class="float-label" for="inputUrl">Url Input</label>
+							</div>
+							<div class="float-group">
+								<input type="week" id="inputWeek" name="week" class="float-input" placeholder="Enter Event Week" required>
+								<label class="float-label" for="inputWeek">Week Input</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- text input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">textInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">textInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Text Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- email input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">emailInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">emailInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Email Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- date input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">date</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">dateInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">dateInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Date Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- datetime-local input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">datetime-local</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">datetimeInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">datetimeInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Datetime Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- number input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">number</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">numberInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">numberInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Number Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- password input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">password</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">passwordInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">passwordInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Password Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- tel input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">tel</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">telInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">telInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Tel Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- time input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">time</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">timeInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">timeInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Time Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- url input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">url</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">urlInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">urlInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Url Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- week input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">week</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">weekInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">weekInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Week Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- colored float -->
+				<div class="doc-data" id="colored-float">
+					<hr class="type-1">
+					<h3>Colored</h3>
+					<p>Floating Inputs support 8+ colors with <span>&lt;label&gt;</span> and <span>&lt;input&gt;</span> color combination.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You can apply <span>.default</span>, <span>.primary</span>, <span>.secondary</span>, <span>.dark</span>, <span>.light</span>, <span>.warning</span>, <span>.danger</span>, <span>.success</span>, <span>.info</span> class with <span>.float-group</span> class easily for colored inputs.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="float-group">
+								<input type="text" id="main" name="main" class="float-input" required>
+								<label class="float-label" for="main">Main Input</label>
+							</div>
+							<div class="float-group default">
+								<input type="text" id="default" name="default" class="float-input" required>
+								<label class="float-label" for="default">Default Input</label>
+							</div>
+							<div class="float-group primary">
+								<input type="text" id="primary" name="primary" class="float-input" required>
+								<label class="float-label" for="primary">Primary Input</label>
+							</div>
+							<div class="float-group secondary">
+								<input type="text" id="secondary" name="secondary" class="float-input" required>
+								<label class="float-label" for="secondary">Secondary Input</label>
+							</div>
+							<div class="float-group dark">
+								<input type="text" id="dark" name="dark" class="float-input" required>
+								<label class="float-label" for="dark">Dark Input</label>
+							</div>
+							<div class="float-group light">
+								<input type="text" id="light" name="light" class="float-input" required>
+								<label class="float-label" for="light">Light Input</label>
+							</div>
+							<div class="float-group warning">
+								<input type="text" id="warning" name="warning" class="float-input" required>
+								<label class="float-label" for="warning">Warning Input</label>
+							</div>
+							<div class="float-group danger">
+								<input type="text" id="danger" name="danger" class="float-input" required>
+								<label class="float-label" for="danger">Danger Input</label>
+							</div>
+							<div class="float-group success">
+								<input type="text" id="success" name="success" class="float-input" required>
+								<label class="float-label" for="success">Success Input</label>
+							</div>
+							<div class="float-group info">
+								<input type="text" id="info" name="info" class="float-input" required>
+								<label class="float-label" for="info">Info Input</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- main input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- default input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- primary input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- secondary input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- dark input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group dark</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- light input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- warning input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- danger input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- success input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- info input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- sizing float -->
+				<div class="doc-data" id="sizing-float">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>Floating inputs have small to large size set.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Add <span>.small</span> class with <span>.float-group</span> class for small sizing.<br>
+						Add <span>.large</span> class with <span>.float-group</span> class for large sizing.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="float-group small">
+								<input type="text" id="smallSize" name="name" class="float-input" required>
+								<label class="float-label" for="smallSize">Your Full Name</label>
+							</div>
+							<div class="float-group">
+								<input type="text" id="normalSize" name="name" class="float-input" required>
+								<label class="float-label" for="normalSize">Your Full Name</label>
+							</div>
+							<div class="float-group large">
+								<input type="text" id="largeSize" name="name" class="float-input" required>
+								<label class="float-label" for="largeSize">Your Full Name</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- small input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group small</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">smallSize</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">smallSize</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- normal input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">normalSize</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">normalSize</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- large input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group large</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">largeSize</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">largeSize</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- disabled float -->
+				<div class="doc-data" id="disabled-float">
+					<hr class="type-1">
+					<h3>Disabled</h3>
+					<p>Floating Input contain disabled state to fill light colors and opacity for inputs and made a disabled type input.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>disabled</span> attribute with <span>.float-group</span> class.<br> You don't need to add <span>disabled</span> in <span>&lt;input&gt;</span>'s.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="float-group" disabled>
+								<input type="text" id="disabled1" name="fullname" class="float-input" required>
+								<label class="float-label" for="disabled1">Disabled Input Label Text</label>
+							</div>
+							<div class="float-group" disabled>
+								<input type="text" id="disabled2" name="fullname" class="float-input" value="You can't access this inputs.">
+								<label class="float-label" for="disabled2">label</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- empty input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabled1</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabled1</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Disabled Input Label Text&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- filled required ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabled2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">disabled2</b>&quot; <b class="cl">value</b>=&quot;<b class="cn">you can't access this inputs.</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabled2</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;label&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- readonly float -->
+				<div class="doc-data" id="readonly-float">
+					<hr class="type-1">
+					<h3>ReadOnly</h3>
+					<p>Floating Input contain readonly attribute to show an input-field is read-only.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>readonly</span> attribute with <span>&lt;input&gt;</span> tag.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="float-group">
+								<input type="text" id="floatText" name="fullname" class="float-input" placeholder="This text is only for read." readonly>
+								<label class="float-label" for="floatText">Your Full Name</label>
+							</div>
+							<div class="float-group">
+								<input type="text" id="floatText2" name="fullname" class="float-input" readonly value="Mohit Nandpal">
+								<label class="float-label" for="floatText2">Your Full Name</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- empty input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">floatName</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">readonly</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">floatName</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- filled input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">float-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">floatName2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot;  <b class="cl">value</b>=&quot;<b class="cn">Mohit Nandpal</b>&quot; <b class="cl">readonly</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">floatName2</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">float-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- spacefix -->
+				<div class="spacefix"></div>
+				<!-- component wrap group -->
+				<div class="tag cmp" id="wrap-input">
+					<h1>Wrapping Input</h1>
+					<p>Butterfly Forms are also designed latest styling of Wrap Inputs fields. Wrap input fields are covered with multiple colors, sizes, layouts and more.</p>
+					<p class="cl">You need to apply <span>.wrap-group</span> class.</p>
+				</div>
+				<!-- example float -->
+				<div class="doc-data" id="example-wrap">
+					<hr class="type-1">
+					<h3>Example</h3>
+					<p>Wrapping Input is combination of <span>&lt;input&gt;</span> tag and <span>&lt;label&gt;</span> tag with its own classes and it is designed with the newer inputs. It is mainly designed as a wrapping of input fields with some text.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.wrap-group</span> class first. Add <span>.wrap-input</span> to the <span>&lt;input&gt;</span> tag and apply <span>.wrap-label</span> to the <span>&lt;label&gt;</span> tag.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="wrap-group">
+								<input type="text" id="wrapText" name="fullname" class="wrap-input" required>
+								<label class="wrap-label" for="wrapText">Your Full Name</label>
+							</div>
+							<div class="wrap-group">
+								<input type="text" id="wrapText2" name="fullname" class="wrap-input">
+								<label class="wrap-label" for="wrapText2">Your Full Name</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- required input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">wrapName</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">wrapName</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- not-required input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">wrapName2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">wrapName2</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- input types float -->
+				<div class="doc-data" id="input-types-wrap">
+					<hr class="type-1">
+					<h3>Input Types</h3>
+					<p>Wrapping Input supports all the input types with custom design.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.wrap-group</span> class first. Add <span>.wrap-input</span> to the <span>&lt;input&gt;</span> tag and apply <span>.wrap-label</span> to the <span>&lt;label&gt;</span> tag.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="wrap-group">
+								<input type="text" id="inputText" name="textmame" class="wrap-input" placeholder="Enter Name" required>
+								<label class="wrap-label" for="inputText">Text Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="email" id="inputEmail" name="emailid" class="wrap-input" placeholder="Enter Email" required>
+								<label class="wrap-label" for="inputEmail">Email Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="date" id="inputDate" name="date" class="wrap-input" placeholder="Enter Birth Date" required>
+								<label class="wrap-label" for="inputDate">Date Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="datetime-local" id="inputDatetime" name="datetime" class="wrap-input" placeholder="Enter Date and Time" required>
+								<label class="wrap-label" for="inputDatetime">Datetime Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="number" id="inputNumber" name="number" class="wrap-input" placeholder="" required>
+								<label class="wrap-label" for="inputNumber">Number Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="password" id="inputPassword" name="password" class="wrap-input" placeholder="Enter Password" required>
+								<label class="wrap-label" for="inputPassword">Password Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="tel" id="inputTel" name="tel" class="wrap-input" placeholder="Enter Mobile Number" required>
+								<label class="wrap-label" for="inputTel">Tel Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="time" id="inputTime" name="time" class="wrap-input" placeholder="Enter Appointment Time" required>
+								<label class="wrap-label" for="inputTime">Time Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="url" id="inputUrl" name="url" class="wrap-input" placeholder="Enter Your Link" required>
+								<label class="wrap-label" for="inputUrl">Url Input</label>
+							</div>
+							<div class="wrap-group">
+								<input type="week" id="inputWeek" name="week" class="wrap-input" placeholder="Enter Event Week" required>
+								<label class="wrap-label" for="inputWeek">Week Input</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- text input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">textInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">textInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Text Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- email input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">emailInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">emailInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Email Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- date input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">date</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">dateInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">dateInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Date Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- datetime-local input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">datetime-local</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">datetimeInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">datetimeInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Datetime Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- number input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">number</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">numberInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">numberInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Number Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- password input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">password</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">passwordInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">passwordInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Password Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- tel input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">tel</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">telInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">telInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Tel Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- time input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">time</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">timeInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">timeInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Time Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- url input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">url</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">urlInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">urlInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Url Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- week input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">week</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">weekInput</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">weekInput</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Week Input&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- colored wrap -->
+				<div class="doc-data" id="colored-wrap">
+					<hr class="type-1">
+					<h3>Colored</h3>
+					<p>Wrapping Inputs support 8+ colors with <span>&lt;label&gt;</span> and <span>&lt;input&gt;</span> color combination.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You can apply <span>.default</span>, <span>.primary</span>, <span>.secondary</span>, <span>.dark</span>, <span>.light</span>, <span>.warning</span>, <span>.danger</span>, <span>.success</span>, <span>.info</span> class with <span>.wrap-group</span> class easily for colored inputs.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="wrap-group">
+								<input type="text" id="main" name="main" class="wrap-input" required>
+								<label class="wrap-label" for="main">Main Input</label>
+							</div>
+							<div class="wrap-group default">
+								<input type="text" id="default" name="default" class="wrap-input" required>
+								<label class="wrap-label" for="default">Default Input</label>
+							</div>
+							<div class="wrap-group primary">
+								<input type="text" id="primary" name="primary" class="wrap-input" required>
+								<label class="wrap-label" for="primary">Primary Input</label>
+							</div>
+							<div class="wrap-group secondary">
+								<input type="text" id="secondary" name="secondary" class="wrap-input" required>
+								<label class="wrap-label" for="secondary">Secondary Input</label>
+							</div>
+							<div class="wrap-group dark">
+								<input type="text" id="dark" name="dark" class="wrap-input" required>
+								<label class="wrap-label" for="dark">Dark Input</label>
+							</div>
+							<div class="wrap-group light">
+								<input type="text" id="light" name="light" class="wrap-input" required>
+								<label class="wrap-label" for="light">Light Input</label>
+							</div>
+							<div class="wrap-group warning">
+								<input type="text" id="warning" name="warning" class="wrap-input" required>
+								<label class="wrap-label" for="warning">Warning Input</label>
+							</div>
+							<div class="wrap-group danger">
+								<input type="text" id="danger" name="danger" class="wrap-input" required>
+								<label class="wrap-label" for="danger">Danger Input</label>
+							</div>
+							<div class="wrap-group success">
+								<input type="text" id="success" name="success" class="wrap-input" required>
+								<label class="wrap-label" for="success">Success Input</label>
+							</div>
+							<div class="wrap-group info">
+								<input type="text" id="info" name="info" class="wrap-input" required>
+								<label class="wrap-label" for="info">Info Input</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- main input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- default input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- primary input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- secondary input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- dark input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group dark</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- light input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- warning input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- danger input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- success input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- info input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- sizing wrap -->
+				<div class="doc-data" id="sizing-wrap">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>Wrapping inputs have small to large size set.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Add <span>.small</span> class with <span>.wrap-group</span> class for small sizing.<br>
+						Add <span>.large</span> class with <span>.wrap-group</span> class for large sizing.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="wrap-group small">
+								<input type="text" id="smallSize" name="name" class="wrap-input" required>
+								<label class="wrap-label" for="smallSize">Your Full Name</label>
+							</div>
+							<div class="wrap-group">
+								<input type="text" id="normalSize" name="name" class="wrap-input" required>
+								<label class="wrap-label" for="normalSize">Your Full Name</label>
+							</div>
+							<div class="wrap-group large">
+								<input type="text" id="largeSize" name="name" class="wrap-input" required>
+								<label class="wrap-label" for="largeSize">Your Full Name</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- small input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group small</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">smallSize</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">smallSize</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- normal input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">normalSize</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">normalSize</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- large input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group large</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">largeSize</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">largeSize</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- disabled wrap -->
+				<div class="doc-data" id="disabled-wrap">
+					<hr class="type-1">
+					<h3>Disabled</h3>
+					<p>Wrapping Input contain disabled state to fill light colors and opacity for inputs and made a disabled type input.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>disabled</span> attribute with <span>.wrap-group</span> class.<br> You don't need to add <span>disabled</span> in <span>&lt;input&gt;</span>'s.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="wrap-group" disabled>
+								<input type="text" id="disabled1" name="fullname" class="wrap-input" required>
+								<label class="wrap-label" for="disabled1">Disabled Input Label Text</label>
+							</div>
+							<div class="wrap-group" disabled>
+								<input type="text" id="disabled2" name="fullname" class="wrap-input" value="You can't access this inputs.">
+								<label class="wrap-label" for="disabled2">label</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- empty input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabled1</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabled1</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Disabled Input Label Text&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- filled required ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabled2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">disabled2</b>&quot; <b class="cl">value</b>=&quot;<b class="cn">you can't access this inputs.</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabled2</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- readonly wrap -->
+				<div class="doc-data" id="readonly-wrap">
+					<hr class="type-1">
+					<h3>ReadOnly</h3>
+					<p>Wrapping Input contain readonly attribute to show an input-field is read-only.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>readonly</span> attribute with <span>&lt;input&gt;</span> tag.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="wrap-group">
+								<input type="text" id="wrapText" name="fullname" class="wrap-input" placeholder="This text is only for read." readonly>
+								<label class="wrap-label" for="wrapText">Your Full Name</label>
+							</div>
+							<div class="wrap-group">
+								<input type="text" id="wrapText2" name="fullname" class="wrap-input" readonly value="Mohit Nandpal">
+								<label class="wrap-label" for="wrapText2">Your Full Name</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- required input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">wrapName</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">readonly</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">wrapName</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- not-required input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">wrapName2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot; <b class="cl">value</b>=&quot;<b class="cn">Mohit Nandpal</b>&quot;  <b class="cl">readonly</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">wrapName2</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt;Your Full Name&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Floating</a>
+				<a href="#example-float" class="ml1">Example</a>
+				<a href="#input-types-float" class="ml1">Input types</a>
+				<a href="#colored-float" class="ml1">Colored</a>
+				<a href="#sizing-float" class="ml1">Sizing</a>
+				<a href="#disabled-float" class="ml1">Disabled</a>
+				<a href="#readonly-float" class="ml1">Readonly</a>
+				<a href="#wrap-input">Wrapping</a>
+				<a href="#example-wrap" class="ml1">Example</a>
+				<a href="#input-types-wrap" class="ml1">Input types</a>
+				<a href="#colored-wrap" class="ml1">Colored</a>
+				<a href="#sizing-wrap" class="ml1">Sizing</a>
+				<a href="#disabled-wrap" class="ml1">Disabled</a>
+				<a href="#readonly-wrap" class="ml1">Readonly</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

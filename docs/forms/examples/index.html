@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Forms · Butterfly</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterfly.css</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="Components">
+				<h3>Components</h3>
+				<a href="/docs/standard/alert/">Alert</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				<a href="/docs/standard/grid/">Grid</a>
+				
+				<a href="/docs/standard/inputs/">Input Types</a>
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="forms">
+				<h3>Forms</h3>
+				<a href="/docs/forms/overview/">Overview</a>
+				<a href="/docs/forms/examples/" class="active">Examples</a>
+				<a href="/docs/forms/checks-radios/">Checks & Radios</a>
+				<a href="/docs/forms/file/">File</a>
+				<a href="/docs/forms/float-input/">Floating Input</a>
+				<a href="/docs/forms/input-group/">Input Group</a>
+				<a href="/docs/forms/picker/">Picker</a>
+				<a href="/docs/forms/range/">Range</a>
+				<a href="/docs/forms/select/">Select</a>
+				<a href="/docs/forms/switch/">Switch</a>
+				<a href="/docs/forms/textarea/">Textarea</a>
+			</div>
+			<div class="link" id="Elements">
+				<h3>Elements</h3>
+				<a href="/docs/elements/align/">Alignment</a>
+				<a href="/docs/elements/border/">Border</a>
+				<a href="/docs/elements/color/">Color</a>
+				<a href="/docs/elements/heading/">Heading</a>
+				<a href="/docs/elements/list/">List</a>
+				<a href="/docs/elements/margin/">Margin</a>
+				<a href="/docs/elements/padding/">Padding</a>
+				<a href="/docs/elements/textstyle/">Text Styles</a>
+			</div>
+				<div class="link" id="Layout">
+				<h3>Layout</h3>
+				<a href="/docs/layout/container/">Container</a>
+			</div>
+			<div class="link" id="Modules">
+				<h3>Modules</h3>
+				<a href="/docs/modules/bojo/">Bojo</a>
+				<a href="/docs/modules/contact/">Contact</a>
+				<a href="/docs/modules/forms/">Forms</a>
+				<a href="/docs/modules/footers/">Footers</a>
+				<a href="/docs/modules/headers/">Headers</a>
+				<a href="/docs/modules/services/">Services</a>
+				<a href="/docs/modules/skills/">Skills</a>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="alertbox">
+					<h1>Examples</h1>
+					<p>Content that is ready for you to choose from the best form designs, layouts, colors and mixing.
+					<p class="cl">Use the <span>.form-*</span> class for creating a structure for it.</p>
+				</div>
+				<!-- sign in example -->
+				<div class="doc-data" id="signin">
+					<hr class="type-1">
+					<h3>Sign In</h3>
+					<p>The below example is simple sign in form which include email and password input fields with one button and one link.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Use the <span>.form-control</span> class for simple input field styling.
+						It uses <span>label</span> for <span>input</span> fields with a <span>small</span> class that pass a small message for inputs.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer px5 pt2">
+								<div class="form-control">
+									<label for="SignInEmail">Enter Email</label>
+									<input type="email" id="SignInEmail" name="email" class="form-input">
+									<small id="emailHelp" class="text-muted">We'll never share your email with anyone else.</small>
+								</div>
+								<div class="form-control">
+									<label for="SignInKey">Enter Password</label>
+									<input type="password" id="SignInKey" name="password" class="form-input" >
+								</div>
+								<div class="form-control text-center my2">
+									<a class="btn btn-link">Forgot Password?</a>
+								</div>
+								<div class="form-control text-center">
+									<button class="btn cl-btn-primary block">Login to your accounts</button>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span>&lt;<b class="dv">form</b>&gt;</span>
+								  <span class="cmt">&lt;!--- email input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">SignInEmail</b>&quot;&gt; Enter Email &lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">SignInEmail</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">email</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">small</b> <b class="cl">class</b>=&quot;<b class="cn">text-secondary</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">emailHelp</b>&quot;&gt;We'll never share your email with anyone else.&lt;/<b class="dv">small</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- password input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">SignInKey</b>&quot;&gt; Enter Password &lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">Password</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">SignInKey</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">password</b>&quot;&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- forget link ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control my2 text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Forgot Password? &lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+ 								  <span class="cmt">&lt;!--- login button ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary ripple</b>&quot;&gt; Login to your account &lt;/<b class="dv">button</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">form</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- signup example -->
+				<div class="doc-data" id="signup">
+					<hr class="type-1">
+					<h3>Signup</h3>
+					<p>The below example is simple sign up form which include text, email, password, checkbox and one button with layout.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Use the <span>.form-control</span> class for simple input field styling.
+						It uses <span>label</span>, <span>input</span> fields with a <span>small</span> class that pass a small message for inputs. <span>checkbox</span> for conditions. <span>a</span> tag for link and <span>button.</span>
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Sans subcontainer mt2">
+								<div class="row">
+									<div class="col">
+										<div class="wrap-group">
+											<input type="text" id="RegFname" name="fname" class="wrap-input" required>
+											<label class="wrap-label" for="RegFname">First Name</label>
+										</div>
+									</div>
+									<div class="col">
+										<div class="wrap-group">
+											<input type="text" id="RegLname" name="lname" class="wrap-input" required>
+											<label class="wrap-label" for="RegLname">Last Name </label>
+										</div>
+									</div>
+								</div>
+								<div class="wrap-group mb2">
+									<input type="email" id="RegEmail" name="email" class="wrap-input" required>
+									<label class="wrap-label" for="RegEmail">Enter Email</label>
+								</div>
+								<div class="wrap-group mb2">
+									<input type="password" id="RegKey" name="password" class="wrap-input" required>
+									<label class="wrap-label" for="RegKey">Enter Password</label>
+								</div>
+
+								<div class="form-control mt3 mb2">
+									<div class="checkbox-group cn-center">
+										<input type="checkbox" id="ExampleCond">
+										<label for="ExampleCond" class="checkbox-label text-dark">Allow all the terms and conditions</label>
+									</div>
+								</div>
+								<div class="form-control text-center">
+									<button class="btn cl-btn-primary block ripple">Sign Up For Free</button>
+								</div>
+								<div class="form-control text-center mt3">
+									<a class="btn btn-link"><span class="text-dark">Already a Member?</span> Login Now</a>									
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span>&lt;<b class="dv">form</b> <b class="cl">class</b>=&quot;<b class="cn">subcontainer mt2</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row</b>&quot;&gt;</span>
+								    <span class="cmt">&lt;!--- firstname input ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">RegFname</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fname</b>&quot; <b class="cl">required</b>&gt;</span>
+								        <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">RegFname</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt; First Name &lt;/<b class="dv">label</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- lastname input ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">RegLname</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">lname</b>&quot; <b class="cl">required</b>&gt;</span>
+								        <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">RegLname</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt; Last Name &lt;/<b class="dv">label</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+  								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- email input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">RegEmail</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">required</b>&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">RegEmail</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt; Enter Email &lt;/<b class="dv">label</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- password input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-group</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">Password</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">RegKey</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">password</b>&quot; <b class="cl">required</b>&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">RegKey</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">wrap-label</b>&quot;&gt; Enter Password &lt;/<b class="dv">label</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- condition checkbox ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control my3</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group cn-center</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExampleCond</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">ExampleCond</b>&quot;&gt; Allow all the terms and conditions.&lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+ 								  <span class="cmt">&lt;!--- signup button ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary block ripple</b>&quot;&gt; Sign up for free &lt;/<b class="dv">button</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+ 								  <span class="cmt">&lt;!--- login button ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt;&lt;<b class="dv">span</b> <b class="cl">class</b>=&quot;<b class="cn">text-dark</b>&quot;&gt; Already a Member? &lt;/<b class="dv">span</b>&gt; Login Now. &lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">form</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- contact example -->
+				<div class="doc-data" id="contact">
+					<hr class="type-1">
+					<h3>Contact</h3>
+					<p>The below example is simple contact us form which include text, email, textarea and one button.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Use the <span>.form-control</span> class for simple input field styling.
+						It uses <span>label</span>, <span>input</span> fields with a <span>small</span> class that pass a small message for inputs. <span>checkbox</span> for conditions. <span>a</span> tag for link and <span>button.</span>
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex light-bg-secondary" id="example">
+							<form class="Sans subcontainer mt2 px5">
+								<div class="form-control">
+									<input type="text" id="ContName" name="fullname" class="form-input" placeholder="Your Full Name">
+								</div>
+								<div class="form-control">
+									<input type="email" id="ContEmail" name="email" class="form-input" placeholder="Your Email id">
+								</div>
+								<div class="form-control">
+									<textarea name="message" rows="6" placeholder="Your Message..." class="form-input"></textarea>
+								</div>
+								<div class="form-control">
+									<button class="btn cl-btn-secondary block ripple shadow-large ripple">Send Message</button>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span>&lt;<b class="dv">form</b> <b class="cl">class</b>=&quot;<b class="cn">light-bg-secondary pxt mt2</b>&quot;&gt;</span>
+								  <span class="cmt">&lt;!--- text input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fullname</b>&quot;  <b class="cl">placeholder</b>=&quot;<b class="cn">Your Full Name</b>&quot;&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- email input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">Your Email id</b>&quot;&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- textarea input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">textarea</b> <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">message</b>&quot; <b class="cl">placehoder</b>=&quot;<b class="cn">Your Message...</b>&quot;&gt;&lt;/<b class="dv">textarea</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- submit button ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-secondary block ripple shadow-large</b>&quot;&gt; Your Message &lt;/<b class="dv">button</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">form</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- billing example -->
+				<div class="doc-data" id="contact">
+					<hr class="type-1">
+					<h3>Billing</h3>
+					<p>The below example is Billing form which multiple inputs, checkboxes, radios, ranges, selects, buttons and links.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Use the <span>.form-control</span> class for simple input field styling.
+						It uses <span>label</span>, <span>input</span> fields with a <span>small</span> class that pass a small message for inputs. <span>checkbox</span> for conditions. <span>a</span> tag for link and <span>button.</span>
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="container bg-light py5 px2">
+								<form class="Sans">
+									<h4 class="mb2">Billing address (sample)</h4>
+									<hr class="type-1">
+									<div class="row g3 mt1">
+										<div class="col-el-6">
+											<div class="form-group secondary"> 
+												<input type="text" name="fname" class="group-input " placeholder="First Name">
+											</div>	
+										</div>
+										<div class="col-el-6">
+											<div class="form-group secondary"> 
+												<input type="text" name="lname" class="group-input" placeholder="Last Name">
+											</div>	
+										</div>
+									</div>
+									<div class="form-group secondary">
+										<label class="group-label bg-default" for="username">
+											<i class="fa fa-at"></i>
+										</label>
+										<input type="text" class="group-input" id="username" name="uname" placeholder="username">
+									</div>
+									<div class="form-group secondary">
+										<label class="group-label bg-default" for="emailid">
+											<i class="fa fa-envelope"></i>
+										</label>
+										<input type="email" class="group-input" id="emailid" name="email" placeholder="abc@gmail.com">
+									</div>
+									<div class="form-group secondary">
+										<label class="group-label bg-default" for="contact">
+											<i class="fa fa-phone"></i>
+										</label>
+										<input type="number" class="group-input" id="contact" name="contact" placeholder="987654321"> 
+									</div>
+									<div class="form-group secondary">
+										<label class="group-label bg-default" for="address">
+											<i class="fas fa-map-marker-alt"></i>
+										</label>
+										<input type="text" class="group-input" id="address" name="address" placeholder="111-A, Main St...">
+									</div>
+									<div class="form-group secondary">
+										<label class="group-label bg-default" for="address2">
+											<i class="fas fa-map-marker"></i>
+										</label>
+										<input type="text" class="group-input" id="address2" name="address2" placeholder="Address 2 (optional)">
+									</div>
+									<div class="row g3">
+										<div class="col-el-6">
+											<div class="form-group secondary"> 
+												<select class="select-group">
+													<option selected disabled>Country</option>
+													<option>India</option>
+												</select>
+											</div>	
+										</div>
+										<div class="col-el-6">
+											<div class="form-group secondary"> 
+												<select class="select-group">
+													<option selected disabled>State</option>
+													<option>Gujarat</option>
+												</select>
+											</div>	
+										</div>
+										<div class="col-el-6">
+											<div class="form-group secondary"> 
+												<select class="select-group">
+													<option selected disabled>City</option>
+													<option>Ahmedabad</option>
+													<option>Surat</option>
+												</select>
+											</div>	
+										</div>
+										<div class="col-el-6">
+											<div class="form-group secondary"> 
+												<select class="select-group">
+													<option selected disabled>Zip Code</option>
+													<option>380001</option>
+													<option>382150</option>
+													<option>388850</option>
+												</select>
+											</div>	
+										</div>
+									</div>
+									<div class="my2">
+										<hr class="type-1"> 
+									</div>
+									<h4>Paymend Method</h4>
+									<div class="radio-group size-14 mt2">
+										<input type="radio" name="method" id="method1">
+										<label class="radio-label" for="method1">Credit Card</label>
+									</div>
+									<div class="radio-group size-14">
+										<input type="radio" name="method" id="method2">
+										<label class="radio-label" for="method2">Debit Card</label>
+									</div>
+									<div class="radio-group size-14">
+										<input type="radio" name="method" id="method3">
+										<label class="radio-label" for="method3">Banking</label>
+									</div>
+									<div class="radio-group size-14" disabled>
+										<input type="radio" name="method" id="method5">
+										<label class="radio-label" for="method5">Pay On Delivery</label>
+									</div>
+									<div class="my2">
+										<hr class="type-1"> 
+									</div>
+									<div class="form-group">
+										<button class="btn cl-btn-default active shadow-large ripple" ripple-for="dark"> Continue to Checkout</button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="MCard">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">container bg-light py5 px2</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">form</b>&gt;</span>
+								    <span>&lt;<b class="dv">h4</b> <b class="cl">class</b>=&quot;<b class="cn">mb2</b>&quot;&gt;Billing address (sample)&lt;/<b class="dv">h4</b>&gt;</span>
+								    <span>&lt;<b class="dv">hr</b> <b class="cl">class</b>=&quot;<b class="cn">type-1</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row g3 mt1</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!--- firstname input ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">group-input</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">First Name</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fname</b>&quot;&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!--- lastname input ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">group-input</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">Last Name</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">lname</b>&quot;&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- username input ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">group-label bg-default</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">uname</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-at</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								      <span>&lt;/<b class="dv">label</b>&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">group-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">uname</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">username</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">username</b>&quot;&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- email input ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">group-label bg-default</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">emailid</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-envelope</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								      <span>&lt;/<b class="dv">label</b>&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">group-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">emailid</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">abc@gmail.com</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">email</b>&quot;&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								     <span class="cmt">&lt;!--- number input ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">group-label bg-default</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">contact</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-phone</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								      <span>&lt;/<b class="dv">label</b>&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">number</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">group-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">phone</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">987654321</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">contact</b>&quot;&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- address input ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">group-label bg-default</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">address</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-map-marker-alt</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								      <span>&lt;/<b class="dv">label</b>&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">group-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">address</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">111-A, Main St...</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">address</b>&quot;&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- second address input ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">group-label bg-default</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">address2</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-map-marker</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								      <span>&lt;/<b class="dv">label</b>&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">group-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">address2</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">Address 2 (optional)...</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">address2</b>&quot;&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row g3</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!--- country select ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">select</b> <b class="cl">class</b>=&quot;<b class="cn">select-group</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">country</b>&quot;&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">selected disabled</b>&gt;Country&lt;/<b class="dv">option</b>&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">value</b>=&quot;<b class="cn">india</b>&quot;&gt;India&lt;/<b class="dv">option</b>&gt;</span>
+								          <span>&lt;/<b class="dv">select</b>&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!--- state select ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">select</b> <b class="cl">class</b>=&quot;<b class="cn">select-group</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">state</b>&quot;&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">selected disabled</b>&gt;State&lt;/<b class="dv">option</b>&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">value</b>=&quot;<b class="cn">gujarat</b>&quot;&gt;Gujarat&lt;/<b class="dv">option</b>&gt;</span>
+								          <span>&lt;/<b class="dv">select</b>&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!--- city select ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">select</b> <b class="cl">class</b>=&quot;<b class="cn">select-group</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">city</b>&quot;&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">selected disabled</b>&gt;City&lt;/<b class="dv">option</b>&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">value</b>=&quot;<b class="cn">ahm</b>&quot;&gt;Ahmedabad&lt;/<b class="dv">option</b>&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">value</b>=&quot;<b class="cn">srt</b>&quot;&gt;Surat&lt;/<b class="dv">option</b>&gt;</span>
+								          <span>&lt;/<b class="dv">select</b>&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!--- zipcode select ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group secondary</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">select</b> <b class="cl">class</b>=&quot;<b class="cn">select-group</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">zipcode</b>&quot;&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">selected disabled</b>&gt;Zip Code&lt;/<b class="dv">option</b>&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">value</b>=&quot;<b class="cn">area1</b>&quot;&gt;380001&lt;/<b class="dv">option</b>&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">value</b>=&quot;<b class="cn">are100</b>&quot;&gt;382150&lt;/<b class="dv">option</b>&gt;</span>
+								            <span>&lt;<b class="dv">option</b> <b class="cl">value</b>=&quot;<b class="cn">area770</b>&quot;&gt;388850&lt;/<b class="dv">option</b>&gt;</span>
+								          <span>&lt;/<b class="dv">select</b>&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">hr</b> <b class="cl">class</b>=&quot;<b class="cn">type-1</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">h4</b>&gt;Payment Method&lt;/<b class="dv">h4</b>&gt;</span>
+								    <span class="cmt">&lt;!--- method 1 ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group size-14</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">method1</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">method</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">method1</b>&quot;&gt;Credit Card&lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- method 2 ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group size-14</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">method2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">method</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">method2</b>&quot;&gt;Debit Card&lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- method 3 ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group size-14</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">method3</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">method</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">method3</b>&quot;&gt;Banking&lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span class="cmt">&lt;!--- method 4 ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group size-14</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">method4</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">method</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">method4</b>&quot;&gt;Pay On Delivery&lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">hr</b> <b class="cl">class</b>=&quot;<b class="cn">type-1</b>&quot;&gt;</span>
+								    <span class="cmt">&lt;!--- submit btn ---&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-group</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">button</b> <b class="cl">type</b>=&quot;<b class="cn">submit</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default active shadow-large ripple</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;Continue to Checkout&lt;/<b class="dv">button</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">form</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Cards</a>
+				<a href="#simple-card" class="ml1">Simple Card</a>
+				<a href="#profile-card" class="ml1">Profile Card</a>
+				<a href="#background-card" class="ml1">Background Card</a>
+				<a href="#horizontal-card" class="ml1">Horizontal Card</a>
+				<a href="#header-card" class="ml1">Header Card</a>
+				<a href="#card-sizing" class="ml1">Sizing</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

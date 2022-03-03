@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "element.css",
+	"sources": [
+		"../scss/element.scss"
+	],
+	"sourcesContent": [
+		"ul.circle li{\r\n\tlist-style-type: circle;\r\n}\r\nul.armenian li{\r\n\tlist-style-type: armenian;\r\n}\r\nul.decimal li{\r\n\tlist-style-type: decimal;\r\n}\r\nul.disc li{\r\n\tlist-style-type: disc;\r\n}\r\nul li a{\r\n\ttext-decoration: none;\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAAA,AAAA,EAAE,AAAA,OAAO,CAAC,EAAE,CAAA;EACX,eAAe,EAAE,MAAM;CACvB;;;AACD,AAAA,EAAE,AAAA,SAAS,CAAC,EAAE,CAAA;EACb,eAAe,EAAE,QAAQ;CACzB;;;AACD,AAAA,EAAE,AAAA,QAAQ,CAAC,EAAE,CAAA;EACZ,eAAe,EAAE,OAAO;CACxB;;;AACD,AAAA,EAAE,AAAA,KAAK,CAAC,EAAE,CAAA;EACT,eAAe,EAAE,IAAI;CACrB;;;AACD,AAAA,EAAE,CAAC,EAAE,CAAC,CAAC,CAAA;EACN,eAAe,EAAE,IAAI;CACrB"
+}

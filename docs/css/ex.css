@@ -1,0 +1,22 @@
+$font-sizes: 8px 10px 12px 14px 18px 24px;
+
+@each $font-size in $font-sizes {
+  .size-#{$font-size} {
+    font-size: $font-size;
+  }
+}
+
+// 
+@import 'colors';
+
+$root_color: $primary, $secondary, $dark, $light, $warning, $danger, $success, $info;
+
+@each $color in $root_color {
+	.btn-#{$color}{
+		background-color: $color;
+	}
+}
+
+body{
+	margin: size(20px);
+}

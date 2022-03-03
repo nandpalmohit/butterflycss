@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Forms · Butterfly</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterfly.css</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="Components">
+				<h3>Components</h3>
+				<a href="/docs/standard/alert/">Alert</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				<a href="/docs/standard/grid/">Grid</a>
+				
+				<a href="/docs/standard/inputs/">Input Types</a>
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="forms">
+				<h3>Forms</h3>
+				<a href="/docs/forms/overview/">Overview</a>
+				<a href="/docs/forms/examples/">Examples</a>
+				<a href="/docs/forms/checks-radios/" class="active">Checks & Radios</a>
+				<a href="/docs/forms/file/">File</a>
+				<a href="/docs/forms/float-input/">Floating Input</a>
+				<a href="/docs/forms/input-group/">Input Group</a>
+				<a href="/docs/forms/picker/">Picker</a>
+				<a href="/docs/forms/range/">Range</a>
+				<a href="/docs/forms/select/">Select</a>
+				<a href="/docs/forms/switch/">Switch</a>
+				<a href="/docs/forms/textarea/">Textarea</a>
+			</div>
+			<div class="link" id="Elements">
+				<h3>Elements</h3>
+				<a href="/docs/elements/align/">Alignment</a>
+				<a href="/docs/elements/border/">Border</a>
+				<a href="/docs/elements/color/">Color</a>
+				<a href="/docs/elements/heading/">Heading</a>
+				<a href="/docs/elements/list/">List</a>
+				<a href="/docs/elements/margin/">Margin</a>
+				<a href="/docs/elements/padding/">Padding</a>
+				<a href="/docs/elements/textstyle/">Text Styles</a>
+			</div>
+				<div class="link" id="Layout">
+				<h3>Layout</h3>
+				<a href="/docs/layout/container/">Container</a>
+			</div>
+			<div class="link" id="Modules">
+				<h3>Modules</h3>
+				<a href="/docs/modules/bojo/">Bojo</a>
+				<a href="/docs/modules/contact/">Contact</a>
+				<a href="/docs/modules/forms/">Forms</a>
+				<a href="/docs/modules/footers/">Footers</a>
+				<a href="/docs/modules/headers/">Headers</a>
+				<a href="/docs/modules/services/">Services</a>
+				<a href="/docs/modules/skills/">Skills</a>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="checks">
+					<h1>Checkbox</h1>
+					<p>Butterfly Forms is designed modern checkbox as a new generation form controls.</p>
+					<p class="cl">A checkbox is one of the <span>HTML forms</span> used on every websites. We're styled a simple checkbox to the next generation checkbox with the help of <span>.checkbox-group</span> class and you can customize the colors, styling, layout and more with other classes. </p>
+				</div>
+				<!-- overview-check -->
+				<div class="doc-data" id="overview-check">
+					<hr class="type-1">
+					<h3>Overview</h3>
+					<p>Our checkbox is works differently as we use <span>&lt;input&gt;</span> tag and <span>&lt;label&gt;</span> tag for proper styling and you need to specify <span>id</span> and <span>for</span> attribute to relate the <span>&lt;input&gt;</span> tag and <span>&lt;label&gt;</span>. You can use <span>checked</span> and <span>disabled</span> attribute for it.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.checkbox-group</span> class for checkbox and apply <span>.checkbox-label</span> to the <span>&lt;label&gt;</span> tag.
+					</p>
+					<div class="alertbox lt-alert-primary">
+						<b>.checkbox-group</b> class follows flex property and display the content in flex. If you need to set the content to the center, just add <b>.cn-center</b> class which set the content center.
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="checkbox-group">
+								  <input type="checkbox" id="defaultCheckbox" name="example1">
+								  <label for="defaultCheckbox" class="checkbox-label">Default checkbox</label>
+								</div>
+								<!--- checked checkbox --->
+								<div class="checkbox-group">
+								  <input type="checkbox" id="checkedCheckbox" name="example1" checked>
+								  <label for="checkedCheckbox" class="checkbox-label">Checked checkbox</label>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- first checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">defaultCheckbox</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">defaultCheckbox</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt;Default Checkbox&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- checked checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">checkedCheckbox</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">checkedCheckbox</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt;Checked Checkbox&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- inline-check -->
+				<div class="doc-data" id="inline-check">
+					<hr class="type-1">
+					<h3>Inline</h3>
+					<p><span>.checkbox-group-inline</span> class follows inline-flex property and display the content in inline.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.checkbox-group-inline</span> class for checkbox.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="checkbox-group-inline">
+								  <input type="checkbox" id="firstCheckbox" name="check">
+								  <label for="firstCheckbox" class="checkbox-label">First checkbox</label>
+								</div>
+								<!--- second checkbox --->
+								<div class="checkbox-group-inline">
+								  <input type="checkbox" id="secondCheckbox" name="check">
+								  <label for="secondCheckbox" class="checkbox-label">Second checkbox</label>
+								</div>
+								<!--- checked checkbox --->
+								<div class="checkbox-group-inline">
+								  <input type="checkbox" id="checkedCheckbox" name="check" checked>
+								  <label for="checkedCheckbox" class="checkbox-label">Checked checkbox</label>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- first checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group-inline</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">firstCheckbox</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">firstCheckbox</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt; First Checkbox &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- second checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group-inline</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">secondCheckbox</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">secondCheckbox</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt; Second Checkbox &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- checked checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group-inline</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">checkedCheckbox</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">checkedCheckbox</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt; Checked Checkbox &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- disabled-check -->
+				<div class="doc-data" id="disabled-check">
+					<hr class="type-1">
+					<h3>Disabled</h3>
+					<p>Checkbox contain <span>disabled state</span> which look inactive checkbox.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span>disabled</span> attribute with <span>.checkbox-group</span> class.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="checkbox-group">
+								  <input type="checkbox" id="defaultCheck" name="check">
+								  <label for="defaultCheck" class="checkbox-label">Default checks</label>
+								</div>
+								<!--- checked checkbox --->
+								<div class="checkbox-group">
+								  <input type="checkbox" id="checkedCheck" name="check" checked>
+								  <label for="checkedCheck" class="checkbox-label">Checked checks</label>
+								</div>
+								<!--- disabled checkbox --->
+								<div class="checkbox-group" disabled>
+								  <input type="checkbox" id="disabledCheck" name="check">
+								  <label for="disabledCheck" class="checkbox-label">Disabled checks</label>
+								</div>
+								<!--- disabled checked checkbox --->
+								<div class="checkbox-group" disabled>
+								  <input type="checkbox" id="disabledcheckedCheck" name="check" checked>
+								  <label for="disabledcheckedCheck" class="checkbox-label">Disabled cheked checks</label>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- default checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">defaultCheck</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">defaultCheck</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt; Default Checkbox &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- checked checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">checkedCheck</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">checkedCheck</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt; Checked Checkbox &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- disabled checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabledCheck</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabledCheck</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt; Disabled Checkbox &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- disabled checked checkbox ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabledCheckedCheck</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">check</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabledCheckedCheck</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot;&gt; Disabled Checked Checkbox &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- spacefix -->
+				<div class="spacefix"></div>
+				<!-- component radio -->
+				<div class="tag cmp" id="radios">
+					<h1>Radio Button</h1>
+					<p>Radio button allow single choice to pick while checkbox allow multiple choices to pick. We also desgined the radios with modern radios.</p>
+					<p class="cl">Use the <span>.radio-group</span> class for radios.</p>
+				</div>
+				<!-- overview-radio -->
+				<div class="doc-data" id="overview-radio">
+					<hr class="type-1">
+					<h3>Overview</h3>
+					<p>Our Radio Button is works differently as we use <span>&lt;input&gt;</span> tag and <span>&lt;label&gt;</span> tag for proper styling and you need to specify <span>id</span> and <span>for</span> attribute to relate the <span>&lt;input&gt;</span> tag and <span>&lt;label&gt;</span>. You can use <span>checked</span> and <span>disabled</span> attribute for it.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.radio-group</span> class for radio and apply <span>.radio-label</span> to the <span>&lt;label&gt;</span> tag.
+					</p>
+					<div class="alertbox lt-alert-primary">
+						<b>.radio-group</b> class follows flex property and display the content in flex. If you need to set the content to the center, just add <b>.cn-center</b> class which set the content center.
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="radio-group">
+								  <input type="radio" id="defaultradio" name="example1">
+								  <label for="defaultradio" class="radio-label">Default radio</label>
+								</div>
+								<!--- checked radio --->
+								<div class="radio-group">
+								  <input type="radio" id="thirdradio" name="example1" checked>
+								  <label for="thirdradio" class="radio-label">Checked radio</label>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- first radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">defaultradio</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radios</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">defaultradio</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt;Default radio&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- checked radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">thirdradio</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radios</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">thirdradio</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt;Checked radio&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- inline-radio -->
+				<div class="doc-data" id="inline-radio">
+					<hr class="type-1">
+					<h3>Inline</h3>
+					<p><span>.radio-group-inline</span> class follows inline-flex property and display the content in inline.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.radio-group-inline</span> class for radio.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="radio-group-inline">
+								  <input type="radio" id="firstradio" name="radio">
+								  <label for="firstradio" class="radio-label">First radio</label>
+								</div>
+								<!--- second radio --->
+								<div class="radio-group-inline">
+								  <input type="radio" id="secondradio" name="radio">
+								  <label for="secondradio" class="radio-label">Second radio</label>
+								</div>
+								<!--- checked radio --->
+								<div class="radio-group-inline">
+								  <input type="radio" id="checkedradio" name="radio" checked>
+								  <label for="checkedradio" class="radio-label">Checked radio</label>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- first radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group-inline</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">firstradio</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radio</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">firstradio</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt; First radio &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- second radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group-inline</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">secondradio</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radio</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">secondradio</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt; Second radio &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- radioed radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group-inline</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">checkedradio</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">checkedradio</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt; Checked radio &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- disabled-radio -->
+				<div class="doc-data" id="disabled-radio">
+					<hr class="type-1">
+					<h3>Disabled</h3>
+					<p>Radio Button contain <span>disabled state</span> which look inactive checkbox.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span>disabled</span> attribute with <span>.radio-group</span> class.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="radio-group">
+								  <input type="radio" id="defaultRadio1" name="radio">
+								  <label for="defaultRadio1" class="radio-label">Default radio</label>
+								</div>
+								<!--- checked radio --->
+								<div class="radio-group">
+								  <input type="radio" id="checkedRadio2" name="radio" checked>
+								  <label for="checkedRadio2" class="radio-label">Checked radio</label>
+								</div>
+								<!--- disabled radio --->
+								<div class="radio-group" disabled>
+								  <input type="radio" id="disabledRadio3" name="radio">
+								  <label for="disabledRadio3" class="radio-label">Disabled radio</label>
+								</div>
+								<!--- disabled checked radio --->
+								<div class="radio-group" disabled>
+								  <input type="radio" id="disabledCheckedRadio4" name="radio" checked>
+								  <label for="disabledCheckedRadio4" class="radio-label">Disabled cheked radio</label>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- default radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">defaultRadio1</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radio</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">defaultRadio1</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt; Default radio &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- checked radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">checkedRadio2</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">checkedRadio2</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt; Checked radio &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- disabled radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabledRadio3</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radio</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabledRadio3</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt; Disabled radio &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- disabled checked radio ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">radio-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">disabledCheckedRadio4</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">radio</b>&quot; <b class="cl">checked</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">disabledCheckedRadio4</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">radio-label</b>&quot;&gt; Disabled Checked Radio &lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Cards</a>
+				<a href="#simple-card" class="ml1">Simple Card</a>
+				<a href="#profile-card" class="ml1">Profile Card</a>
+				<a href="#background-card" class="ml1">Background Card</a>
+				<a href="#horizontal-card" class="ml1">Horizontal Card</a>
+				<a href="#header-card" class="ml1">Header Card</a>
+				<a href="#card-sizing" class="ml1">Sizing</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

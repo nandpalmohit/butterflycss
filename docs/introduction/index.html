@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Introduction · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main class -->
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'" class="active">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+				<h3 onclick="location.href='/docs/standard/'">Components</h3>
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- introduction -->
+				<div class="tag" id="introduction">
+					<h1 class="Sans-Heavy mb1">Introduction to Butterflycss</h1>
+					<p class="text-black size-18 Sans-Medium mb3">The free and open-source library with modern and new generation designed component based css.</p>
+					<div class="container cl-bg-info my5 pd3 rounded-10 shadow-normal">
+						<div class="row">
+							<div class="col-el-8 py1">
+								<h3 class="Sans-Semibold text-light line-13">Beautifull components that made up with modern design and precompiled css.</h3>
+							</div>
+							<div class="col-el-4 py1">
+								<a href="docs/standard/" class="btn cl-btn-light large Sans-Bold ripple block" ripple-for="dark">Browse Component</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- quick intro -->
+				<div class="doc-data tag-info" id="quick-intro">
+					<!-- quick intro -->
+					<hr class="type-1">
+					<h2 class="Sans-Bold mb1">Quick Introduction</h2>
+					<p class="text-muted size-16 Sans mb3">Butterflycss is purely made with <span>CSS files</span> and doesn't need any javascript files for the project. The library is <span>precompiled</span> with <span>SCSS files</span>.<br> You just need to care about <span>butterfly.min.css</span> which is a compressed CSS file while <span>butterfly.css</span> is main file where you can customize the docs and set your own goal.</p>
+					<!-- tree model -->
+					<h2 class="Sans-Bold mb1 mt4">Tree structure</h2>
+					<p class="text-muted size-16 Sans">Let's see the complete structure of all content in butterflycss.</p>
+					<div class="tag-code mt1 mb2">
+						<pre class="i-code">
+							<code>
+								<span class="cmt">docs/</span>
+								<span class="cmt">├─ butterfly.css</span>
+								<span class="cmt">├─ butterfly.min.css</span>
+								<span class="cmt">├─ butterfly.css.map</span>
+								<span class="cmt">├─ css/</span>
+								<span class="cmt">│   ├─ alert.css</span>
+								<span class="cmt">│   ├─ badge.css</span>
+								<span class="cmt">│   ├─ bojo.css</span>
+								<span class="cmt">│   ├─ button.css</span>
+								<span class="cmt">│   ├─ buttongrp.css</span>
+								<span class="cmt">│   ├─ card.css</span>
+								<span class="cmt">│   ├─ container.css</span>
+								<span class="cmt">│   ├─ element.css</span>
+								<span class="cmt">│   ├─ footer.css</span>
+								<span class="cmt">│   ├─ inputs.css</span>
+								<span class="cmt">│   ├─ layout.css</span>
+								<span class="cmt">│   ├─ model.css</span>
+								<span class="cmt">│   ├─ navbar.css</span>
+								<span class="cmt">│   ├─ progress.css</span>
+								<span class="cmt">│   ├─ table.css</span>
+								<span class="cmt">│   ├─ alert.css.map</span>
+								<span class="cmt">│   ├─ badge.css.map</span>
+								<span class="cmt">│   ├─ bojo.css.map</span>
+								<span class="cmt">│   ├─ button.css.map</span>
+								<span class="cmt">│   ├─ buttongrp.css.map</span>
+								<span class="cmt">│   ├─ card.css.map</span>
+								<span class="cmt">│   ├─ container.css.map</span>
+								<span class="cmt">│   ├─ element.css.map</span>
+								<span class="cmt">│   ├─ footer.css.map</span>
+								<span class="cmt">│   ├─ inputs.css.map</span>
+								<span class="cmt">│   ├─ layout.css.map</span>
+								<span class="cmt">│   ├─ model.css.map</span>
+								<span class="cmt">│   ├─ navbar.css.map</span>
+								<span class="cmt">│   ├─ progress.css.map</span>
+								<span class="cmt">│   └── table.css.map</span>
+								<span class="cmt">└── scss/</span>
+								<span class="cmt">    ├─ alert.scss</span>
+								<span class="cmt">    ├─ badge.scss</span>
+								<span class="cmt">    ├─ bojo.scss</span>
+								<span class="cmt">    ├─ button.scss</span>
+								<span class="cmt">    ├─ buttongrp.scss</span>
+								<span class="cmt">    ├─ card.scss</span>
+								<span class="cmt">    ├─ colors.scss</span>
+								<span class="cmt">    ├─ container.scss</span>
+								<span class="cmt">    ├─ element.scss</span>
+								<span class="cmt">    ├─ footer.scss</span>
+								<span class="cmt">    ├─ inputs.scss</span>
+								<span class="cmt">    ├─ layout.scss</span>
+								<span class="cmt">    ├─ model.scss</span>
+								<span class="cmt">    ├─ navbar.scss</span>
+								<span class="cmt">    ├─ progress.scss</span>
+								<span class="cmt">    └── table.scss</span></code>
+						</pre>
+					</div>
+					<p class="text-muted size-16 Sans mb3">This is the most basic of butterflycss: We created each component and layout-based CSS files so you can easily use it and build a strong and styled component. We provide compiled CSS files as <span>butterfly.css</span> or <span>_.css</span> files as well as we provide compiled and minified CSS files <span>butterfly.min.css</span>. The <span>_.css.map</span> files also available for use with certain browser's developer tools.<br><br> If you want to just add minified and compiled files than add <span>butterfly.min.css</span> file to your project or just add compiled file <span>butterfly.css</span>.</p>
+				</div>
+				<!-- how to use -->
+				<div class="doc-data tag-info" id="how-to-use">
+					<hr class="type-1">
+					<h2 class="Sans-Bold mb1">How to use</h2>
+					<p class="text-muted size-16 Sans">After completion of <span onclick="location.href='/docs/#html-template'">HTML starter template</span> you just need to add layouts, components, elements, modules and other stuff for your project.</p>
+					<!-- card example -->
+					<div class="row mt3">
+						<div class="col">
+							<div class="card br-default mg1">
+								<div class="card-header size-14"> 
+								    <img src="/docs/assets/dummy/d2.jpg"> Tourist Guy
+								</div>
+								<img src="/docs/assets/city/c3.jpg">
+								<div class="card-footer"> 
+								    <span class="text-muted Sans-Light size-14"> 1 hour ago. </span>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="tag-code pd1">
+								<pre class="i-code">
+								<span class="cmt">&lt;!--- card example --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header size-14</b>&quot;&gt; </span>
+								    <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot;&gt; Tourist Guy </span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot;&gt; </span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer </b>&quot;&gt; </span>
+								    <span>&lt;<b class="dv">span</b> <b class="cl">class</b>=&quot;<b class="cn">text-muted size-14</b>&quot;&gt; 1 hour ago. &lt;/<b class="dv">span</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								</pre>
+							</div>
+						</div>
+					</div>
+					<p class="text-muted size-16 Sans mt3">In the above example, we made a simple feed example that represents the <span>card</span> component (<span>card-header, card-footer, card-body and more</span>) which is purely created <span>responsive layout</span>.</p>
+				</div>
+				<!-- responsive -->
+				<div class="doc-data tag-info" id="responsive">
+					<h2 class="Sans-Bold mb1">Responsive Layout</h2>
+					<p class="text-muted size-16 Sans mb3">It is made with a responsive layout that supports the mobile-first site, tablet-first sites with butterflycss</p>
+					<div class="container">
+						<table class="hr-table">
+							<thead>
+								<tr>
+									<th>Class</th>
+									<th>Small</th>
+									<th>Medium</th>
+									<th>Large</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="cl">.container</td>
+									<td>100%</td>
+									<td>100%</td>
+									<td>100%</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/" class="btn btn-link large "><i class="fas fa-long-arrow-alt-left mr1"></i> Getting started</a>
+					<a href="/docs/browser-support/" class="btn btn-link large">Browser support<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Introduction</a>
+				<a href="#quick-intro">Quick introduction</a>
+				<a href="#how-to-use">How to use</a>
+				<a href="#download">Download</a>
+				<a href="#">Get Started</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

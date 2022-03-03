@@ -1,0 +1,144 @@
+:root {
+  --bc-default: #e0e1e2;
+  --bc-link: #1f4bdb;
+  --bc-primary: #0053db;
+  --bc-secondary: #778899 ;
+  --bc-dark: #393939;
+  --bc-light: #f7f7f7;
+  --bc-danger: #fa2349;
+  --bc-warning: #ffa500;
+  --bc-info: #07a9df;
+  --bc-success: #3ab509;
+  --bc-black: #000;
+  --bc-white: #fff;
+  --bc-muted:#636363;
+  --bc-grey: #AAAAAA;
+  --bc-silver: #DDDDDD;
+  --bc-maroon: #85144b;
+  --bc-navy: #03045e;
+  --bc-orange: #FF851B;
+  --bc-pink: #ffafcc;
+  --bc-purple: #B10DC9;
+  --bc-red: #FF4136;
+  --bc-teal: #008080;
+  --bc-green: #008000;
+  --bc-yellow: #FFDC00;
+  --bc-light-default: rgba(237, 240, 240,0.3);
+  --bc-light-primary: #dcf0f5;
+  --bc-light-secondary: #f2f4f5;
+  --bc-light-warning: #ffedcc;
+  --bc-light-danger: #fce9ec;
+  --bc-light-info: #d9f5ff;
+  --bc-light-success: #d1ffbf;
+  --bc-light-extreme: #e6e6e6;
+  --bc-transparent-black:rgba(0, 0, 0, 0.01);
+}
+
+.btn-grp {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  transition: 0.3s;
+}
+
+.btn-grp a, .btn-grp button {
+  cursor: pointer;
+}
+
+.btn-grp:hover {
+  transition: 0.3s;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-grp .btn {
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+.btn-grp > .btn:first-child {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.btn-grp > .btn:last-child {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.btn-grp > .btn[class*=ot-btn-] {
+  transition: 0.3s ease-in;
+  border-width: 2px 0px !important;
+}
+
+.btn-grp > .btn[class*=ot-btn-]:first-child {
+  border-left: 2px solid !important;
+}
+
+.btn-grp > .btn[class*=ot-btn-]:last-child {
+  border-right: 2px solid !important;
+}
+
+.btn-grp > .btn[class*=ot-btn-]:hover, .btn-grp > .btn[class*=ot-btn-]:focus {
+  background-color: #f2f2f2;
+  transition: 0.3s;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.btn-grp > .btn[class*=ot-btn-]:active {
+  background-color: #e6e6e6;
+}
+
+.btn-grp-vertical {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  vertical-align: middle;
+}
+
+.btn-grp-vertical .btn {
+  position: relative;
+  border-radius: 0px;
+  width: 100%;
+  box-shadow: none;
+}
+
+.btn-grp-vertical > .btn:first-child {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+
+.btn-grp-vertical > .btn:last-child {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.btn-grp-vertical > .btn[class*=ot-btn-]:first-child {
+  border-top: 2px solid !important;
+}
+
+.btn-grp-vertical > .btn[class*=ot-btn-]:last-child {
+  border-bottom: 2px solid !important;
+}
+
+.btn-grp-vertical > .btn[class*=ot-btn-] {
+  transition: 0.3s ease-in;
+  border-width: 0 2px !important;
+}
+
+.btn-grp-vertical > .btn[class*=ot-btn-]:hover, .btn-grp-vertical > .btn[class*=ot-btn-]:focus {
+  background-color: #f2f2f2;
+  transition: 0.3s;
+}
+
+.btn-grp-vertical > .btn[class*=ot-btn-]:active {
+  background-color: #e6e6e6;
+}

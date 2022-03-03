@@ -1,0 +1,67 @@
+:root {
+  --bc-default: #e0e1e2;
+  --bc-link: #1f4bdb;
+  --bc-primary: #0053db;
+  --bc-secondary: #778899 ;
+  --bc-dark: #393939;
+  --bc-light: #f7f7f7;
+  --bc-danger: #fa2349;
+  --bc-warning: #ffa500;
+  --bc-info: #07a9df;
+  --bc-success: #3ab509;
+  --bc-black: #000;
+  --bc-white: #fff;
+  --bc-muted:#636363;
+  --bc-grey: #AAAAAA;
+  --bc-silver: #DDDDDD;
+  --bc-maroon: #85144b;
+  --bc-navy: #03045e;
+  --bc-orange: #FF851B;
+  --bc-pink: #ffafcc;
+  --bc-purple: #B10DC9;
+  --bc-red: #FF4136;
+  --bc-teal: #008080;
+  --bc-green: #008000;
+  --bc-yellow: #FFDC00;
+  --bc-light-default: rgba(237, 240, 240,0.3);
+  --bc-light-primary: #dcf0f5;
+  --bc-light-secondary: #f2f4f5;
+  --bc-light-warning: #ffedcc;
+  --bc-light-danger: #fce9ec;
+  --bc-light-info: #d9f5ff;
+  --bc-light-success: #d1ffbf;
+  --bc-light-extreme: #e6e6e6;
+  --bc-transparent-black:rgba(0, 0, 0, 0.01);
+}
+
+.progress {
+  display: flex;
+  overflow: hidden;
+  font-size: 12px;
+  background-color: var(--bc-light);
+  border-radius: 6px;
+  margin: 16px 0px 16px 0px;
+  padding: 0px;
+  height: 16px;
+}
+
+.pgbar {
+  border: 0px;
+  transition: width 1s ease;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--bc-link);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.label-progress {
+  padding: 0px 16px 0px 0px;
+  font-size: 14px;
+  background-color: white;
+  font-weight: 500;
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "fn.css",
+	"sources": [
+		"../scss/fn.scss"
+	],
+	"sourcesContent": [
+		"// base size 16px for converting into rem.\r\n$base-size: 16px;\r\n\r\n@function rem($target, $context: $base-size) {\r\n  @return ($target / $context) * 1rem;\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": ""
+}

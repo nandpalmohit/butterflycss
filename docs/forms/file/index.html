@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>File · Butterfly</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterfly.css</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="Components">
+				<h3>Components</h3>
+				<a href="/docs/standard/alert/">Alert</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				<a href="/docs/standard/grid/">Grid</a>
+				
+				<a href="/docs/standard/inputs/">Input Types</a>
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="forms">
+				<h3>Forms</h3>
+				<a href="/docs/forms/overview/">Overview</a>
+				<a href="/docs/forms/examples/">Examples</a>
+				<a href="/docs/forms/checks-radios/">Checks & Radios</a>
+				<a href="/docs/forms/file/" class="active">File</a>
+				<a href="/docs/forms/float-input/">Floating Input</a>
+				<a href="/docs/forms/input-group/">Input Group</a>
+				<a href="/docs/forms/picker/">Picker</a>
+				<a href="/docs/forms/range/">Range</a>
+				<a href="/docs/forms/select/">Select</a>
+				<a href="/docs/forms/switch/">Switch</a>
+				<a href="/docs/forms/textarea/">Textarea</a>
+			</div>
+			<div class="link" id="Elements">
+				<h3>Elements</h3>
+				<a href="/docs/elements/align/">Alignment</a>
+				<a href="/docs/elements/border/">Border</a>
+				<a href="/docs/elements/color/">Color</a>
+				<a href="/docs/elements/heading/">Heading</a>
+				<a href="/docs/elements/list/">List</a>
+				<a href="/docs/elements/margin/">Margin</a>
+				<a href="/docs/elements/padding/">Padding</a>
+				<a href="/docs/elements/textstyle/">Text Styles</a>
+			</div>
+				<div class="link" id="Layout">
+				<h3>Layout</h3>
+				<a href="/docs/layout/container/">Container</a>
+			</div>
+			<div class="link" id="Modules">
+				<h3>Modules</h3>
+				<a href="/docs/modules/bojo/">Bojo</a>
+				<a href="/docs/modules/contact/">Contact</a>
+				<a href="/docs/modules/forms/">Forms</a>
+				<a href="/docs/modules/footers/">Footers</a>
+				<a href="/docs/modules/headers/">Headers</a>
+				<a href="/docs/modules/services/">Services</a>
+				<a href="/docs/modules/skills/">Skills</a>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="alertbox">
+					<h1>File</h1>
+					<p>Butterfly Forms is designed modern file as a new generation form controls.</p>
+					<p class="cl">You need to apply <span>.file-group</span> class.</p>
+				</div>
+				<!-- example -->
+				<div class="doc-data" id="example">
+					<hr class="type-1">
+					<h3>Example</h3>
+					<p>File have a different class as you need to specify <span>.file-group</span> class to create a layout and design for it. The perfect combination of <span>&lt;input&gt;</span> ~ <span>&lt;label&gt;</span> tag with its own classes.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>.file-group</span> class for file. Add <span>.file-input</span> to the <span>&lt;input&gt;</span> tag and apply <span>.file-label</span> to the <span>&lt;label&gt;</span> tag.
+					</p>
+					<div class="alertbox lt-alert-primary">
+						<b>.file-group</b> class follows grid property and display the content in column.
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="file-group">
+								<input type="file" name="doc" id="docFile" class="file-input">
+								<label class="file-label" for="docFile">Upload Your File</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- file input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">file-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">file</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">doc</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- example -->
+				<div class="doc-data" id="example">
+					<hr class="type-1">
+					<h3>Multiple Files</h3>
+					<p>Files allowed multiple documents to submit at a one time.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>multiple</span> attribute in <span>&lt;input&gt;</span> tag.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="file-group">
+								<input type="file" name="doc" id="multiDocFile" class="file-input" multiple>
+								<label class="file-label" for="multiDocFile">Upload Your File</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- file input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">file-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">file</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">multiDocFile</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">doc</b>&quot; <b class="cl">multiple</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">multiDocFile</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- sizing -->
+				<div class="doc-data" id="overview">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>File sizes is important to set layout and design as per form sizes.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span>.small</span> class for small sizing, <span>.large</span> class for large sizing.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="file-group small">
+								<input type="file" name="doc" id="docFile" class="file-input">
+								<label class="file-label" for="docFile">Upload Your File</label>
+							</div>
+							<div class="file-group">
+								<input type="file" name="doc" id="docFile" class="file-input">
+								<label class="file-label" for="docFile">Upload Your File</label>
+							</div>
+							<div class="file-group large">
+								<input type="file" name="doc" id="docFile" class="file-input">
+								<label class="file-label" for="docFile">Upload Your File</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- small file input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">file-group small</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">file</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">doc</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- file input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">file-group</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">file</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">doc</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- large file input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">file-group large</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">file</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">doc</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- disabled -->
+				<div class="doc-data" id="overview">
+					<hr class="type-1">
+					<h3>Disabled</h3>
+					<p>Files are more usefull with the states as disabled.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to apply <span>disabled</span> attribute with associated <span>.form-group</span> class.
+					</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="file-group" disabled>
+								<input type="file" name="doc" id="docFile" class="file-input">
+								<label class="file-label" for="docFile">Upload Your File</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span class="cmt">&lt;!--- file input ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">file-group</b>&quot; <b class="cl">disabled</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">file</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">doc</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">docFile</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">file-label</b>&quot;&gt;Upload Your File&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Cards</a>
+				<a href="#simple-card" class="ml1">Simple Card</a>
+				<a href="#profile-card" class="ml1">Profile Card</a>
+				<a href="#background-card" class="ml1">Background Card</a>
+				<a href="#horizontal-card" class="ml1">Horizontal Card</a>
+				<a href="#header-card" class="ml1">Header Card</a>
+				<a href="#card-sizing" class="ml1">Sizing</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

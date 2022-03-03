@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "table.css",
+	"sources": [
+		"../scss/table.scss",
+		"../scss/colors.scss"
+	],
+	"sourcesContent": [
+		"@import 'colors';\r\n\r\ntable{\r\n\tmargin-bottom: 10px;\r\n \tborder-collapse: collapse;\r\n \twidth: 100%;\r\n}\r\ntable th, table td{\r\n  \ttext-align: left;\r\n  \tpadding: 8px;\r\n}\r\n.table, .table th,.table td{\r\n\tbackground-color: transparent;\r\n}\r\n/*-----box table css-----*/\r\n.box-table th, .box-table td{\r\n \tborder: 1px solid $secondary;\r\n\tpadding: 8px 12px;\r\n\tbackground-color: transparent;\r\n}\r\n/*---hr table css------*/\r\n.hr-table td, .hr-table th{\r\n\tbackground-color: transparent;\r\n\tpadding: 8px 12px;\r\n  \tborder: 1px solid $light_h;\r\n  \tborder-width: 0 0 1px 0;\r\n}\r\n/*----*/\r\n.stripped tr:nth-child(odd){\r\n\tbackground-color: #f2f2f2\r\n}",
+		"// colors\r\n// used fofr bg color, btn color, alert,\r\n\r\n$default: #e0e1e2;\r\n$primary: #0053db;\r\n$secondary: #778899 ;\r\n$dark: #393939;\r\n$light: #f7f7f7;\r\n$danger: #fa2349;\r\n$warning: #ffa500;\r\n$info: #07ace3;\r\n$success: #3ab509;\r\n$muted :#636363;\r\n$white : #fff;\r\n$black: #000;\r\n$link: #1f4bdb;\r\n\r\n// dark colors\r\n//used for border colors, bg colors and hover effect\r\n$default_h:#d9dbdb;\r\n$primary_h:#004ac2;\r\n$secondary_h:#637180;\r\n$dark_h:#1f1f1f;\r\n$light_h:#f2f2f2;\r\n$danger_h:#d91e3f;\r\n$warning_h: #e69500;\r\n$info_h: #0699c9;\r\n$success_h:#329c08;\r\n$white_h: #fafafa;\r\n$black_h: #0e0f12;\r\n$link_h: #1b42c2;\r\n// active colors\r\n$active_default: #cfd1d1;\r\n$active_primary: #003a99;\r\n$active_secondary: #4f5a66;\r\n$active_dark : #000000;\r\n$active_light : #e6e6e6;\r\n$active_warning : #b37400;\r\n$active_danger: #a61730;\r\n$active_info: #057296;\r\n$active_success: #2a8207;\r\n$active_link :  #1839a8;\r\n\r\n// light colors\r\n$light_default: rgba(237, 240, 240,0.3);\r\n$light_primary: #dcf0f5;\r\n$light_secondary: #f2f4f5;\r\n$light_warning : #ffecd4;\r\n$light_danger: #ffdee6;\r\n$light_info: #d9f5ff;\r\n$light_success: #d1ffbf;\r\n// more colors\r\n$ccc: #cccccc;"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,KAAK,CAAA;EACJ,aAAa,EAAE,IAAI;EAClB,eAAe,EAAE,QAAQ;EACzB,KAAK,EAAE,IAAI;CACZ;;;AACD,AAAA,KAAK,CAAC,EAAE,EAAE,KAAK,CAAC,EAAE,CAAA;EACf,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,GAAG;CACd;;;AACD,AAAA,MAAM,EAAE,MAAM,CAAC,EAAE,EAAC,MAAM,CAAC,EAAE,CAAA;EAC1B,gBAAgB,EAAE,WAAW;CAC7B;;AACD,2BAA2B;;AAC3B,AAAA,UAAU,CAAC,EAAE,EAAE,UAAU,CAAC,EAAE,CAAA;EAC1B,MAAM,EAAE,GAAG,CAAC,KAAK,CCXP,OAAO;EDYlB,OAAO,EAAE,QAAQ;EACjB,gBAAgB,EAAE,WAAW;CAC7B;;AACD,yBAAyB;;AACzB,AAAA,SAAS,CAAC,EAAE,EAAE,SAAS,CAAC,EAAE,CAAA;EACzB,gBAAgB,EAAE,WAAW;EAC7B,OAAO,EAAE,QAAQ;EACf,MAAM,EAAE,GAAG,CAAC,KAAK,CCDX,OAAO;EDEb,YAAY,EAAE,SAAS;CACzB;;AACD,QAAQ;;AACR,AAAA,SAAS,CAAC,EAAE,AAAA,UAAW,CAAA,GAAG,EAAC;EAC1B,gBAAgB,EAAE,OACnB;CAAC"
+}

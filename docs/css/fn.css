@@ -1,0 +1,6 @@
+// base size 16px for converting into rem.
+$base-size: 16px;
+
+@function rem($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}

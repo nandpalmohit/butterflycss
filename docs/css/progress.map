@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "progress.css",
+	"sources": [
+		"../scss/progress.scss",
+		"../scss/colors.scss"
+	],
+	"sourcesContent": [
+		"@import 'colors';\r\n\r\n.progress {\r\n\tdisplay: flex;\r\n\toverflow: hidden;\r\n\tfont-size: 12px;\r\n\tbackground-color: $light;\r\n\tborder-radius: 4px;\r\n\tmargin: 16px 0px 16px 0px;\r\n\tpadding: 0px;\r\n\theight: 16px;\r\n}\r\n.pgbar {\r\n\tborder: 0px;\r\n\ttransition: width 1s ease;\r\n\tdisplay: flex;\r\n\ttext-align: center;\r\n\tjustify-content: center;\r\n\tcolor: white;\r\n\tbackground-color: $link;\r\n\tborder-top-left-radius: 4px;\r\n\tborder-bottom-left-radius: 4px;\r\n\tfont-weight: 500;\r\n\tfont-size: 14px;\r\n}\r\n.label-progress{\r\n\tpadding: 0px 16px 0px 0px;\r\n\tfont-size: 14px;\r\n\tbackground-color: white;\r\n\tfont-weight: 500;\r\n}",
+		"// colors\r\n// used fofr bg color, btn color, alert,\r\n\r\n$default: #e0e1e2;\r\n$primary: #0053db;\r\n$secondary: #778899 ;\r\n$dark: #393939;\r\n$light: #f7f7f7;\r\n$danger: #fa2349;\r\n$warning: #ffa500;\r\n$info: #07ace3;\r\n$success: #3ab509;\r\n$muted :#636363;\r\n$white : #fff;\r\n$black: #000;\r\n$link: #1f4bdb;\r\n\r\n// dark colors\r\n//used for border colors, bg colors and hover effect\r\n$default_h:#d9dbdb;\r\n$primary_h:#004ac2;\r\n$secondary_h:#637180;\r\n$dark_h:#1f1f1f;\r\n$light_h:#f2f2f2;\r\n$danger_h:#d91e3f;\r\n$warning_h: #e69500;\r\n$info_h: #0699c9;\r\n$success_h:#329c08;\r\n$white_h: #fafafa;\r\n$black_h: #0e0f12;\r\n$link_h: #1b42c2;\r\n// active colors\r\n$active_default: #cfd1d1;\r\n$active_primary: #003a99;\r\n$active_secondary: #4f5a66;\r\n$active_dark : #000000;\r\n$active_light : #e6e6e6;\r\n$active_warning : #b37400;\r\n$active_danger: #a61730;\r\n$active_info: #057296;\r\n$active_success: #2a8207;\r\n$active_link :  #1839a8;\r\n\r\n// light colors\r\n$light_default: rgba(237, 240, 240,0.3);\r\n$light_primary: #dcf0f5;\r\n$light_secondary: #f2f4f5;\r\n$light_warning : #ffecd4;\r\n$light_danger: #ffdee6;\r\n$light_info: #d9f5ff;\r\n$light_success: #d1ffbf;\r\n// more colors\r\n$ccc: #cccccc;"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,SAAS,CAAC;EACT,OAAO,EAAE,IAAI;EACb,QAAQ,EAAE,MAAM;EAChB,SAAS,EAAE,IAAI;EACf,gBAAgB,ECCT,OAAO;EDAd,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,iBAAiB;EACzB,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,IAAI;CACZ;;;AACD,AAAA,MAAM,CAAC;EACN,MAAM,EAAE,GAAG;EACX,UAAU,EAAE,aAAa;EACzB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,MAAM;EAClB,eAAe,EAAE,MAAM;EACvB,KAAK,EAAE,KAAK;EACZ,gBAAgB,ECJV,OAAO;EDKb,sBAAsB,EAAE,GAAG;EAC3B,yBAAyB,EAAE,GAAG;EAC9B,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CACf;;;AACD,AAAA,eAAe,CAAA;EACd,OAAO,EAAE,gBAAgB;EACzB,SAAS,EAAE,IAAI;EACf,gBAAgB,EAAE,KAAK;EACvB,WAAW,EAAE,GAAG;CAChB"
+}

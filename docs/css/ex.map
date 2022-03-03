@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "ex.css",
+	"sources": [
+		"../scss/ex.scss",
+		"../scss/colors.scss"
+	],
+	"sourcesContent": [
+		"$font-sizes: 8px 10px 12px 14px 18px 24px;\r\n\r\n@each $font-size in $font-sizes {\r\n  .size-#{$font-size} {\r\n    font-size: $font-size;\r\n  }\r\n}\r\n\r\n// \r\n@import 'colors';\r\n\r\n$root_color: $primary, $secondary, $dark, $light, $warning, $danger, $success, $info;\r\n\r\n@each $color in $root_color {\r\n\t.btn-#{$color}{\r\n\t\tbackground-color: $color;\r\n\t}\r\n}\r\n\r\nbody{\r\n\tmargin: size(20px);\r\n}",
+		"// colors\r\n// used fofr bg color, btn color, alert,\r\n\r\n$default: #e0e1e2;\r\n$primary: #0053db;\r\n$secondary: #778899 ;\r\n$dark: #262626;\r\n$light: #f7f7f7;\r\n$danger: #fa2349;\r\n$warning: #ffa500;\r\n$info: #07ace3;\r\n$success: #3ab509;\r\n$muted :#636363;\r\n$white : #fff;\r\n$black: #000;\r\n$link: #1f4bdb;\r\n\r\n// dark colors\r\n//used for border colors, bg colors and hover effect\r\n$default_h:#d9dbdb;\r\n$primary_h:#004ac2;\r\n$secondary_h:#637180;\r\n$dark_h:#191919;\r\n$light_h:#f2f2f2;\r\n$danger_h:#d91e3f;\r\n$warning_h: #e69500;\r\n$info_h: #0699c9;\r\n$success_h:#329c08;\r\n$white_h: #fafafa;\r\n$black_h: #0e0f12;\r\n$link_h: #1b42c2;\r\n\r\n$active_default: #cfd1d1;\r\n$active_primary: #003a99;\r\n$active_secondary: #4f5a66;\r\n$active_dark : #000000;\r\n$active_light : #e6e6e6;\r\n$active_warning : #b37400;\r\n$active_danger: #a61730;\r\n$active_info: #057296;\r\n$active_success: #2a8207;\r\n$active_link :  #1839a8;\r\n\r\n// light colors\r\n$light_default: rgba(237, 240, 240,0.3);\r\n$light_primary: #dcf0f5;\r\n$light_secondary: #f2f4f5;\r\n$light_warning : #ffecd4;\r\n$light_danger: #ffdee6;\r\n$light_info: #d9f5ff;\r\n$light_success: #d1ffbf;\r\n\r\n// more colors\r\n$ccc: #cccccc;"
+	],
+	"names": [],
+	"mappings": ";AAGE,AAAA,SAAS,CAAW;EAClB,SAAS,EAJA,GAAG;CAKb;;;AAFD,AAAA,UAAU,CAAU;EAClB,SAAS,EAJI,IAAI;CAKlB;;;AAFD,AAAA,UAAU,CAAU;EAClB,SAAS,EAJS,IAAI;CAKvB;;;AAFD,AAAA,UAAU,CAAU;EAClB,SAAS,EAJc,IAAI;CAK5B;;;AAFD,AAAA,UAAU,CAAU;EAClB,SAAS,EAJmB,IAAI;CAKjC;;;AAFD,AAAA,UAAU,CAAU;EAClB,SAAS,EAJwB,IAAI;CAKtC;;;AASF,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECXR,OAAO;CDYf;;;AAFD,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECVN,OAAO;CDWjB;;;AAFD,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECTX,OAAO;CDUZ;;;AAFD,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECRV,OAAO;CDSb;;;AAFD,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECNR,OAAO;CDOf;;;AAFD,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECPT,OAAO;CDQd;;;AAFD,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECJR,OAAO;CDKf;;;AAFD,AAAA,KAAK,AAAA,OAAO,CAAE;EACb,gBAAgB,ECLX,OAAO;CDMZ;;;AAGF,AAAA,IAAI,CAAA;EACH,MAAM,EAAE,UAAU;CAClB"
+}

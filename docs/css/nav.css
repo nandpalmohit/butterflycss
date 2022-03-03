@@ -1,0 +1,334 @@
+@charset "UTF-8";
+:root {
+  --bc-default: #e0e1e2;
+  --bc-link: #1f4bdb;
+  --bc-primary: #0053db;
+  --bc-secondary: #778899 ;
+  --bc-dark: #393939;
+  --bc-light: #f7f7f7;
+  --bc-danger: #fa2349;
+  --bc-warning: #ffa500;
+  --bc-info: #07a9df;
+  --bc-success: #3ab509;
+  --bc-black: #000;
+  --bc-white: #fff;
+  --bc-muted:#636363;
+  --bc-grey: #AAAAAA;
+  --bc-silver: #DDDDDD;
+  --bc-maroon: #85144b;
+  --bc-navy: #03045e;
+  --bc-orange: #FF851B;
+  --bc-pink: #ffafcc;
+  --bc-purple: #B10DC9;
+  --bc-red: #FF4136;
+  --bc-teal: #008080;
+  --bc-green: #008000;
+  --bc-yellow: #FFDC00;
+  --bc-light-default: rgba(237, 240, 240,0.3);
+  --bc-light-primary: #dcf0f5;
+  --bc-light-secondary: #f2f4f5;
+  --bc-light-warning: #ffedcc;
+  --bc-light-danger: #fce9ec;
+  --bc-light-info: #d9f5ff;
+  --bc-light-success: #d1ffbf;
+  --bc-light-extreme: #e6e6e6;
+  --bc-transparent-black:rgba(0, 0, 0, 0.01);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: white;
+  overflow: hidden;
+}
+
+nav .brand {
+  width: auto;
+  height: 100%;
+  float: left;
+  margin: 0 0 0 5%;
+}
+
+.navbar {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+
+.navbar ul {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+}
+
+.navbar ul a {
+  width: 20%;
+  text-decoration: none;
+  height: 60px;
+  color: #222;
+  display: inline-block;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.navbar ul a:hover, .navbar ul a.active {
+  opacity: 1;
+}
+
+#navbarToggle {
+  display: none;
+}
+
+.navbar-icon {
+  display: none;
+}
+
+.nav-default {
+  background-color: var(--bc-default);
+  color: var(--bc-black);
+}
+
+.nav-default a {
+  color: var(--bc-black);
+  text-decoration: none;
+}
+
+.nav-default #navbarToggle:checked ~ ul {
+  background-color: var(--bc-default);
+}
+
+.nav-primary #navbarToggle:checked ~ ul {
+  background-color: var(--bc-primary);
+}
+
+.nav-secondary #navbarToggle:checked ~ ul {
+  background-color: var(--bc-secondary);
+}
+
+.nav-dark #navbarToggle:checked ~ ul {
+  background-color: var(--bc-dark);
+}
+
+.nav-light #navbarToggle:checked ~ ul {
+  background-color: var(--bc-light);
+}
+
+.nav-warning #navbarToggle:checked ~ ul {
+  background-color: var(--bc-warning);
+}
+
+.nav-danger #navbarToggle:checked ~ ul {
+  background-color: var(--bc-danger);
+}
+
+.nav-success #navbarToggle:checked ~ ul {
+  background-color: var(--bc-success);
+}
+
+.nav-info #navbarToggle:checked ~ ul {
+  background-color: var(--bc-info);
+}
+
+.nav-primary {
+  background-color: var(--bc-primary);
+  color: var(--bc-white);
+}
+
+.nav-primary a {
+  color: var(--bc-white);
+  text-decoration: none;
+}
+
+.nav-secondary {
+  background-color: var(--bc-secondary);
+  color: var(--bc-white);
+}
+
+.nav-secondary a {
+  color: var(--bc-white);
+  text-decoration: none;
+}
+
+.nav-dark {
+  background-color: var(--bc-dark);
+  color: var(--bc-white);
+}
+
+.nav-dark a {
+  color: var(--bc-white);
+  text-decoration: none;
+}
+
+.nav-light {
+  background-color: var(--bc-light);
+  color: var(--bc-black);
+}
+
+.nav-light a {
+  color: var(--bc-black);
+  text-decoration: none;
+}
+
+.nav-warning {
+  background-color: var(--bc-warning);
+  color: var(--bc-white);
+}
+
+.nav-warning a {
+  color: var(--bc-white);
+  text-decoration: none;
+}
+
+.nav-danger {
+  background-color: var(--bc-danger);
+  color: var(--bc-white);
+}
+
+.nav-danger a {
+  color: var(--bc-white);
+  text-decoration: none;
+}
+
+.nav-success {
+  background-color: var(--bc-success);
+  color: var(--bc-white);
+}
+
+.nav-success a {
+  color: var(--bc-white);
+  text-decoration: none;
+}
+
+.nav-info {
+  background-color: var(--bc-info);
+  color: var(--bc-white);
+}
+
+.nav-info a {
+  color: var(--bc-white);
+  text-decoration: none;
+}
+
+.navbar-left {
+  position: absolute;
+  left: 30%;
+  transform: translateX(-30%);
+}
+
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-right {
+  position: absolute;
+  right: 0px;
+}
+
+.dropdown {
+  position: relative;
+  height: 0px;
+}
+
+.dropdown ul.dropdown-data {
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  min-width: 140px;
+  max-height: 0px;
+  border: 1px solid transparent;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  transition: border 0.4s;
+}
+
+.dropdown:hover {
+  height: auto;
+}
+
+.dropdown:hover ul.dropdown-data {
+  max-height: 100%;
+  border-color: var(--bc-default);
+}
+
+.dropdown ul.dropdown-data a {
+  font-size: 14px;
+  padding-left: 10px;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown ul.dropdown-data a:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (max-width: 728px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+  }
+  .navbar ul {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0px;
+    -webkit-transition: max-height 0.3s;
+    transition: max-height 0.3s;
+    -webkit-transition: margin-top 0.3s;
+    transition: margin-top 0.3s;
+  }
+  .navbar ul a {
+    text-align: left;
+    width: 100%;
+    max-height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 0px 10px 5%;
+  }
+  .navbar-icon {
+    width: 100px;
+    height: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 60px;
+  }
+  #navbarToggle:checked ~ ul {
+    margin-top: 50px;
+    max-height: 100%;
+    padding-bottom: 20px;
+    /*Para fazer com que o navbar saia da esquerda ou direita, você deve trocar max-height por max-width*/
+  }
+  .navbar-icon i {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .dropdown {
+    height: 60px;
+  }
+  .dropdown ul.dropdown-data {
+    position: relative;
+    margin: 0px 5%;
+    max-width: 90%;
+  }
+}
