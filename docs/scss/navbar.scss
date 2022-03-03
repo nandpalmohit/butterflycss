@@ -1,0 +1,390 @@
+@import 'colors';
+
+// nav
+nav{
+    width: 100%;
+    display: flex;
+    min-height: 50px;
+    flex-wrap: no-rap;
+    overflow: all;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.02);
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+// brand
+nav .brand{
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    max-width: 25%;
+    line-height: 2;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+// navbar
+nav .navbar{
+    max-width: 75%;
+    padding-right: 30px;
+    margin: 4px 0;
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400;
+}
+// navbar links
+nav .navbar a.navbar-link{
+    text-decoration: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 2;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+nav .navbar button{
+    margin: 10px 12px;
+}
+
+// navbar dropdown
+nav .navbar .dropdown{
+    margin-right: 10px;
+}
+nav .navbar .dropdown a.navbar-link:after{
+    position: absolute;
+    content: "▾";
+    // transform: rotate(90deg);
+    font-size: 16px;
+    margin-left: 5px;
+}
+.dropdown ul.dropdown-content{
+    display: none;
+}
+.navbar .dropdown a:hover{
+    cursor: pointer;
+}
+.navbar .dropdown:hover a ~ ul.dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: $white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    border: 1px solid $active_light;
+    border-radius: 6px;
+}
+.navbar .dropdown:hover a ~ ul.dropdown-content li{
+    list-style-type: none;
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.navbar .dropdown:hover a ~ ul.dropdown-content li:first-child{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.navbar .dropdown:hover a ~ ul.dropdown-content li:last-child{
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.navbar .dropdown:hover a ~ ul.dropdown-content li:hover{
+    background: $light_default;
+    cursor: pointer;
+}
+
+.navbar .dropdown ul.dropdown-content li a.dropdown-link{
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 0px;
+}
+// toggle
+nav label.toggle{
+    display: none;
+}
+nav input.navbar-toggle{
+    display: none;
+}
+
+// nav colors
+$nav_colors: ("primary":$primary,"secondary": $secondary,"default": $default,"warning": $warning,"danger": $danger,"success": $success,"info": $info, "dark":$dark, "light":$light, "transparent": $transparent, "navy":$navy,"orange": $orange,"maroon": $maroon, "teal":$teal,"yellow": $yellow,"grey": $grey, "pink":$pink,"purple": $purple,"red": $red);
+
+@each $nav, $colors in $nav_colors {
+    nav.nav-#{$nav}{
+        background-color: $colors;
+    }
+}
+
+// text colors
+$text_colors: ("primary":$primary,"secondary": $secondary,"default": $default,"warning": $warning,"danger": $danger,"success": $success,"info": $info, "dark":$dark, "light":$light, "transparent": $transparent);
+
+@each $text, $colors in $text_colors {
+    nav.text-#{$text} a.navbar-link, nav.text-#{$text} .brand a.navbar-brand, nav.text-#{$text} label.toggle, nav .dropdown ul.dropdown-content.text-#{$text} li a.dropdown-link{
+        color: $colors;
+    } 
+}
+// text hover effect
+$hover_colors: ("primary":$primary_h,"secondary": $secondary_h,"default": $default_h,"warning": $warning_h,"danger": $danger_h,"success": $success_h,"info": $info_h, "dark":$dark_h, "light":$light_h, "transparent": $transparent);
+
+@each $text, $colors in $hover_colors {
+    nav.text-#{$text} a.navbar-link:hover, nav.text-#{$text} a.navbar-link.active{
+        color: $colors;
+    }
+}
+/* responsive media query */
+
+// nav xl
+@media screen and (max-width: 1200px){
+    nav.nav-xl .brand{
+        line-height: 2;
+        max-width: 100%;
+    }
+    nav.nav-xl label.toggle{
+        display: block;
+        width: 10%;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    nav.nav-xl{
+        display: block;
+        position: relative;
+    }
+    nav.nav-xl .navbar{
+        position: relative;
+        border-top: 1px solid rgba(0,0,0,0.05);
+        display: none;
+        transition: .3s ease;
+        height: 0%;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 12px;
+    }
+    nav.nav-xl .navbar ~ button, nav.nav-xl .navbar ~ form, nav.nav-xl .navbar ~ div{
+        display: none;
+    }
+    nav.nav-xl .navbar a.navbar-link{
+        display: block;
+        padding: 8px 20px;
+    }
+
+    nav.nav-xl input.navbar-toggle[type="checkbox"]:checked ~ .navbar{
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+    }
+    nav.nav-xl input.navbar-toggle[type="checkbox"]:checked ~ button, nav.nav-xl input.navbar-toggle[type="checkbox"]:checked ~ form{
+        display: block;
+        margin: 10px 2%;
+        width: 94%;
+        transition: .3s ease;
+    }
+
+    nav.nav-xl .navbar .dropdown:hover a ~ ul.dropdown-content{
+        display: block;
+        position: relative;
+        background-color: $white;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 1;
+        border: 1px solid $active_light;
+        border-radius: 6px;
+        margin: 0px 12px 12px 12px;
+    }
+}
+// nav lg
+@media screen and (max-width: 960px){
+    nav.nav-lg .brand{
+        line-height: 2;
+        max-width: 100%;
+    }
+    nav.nav-lg label.toggle{
+        display: block;
+        width: 10%;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    nav.nav-lg{
+        display: block;
+        position: relative;
+    }
+    nav.nav-lg .navbar{
+        position: relative;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        transition: .3s ease;
+        height: 0%;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 12px;
+    }
+    nav.nav-lg .navbar ~ button, nav.nav-lg .navbar ~ form, nav.nav-lg .navbar ~ div{
+        display: none;
+    }
+    nav.nav-lg .navbar a.navbar-link{
+        display: block;
+        padding: 8px 20px;
+    }
+
+    nav.nav-lg input.navbar-toggle[type="checkbox"]:checked ~ .navbar{
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+    }
+    nav.nav-lg input.navbar-toggle[type="checkbox"]:checked ~ button, nav.nav-lg input.navbar-toggle[type="checkbox"]:checked ~ form{
+        display: block;
+        margin: 10px 2%;
+        width: 94%;
+        transition: .3s ease;
+    }
+
+    nav.nav-lg .navbar .dropdown:hover a ~ ul.dropdown-content{
+        display: block;
+        position: relative;
+        background-color: $white;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 1;
+        border: 1px solid $active_light;
+        border-radius: 6px;
+        margin: 0px 12px 12px 12px;
+    }
+}
+// nav md
+@media screen and (max-width: 768px){
+    nav.nav-md .brand{
+        line-height: 2;
+        max-width: 100%;
+    }
+    nav.nav-md label.toggle{
+        display: block;
+        width: 10%;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    nav.nav-md{
+        display: block;
+        position: relative;
+    }
+    nav.nav-md .navbar{
+        position: relative;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        transition: .3s ease;
+        height: 0%;
+        width: 100%;
+        max-width: 100%;
+        padding-right: 12px;
+    }
+    nav.nav-md .navbar ~ button, nav.nav-md .navbar ~ form, nav.nav-md .navbar ~ div{
+        display: none;
+    }
+    nav.nav-md .navbar a.navbar-link{
+        display: block;
+        padding: 8px 20px;
+    }
+
+    nav.nav-md input.navbar-toggle[type="checkbox"]:checked ~ .navbar{
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+    }
+    nav.nav-md input.navbar-toggle[type="checkbox"]:checked ~ button, nav.nav-md input.navbar-toggle[type="checkbox"]:checked ~ form{
+        display: block;
+        margin: 10px 2%;
+        width: 94%;
+        transition: .3s ease;
+    }
+
+    nav.nav-md .navbar .dropdown:hover a ~ ul.dropdown-content{
+        display: block;
+        position: relative;
+        background-color: $white;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 1;
+        border: 1px solid $active_light;
+        border-radius: 6px;
+        margin: 0px 12px 12px 12px;
+    }
+}
+// nav sm
+@media screen and (max-width: 576px){
+    nav.nav-sm .brand{
+        line-height: 2;
+        max-width: 100%;
+    }
+    nav.nav-sm label.toggle{
+        display: block;
+        width: 10%;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+    nav.nav-sm{
+        display: block;
+        position: relative;
+    }
+    nav.nav-sm .navbar{
+        position: relative;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        display: none;
+        transition: .3s ease;
+        height: 0%;
+        width: 100%;
+        max-width: 100%;
+    }
+    nav.nav-sm .navbar ~ button, nav.nav-sm .navbar ~ form, nav.nav-sm .navbar ~ div{
+        display: none;
+    }
+    nav.nav-sm .navbar a.navbar-link{
+        display: block;
+        padding: 8px 20px;
+    }
+
+    nav.nav-md input.navbar-toggle[type="checkbox"]:checked ~ .navbar{
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+    }
+    nav.nav-md input.navbar-toggle[type="checkbox"]:checked ~ button, nav.nav-md input.navbar-toggle[type="checkbox"]:checked ~ form{
+        display: block;
+        margin: 10px 2%;
+        width: 94%;
+        transition: .3s ease;
+    }
+
+    nav.nav-md .navbar .dropdown:hover a ~ ul.dropdown-content{
+        display: block;
+        position: relative;
+        background-color: $white;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        z-index: 1;
+        border: 1px solid $active_light;
+        border-radius: 6px;
+        margin: 0px 12px 12px 12px;
+    }
+}

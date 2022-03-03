@@ -1,0 +1,91 @@
+@import 'colors';
+
+// display css
+.d-none, .d-none > *{
+	display: none;
+}
+.d-block, .d-block > *{
+	display: block;
+}
+.d-inline-block, .d-inline-block > *{
+	display: inline-block !important;
+}
+.d-inline, .d-inline > *{
+	display: inline;
+}
+.d-flex, .d-flex > *{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.d-inline-flex, .d-inline-flex > *{
+	display: inline-flex;
+}
+.d-content, .d-content > *{
+	display: content;
+}
+// position
+.ps-relative{
+	position: relative;
+}
+.ps-fixed{
+	position: fixed;
+}
+.ps-absolute{
+	position: absolute;
+}
+.ps-sticky{
+	position: sticky;
+}
+.ps-initial{
+	position: initial;
+}
+.ps-inherit{
+	position: inherit;
+}
+// justify content
+.cn-left{
+	justify-content: flex-start !important;
+}
+.cn-center{
+	justify-content: center !important;
+}
+.cn-right{
+	justify-content: flex-end !important;
+}
+.cn-between{
+	justify-content: space-between !important;
+}
+.cn-around{
+	justify-content: space-around !important;
+}
+.cn-evenly{
+	justify-content: space-evenly !important;
+}
+
+// position value
+.right-0{
+	right: 0;
+}
+.top-0{
+	top: 0;
+}
+.bottom-0{
+	bottom: 0;
+}
+.left-0{
+	left: 0;
+}
+// width
+.width-25{
+	width: 25%;
+}
+.width-50{
+	width: 50%;
+}
+.width-75{
+	width: 75%;
+}
+.width-100{
+	width: 100%;
+}

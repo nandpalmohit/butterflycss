@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Badge · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main class -->
+	<div class="container" id="Main">
+		<!-- navbar -->
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/">Alertbox</a>
+				<a href="/docs/standard/badge/" class="active">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="alertbox">
+					<h1> Badge</h1>
+					<p>More informative for labelling and counting component.</p>
+					<p class="cl">Use the <span>.badge</span> class for badges.</p>
+				</div>
+				<!-- colored badges -->
+				<div class="doc-data" id="cl-badge">
+					<hr class="type-1">
+					<h3>Colored Badges</h3>
+					<p>Colored badges are designed with multi color options.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.cl-badge-*</span> class with color name to apply.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="badge cl-badge-default">Default</div>
+							<div class="badge cl-badge-primary">Primary</div>
+							<div class="badge cl-badge-secondary">Secondary</div>
+							<div class="badge cl-badge-dark">Dark</div>
+							<div class="badge cl-badge-light">Light</div>
+							<div class="badge cl-badge-warning">Warning</div>
+							<div class="badge cl-badge-danger">Danger</div>
+							<div class="badge cl-badge-success">Success</div>
+							<div class="badge cl-badge-info">Info</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-dark</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>			
+				<!-- light badges -->
+				<div class="doc-data" id="lt-badge">
+					<hr class="type-1">
+					<h3>Light Badge</h3>
+					<p>All the light badges use as a light taste of components.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.lt-badge-*</span> class with color name to apply light badges.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="badge lt-badge-primary">Primary</div>
+							<div class="badge lt-badge-secondary">secondary</div>
+							<div class="badge lt-badge-warning">warning</div>
+							<div class="badge lt-badge-danger">danger</div>
+							<div class="badge lt-badge-success">success</div>
+							<div class="badge lt-badge-info">info</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="lightBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip2">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- rounded badges -->
+				<div class="doc-data" id="rounded-badge">
+					<hr class="type-1">
+					<h3>Rounded Badges</h3>
+					<p>The radius of badge is dependent on the layout and designs, You have a multiple choices for radius.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.rounded-*</span> class with multiple choices for rounded badges.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="badge rounded-10 cl-badge-primary">Rounded-10</div>
+							<div class="badge rounded-20 lt-badge-primary">Rounded-20</div>
+							<div class="badge rounded-30 cl-badge-primary">Rounded-30</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip3">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-primary rounded-10</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge lt-badge-primary rounded-20</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-primary rounded-30</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- circle badges -->
+				<div class="doc-data" id="circle-badge">
+					<hr class="type-1">
+					<h3>Circle Badges</h3>
+					<p>The cirlce badges is mainly used for counting the numbers, odering, listing with multiple colors.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add <span>.circle</span> class with multiple color badges.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="badge circle cl-badge-primary">1</div>
+							<div class="badge circle cl-badge-secondary">2</div>
+							<div class="badge circle cl-badge-warning">3</div>
+							<div class="badge circle cl-badge-danger">4</div>
+							<div class="badge circle cl-badge-success">5</div>
+							<div class="badge circle cl-badge-info">6</div>
+							<div class="badge circle lt-badge-primary">7</div>
+							<div class="badge circle lt-badge-secondary">8</div>
+							<div class="badge circle lt-badge-warning">9</div>
+							<div class="badge circle lt-badge-danger">10</div>
+							<div class="badge circle lt-badge-success">11</div>
+							<div class="badge circle lt-badge-info">12</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip4">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-dark</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge circle cl-badge-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- sizing -->
+				<div class="doc-data" id="sizing-badge">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>The badge size is more important thing for the badge with its fix size.</p>
+					<p class="alertbox form-alert-default doc-alert">The badge provide <span>.small</span>for small size badges,<span>.large</span>for large size badges. No need to add the class for regular size badges.</p>
+					<div class="board" id="alert1">
+						<div class="bd-ex" id="example">
+							<div class="badge small cl-badge-primary">Small</div>
+							<div class="badge cl-badge-primary">Regular</div>
+							<div class="badge large cl-badge-primary">Large</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge small cl-badge-primary</b>&quot;&gt;Small&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge cl-badge-primary</b>&quot;&gt;Regular&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">badge large cl-badge-primary</b>&quot;&gt;Large&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/alert/" class="btn btn-link large"><i class="fas fa-long-arrow-alt-left mr1"></i> Alertbox</a>
+					<a href="/docs/standard/bojo/" class="btn btn-link large">Bojo<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Badge</a>
+				<a href="#cl-badge" class="ml1">Colored badge</a>
+				<a href="#lt-badge" class="ml1">Light badge</a>
+				<a href="#rounded-badge" class="ml1">Rounded badge</a>
+				<a href="#circle-badge" class="ml1">Cirlce badge</a>
+				<a href="#sizing-badge" class="ml1">Sizing</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

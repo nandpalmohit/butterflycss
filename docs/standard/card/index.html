@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Card · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main container -->
+	<div class="container" id="Main">
+		<!-- navbar -->
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/">Alertbox</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/" class="active">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component card -->
+				<div class="tag" id="card">
+					<h1>Card</h1>
+					<p>Responsive Cards are a more flexible and easy way to use them in multiple options, styles, colors and more.</p>
+					<p class="cl mb1">Use the <span>.card</span> class to create the card.</p>
+				</div>
+				<!-- card example -->
+				<div class="doc-data" id="example-card">
+					<hr class="type-1">
+					<h3>Card Example</h3>
+					<p>The Card contains multiple classes and methods to create a custom element used as an easy showing of contents that comprises various types of titles, images, buttons, texts.</p>
+					<p class="alertbox form-alert-default doc-alert"><span>.card</span> class is neccessary to create a Card component.</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<div class="card large br-default mt-5rem">
+						        <img src="/docs/assets/statue/statue2.jpg">
+						        <div class="card-body">
+						        	<h3 class="card-title">Statue Of Unity</h3>
+						            <p class="card-text Sans line-15">The most prolific creation in recent times, the Statue of Unity, is the World’s Tallest Monument. It represents more than a colossal structure facing the Sardar Sarovar Dam on the river Narmada. It is an iconic symbol of the ‘Iron Man’, who played an important role during India’s freedom struggle and thereafter in the unification of the princely states.</p>
+						            <div class="card-link">
+						            	<button type="button" class="btn ot-btn-info">Learn More</button>
+						            </div>
+						         </div>
+						    </div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>	
+						</div>	
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- card with normal size example ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">h3</b> <b class="cl">class</b>=&quot;<b class="cn">card-title</b>&quot;&gt;Statue Of Unity&lt;/<b class="dv">h3</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text</b>&quot;&gt;The most prolific creation in recent times, the Statue of Unity....&lt;/<b class="dv">p</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-link</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-info</b>&quot;&gt; Learn More &lt;/<b class="dv">button</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">The above card is just an example of a card component with mixed content and fixed width. We will see all of the classes, sizes, and other elements.</p>
+				</div>
+				<!-- simple card -->
+				<div class="doc-data" id="simple-card">
+					<hr class="type-1">
+					<h3>Simple Card</h3>
+					<p>The Card contains 100% Width of its parent class. Card contain mulyiple element, styles, text, component.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span>.card</span> class to create a card component first.<br>
+						<span>.card-body</span> class to add <b>texts, links, images</b> in card body.<br>
+						<span>.card-title</span> class for add title with <b>h1, h2, h3, h4, h5, h6, div</b> class, <br>
+						<span>.card-subtitle</span> class to add subtitle, badge with <b>h1, h2, h3, h4, h5, h6, p, div</b> class,<br>
+						<span>.card-text</span> class to add descriptions, text of card with <b>p, div</b> class,<br>
+						<span>.card-link</span> class to add buttons, links of card with <b>button, link</b> class. You can use <span>&lt;hr&gt;</span> tag for horizontal line.<br>
+						<span>.br-*</span> class mainly use to set 1px solid border with <b>default, primary, secondary, dark, light, warning, danger, success, info</b> color options.
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<div class="card br-default">
+						        <div class="card-body">
+						        	<h3 class="card-title">Title</h3>
+						        	<h4 class="card-subtitle">subtitle</h4>
+						        	<hr>
+						            <p class="card-text ">It's easy to use it as a card-text for texting anything to describe this card and title.</p>
+						            <div class="card-link">
+						            	<button type="button" class="btn cl-btn-primary">Submit</button>
+						            </div>
+						         </div>
+						    </div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- max-width 100% cover for card ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">h3</b> <b class="cl">class</b>=&quot;<b class="cn">card-title</b>&quot;&gt;Title&lt;/<b class="dv">h3</b>&gt;</span>
+								    <span>&lt;<b class="dv">h4</b> <b class="cl">class</b>=&quot;<b class="cn">card-sutitle</b>&quot;&gt;subtitle&lt;/<b class="dv">h4</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text</b>&quot;&gt;It's easy to use it as a card-text...&lt;/<b class="dv">p</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-link</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-info</b>&quot;&gt; Submit &lt;/<b class="dv">button</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- image card -->
+				<div class="doc-data" id="image-card">
+					<hr class="type-1">
+					<h3>Image Card</h3>
+					<p>Image card is mainly use to set an image and add some text to describe the image. Mainly use for Profile-card, Product-card, Menu-card, Vertical-card and more card design.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You just need to add <span>&lt;img&gt;</span> tag under the <span>.card</span> class and before the <span>.card-body</span> class.<br>
+						Add <span>.shadow</span> class to apply box-shadow to card.<br>
+						We can set card width by using <span>style="width: 450px;"</span> attribute.
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<div class="card shadow" style="width: 300px;">
+							    <img src="/docs/assets/mountain/m1.jpg">
+							    <div class="card-body text-center">
+							       	<h3 class="card-title">Leh Ladakh</h3>
+							        <p class="card-text line-15 Sans-Medium">
+							        	Ladakh is a paradise on Earth and boasts of unparalleled beauty. It is a ‘Land of high passes’ and dotted with high altitude lakes and lofty mountains. It is wedged between the high Himalayas and renowned as the ‘Shangri La of India’. 
+							        </p>
+						        </div>
+						    </div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="profilecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip2">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- large size of image card ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card shadow</b>&quot; <b class="cl">style</b>=&quot;<b class="cn">width: 450px;</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">alt</b>=&quot;<b class="cn">...</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">h3</b> <b class="cl">class</b>=&quot;<b class="cn">card-title</b>&quot;&gt;Leh Ladakh&lt;/<b class="dv">h3</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">classs</b>=&quot;<b class="cn">card-text</b>&quot;&gt;Ladakh is a paradise on Earth and boasts of unparalleled beauty...&lt;/<b class="dv">p</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">
+						Image card set the image width to the 100%. If you not use any card size then card set maximum 100% of width.
+					</p>
+				</div>
+				<!-- overlay card -->
+				<div class="doc-data" id="overlay-card">
+					<hr class="type-1">
+					<h3>Overlay Card</h3>
+					<p>Overlay card mainly use to set image as background for card. The card body set to overlay card for text.</p>
+					<p class="alertbox form-alert-default doc-alert">Create a card component and add <span>.overlay-img</span> class in <b>&lt;img&gt;</b> tag to set image for card.<br>After add attribute in <span>.card-body</span>class for body background.<br>
+					Add <span>body-overlay = "transparent"</span> attribute to set <b>background</b> for card body.<br>
+					Add <span>body-overlay = "dark"</span> attribute to set dark <b>background(with 0.3 opacity)</b> for card body.<br>
+					Add <span>body-overlay = "light"</span> attribute to set light <b>background(with 0.3 opacity)</b> for card body.<br>This will help when we set any colored image, saturated image or some other images that impact to the text.
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<div class="card normal">
+							    <img src="/docs/assets/gr/gr1.jpg" class="overlay-img">
+							    <div class="card-body" body-overlay="transparent">
+							      	<div class="card-title text-light size-22">Transparent Overlay</div>
+							        <div class="card-text Sans-Medium size-16 text-light">add body-overlay="" attribute in card-body class to set body overlay to transparent for body background.</div>
+							    </div>
+							</div>
+							<div class="card normal">
+							    <img src="/docs/assets/gr/gr1.jpg" class="overlay-img" overlay-for="dark">
+							    <div class="card-body" body-overlay="dark">
+							      	<div class="card-title text-light size-22">Dark Overlay</div>
+							        <div class="card-text Sans-Medium size-16 text-light">add body-overlay="" attribute in card-body class to set body overlay to dark for body background.</div>
+							    </div>
+							</div>
+							<div class="card normal">
+							    <img src="/docs/assets/gr/gr1.jpg" class="overlay-img" overlay-for="dark">
+							    <div class="card-body" body-overlay="light">
+							      	<div class="card-title text-dark size-22">Light Overlay</div>
+							        <div class="card-text Sans-Medium size-16 text-dark">add body-overlay="" attribute in card-body class to set body overlay to light for body background.</div>
+							    </div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="bgcardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip3">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- transparent overlay ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">img</b> <b class="cl">class</b>=&quot;<b class="cn">overlay-img</b>&quot; <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">alt</b>=&quot;<b class="cn">...</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot; <b class="cl">body-overlay</b>=&quot;<b class="cn">transparent</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title text-white</b>&quot;&gt;Transparent Overlay&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-text text-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- dark overlay ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">img</b> <b class="cl">class</b>=&quot;<b class="cn">overlay-img</b>&quot; <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">alt</b>=&quot;<b class="cn">...</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot; <b class="cl">body-overlay</b>=&quot;<b class="cn">dark</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title text-white</b>&quot;&gt;Dark Overlay&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-text text-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- light overlay ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">img</b> <b class="cl">class</b>=&quot;<b class="cn">overlay-img</b>&quot; <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">alt</b>=&quot;<b class="cn">...</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot; <b class="cl">body-overlay</b>=&quot;<b class="cn">light</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title text-white</b>&quot;&gt;Light Overlay&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-text text-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- horizontal card -->
+				<div class="doc-data" id="horizontal-card">
+					<hr class="type-1">
+					<h3>Horizontal Card</h3>
+					<p>Horizontal card use as a profile card, product card, item card, invitation card, business card, menu card that cover-up with images, titles, texts, links.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span>.card</span> class first after that add <span>.horizontal-card </span> card to creating horizontal layout.<br>
+						Simply add <span>.card-img</span> class for image and <span>.card-body</span> class for card data.
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<div class="card br-default large">
+								<div class="horizontal-card">
+									<div class="card-img">	
+										<img src="/docs/assets/movie/avengers.jpg">
+									</div>
+									<div class="card-body Open">
+										<h1 class="card-title Sans-Bold size-20 my05">Marvel's Avengers</h1>
+										<h5 class="card-subtitle text-muted Sans-Medium mb1">Hollywood Movie</h5>
+										<div class="card-text Sans-Medium size-14 line-15">
+											After the devastating events of the Infinity War, the Avengers assemble once more to reverse Thanos’ actions and restore balance to the universe.
+										</div>
+										<div class="card-link mt2">
+											<button type="button" class="btn small cl-btn-primary">Book Now</button>
+										</div>
+										<hr>
+										<div class="text-muted Open mt2 size-14">Released on 26 April 2019.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="hrcardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip4">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- horizontal card with large size ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-default large</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">horizontal-card</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-img</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">alt</b>=&quot;<b class="cn">...</b>&quot;&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">h1</b> <b class="cl">class</b>=&quot;<b class="cn">card-title size-20 my05</b>&quot;&gt;Marvel's Avengers&lt;/<b class="dv">h1</b>&gt;</span>
+								      <span>&lt;<b class="dv">h4</b> <b class="cl">class</b>=&quot;<b class="cn">card-subtitle text-muted</b>&quot;&gt;Hollywood Movie&lt;/<b class="dv">h4</b>&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-text size-14</b>&quot;&gt;After the devastating events of the Infinity War ...&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-link</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary small</b>&quot;&gt;Book Now</span><span>&lt;/<b class="dv">button</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;<b class="dv">hr</b>&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">text-muted size-14 mt2</b>&quot;&gt;Released on 27 April 2019.&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">
+						The horizontal card use <span>flex property</span> with 33% of width for <span>.card-img</span> class and 66% of width for <span>.card-body</span> class. It arranges the height of card as per image size.
+					</p>
+				</div>
+				<!-- component header-footer card-->
+				<div class="tag cmp" id="header-footer">
+					<h1>Header Footer</h1>
+					<p>Responsive Header and Footer helps to create timeline card, post card, story card and other admin cards that create more attractive cards and easy use with multiple styles, colors and options. </p>
+					<p class="cl">Use the <span>.card</span> class to create the card.</p>
+				</div>
+				<!-- header example -->
+				<div class="doc-data" id="example-header">
+					<hr class="type-1">
+					<h3>Header Footer Example</h3>
+					<p>Header card makes an attractive feel for the content and easy strcutre based style.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span>.card-header</span> class after <span>.card</span> class and before <span>.card-body</span> class.<br>
+						<span>.card-footer</span> class after <span>.card-body</span> class to use it. If you want to add <span>input</span> component, simply add <span>.card-inputbox</span> class for perfect styling and positions.
+					</p>
+					<div class="alertbox lt-alert-danger Open line-15">
+						<i class="fas fa-exclamation-circle mx05"></i>
+						If you not add <b>.card-inputbox</b> class in input box than it display hidden as parent property of input.
+					</div>
+					<p class="Sans text-muted mt2">
+						The below example is timeline card and example of <span>instagram feed page</span>. The complete package of timeline or post page. Header class content use flex property with space adjustment for <span>image - text </span> and set size of image as per card size. the posted image is work as image card with card body. Card body includes title, texts, links, hr. We can use here footer for comment module and add one link button in footer class. 
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card normal br-default text-left">
+								<div class="card-header Sans-Medium size-14">
+									<img src="/docs/assets/dummy/d1.jpg">
+									John Smith
+								</div>
+								<img src="/docs/assets/city/c2.jpg">
+								<div class="card-body">
+									<div class="card-title size-18 mb1">
+										<a class="icon mx05 pd0">
+											<i class="fa fa-heart-o"></i>
+										</a>
+										<a class="icon mx05 pd0">
+											<i class="fa fa-comment-o"></i>
+										</a>
+										<a class="icon mx05 pd0">
+											<i class="fa fa-paper-plane-o"></i>
+										</a>
+										<a class="icon mx05 pd0">
+											<i class="fa fa-bookmark-o"></i>
+										</a>
+									</div>
+									<div class="card-title size-14 Sans-Medium">John Smith</div>
+									<div class="card-text Sans size-14">
+										The beautifull City Mumbai. Night Shot.
+									</div>
+									<div class="card-text Sans-Medium size-14 text-primary">#nightphotography #mumbai #india #shotoniphone</div>
+								</div>
+								<div class="card-footer">
+									<input type="text" class="card-inputbox" placeholder="Add a comment">
+									<a class="btn btn-link pd0"> Post</a>
+								</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- normal size instagram card --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header size-14</b>&quot;&gt; </span>
+								    <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot;&gt; John Smith </span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title mb1 size-18</b>&quot;&gt;
+								      <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">icon</b>&quot;&gt; &lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-heart-o</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt; &lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">icon</b>&quot;&gt; &lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-comment-o</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt; &lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">icon</b>&quot;&gt; &lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fa fa-paper-plane-o</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt; &lt;/<b class="dv">a</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title size-14 </b>&quot;&gt;John Smith&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-text</b>&quot;&gt;The beautifull City Mumbai. Night Shot.&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-text text-primary</b>&quot;&gt;#nightphotography #mumbai #india #shotoniphone.&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer </b>&quot;&gt; </span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">class</b>=&quot;<b class="cn">card-inputbox</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">Add a comment</b>&quot; &gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link pd0</b>&quot;&gt; Post &lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- header card -->
+				<div class="doc-data" id="header-card">
+					<hr class="type-1">
+					<h3>Header Card</h3>
+					<p>Header card used for social media, timeline, event cards with mixing of elements and components.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You can create anything from header card, Just need to add <span>.card-header</span> in the <span>.card</span> class.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card normal br-default">
+								<h5 class="card-header cn-center">Facebook</h5>
+								<div class="card-body">
+									<div class="card-title size-20 text-success Sans-Bold">Congrats, Justin Seg</div>
+									<div class="card-subtitle size-14 Sans-Medium">Winner of Competition</div>
+									<div class="card-text size-14">Facebook announced one competition of most liked post in 1 hour. Justin Seg is winner of the competition.</div>
+									<div class="card-text text-primary size-12 Sans-Medium">Likes 5000+ &nbsp; &nbsp;Comments 2000+</div>
+								</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- normal size header card ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal text-centers br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header cn-center</b>&quot;&gt;Facebook&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title size-20</b>&quot;&gt;Congrats, Justin Seg&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-subtitle size-14</b>&quot;&gt;Winner of Competition&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text size-14</b>&quot;&gt;Facebook announced one competition of most liked post in 1 hour...&lt;/<b class="dv">p</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text text-primary size-12</b>&quot;&gt;Likes 5000+ Comments 2000+ &lt;/<b class="dv">p</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- footer card -->
+				<div class="doc-data" id="footer-card">
+					<hr class="type-1">
+					<h3>Footer Card</h3>
+					<p>Footer card used for links, buttons, actions, time, inputs with styles, colors.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You can create anything from footer card, Just need to add <span>.card-footer</span> in the <span>.card</span> class.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card normal br-default">
+								<div class="card-body">
+									<div class="card-title size-20 text-success Sans-Bold">Congrats, Justin Seg</div>
+									<div class="card-subtitle size-14 Sans-Medium">Winner of Competition</div>
+									<div class="card-text size-14">Facebook announced one competition of most liked post in 1 hour. Justin Seg is winner of the competition.</div>
+									<div class="card-text text-primary size-12 Sans-Medium">Likes 5000+ &nbsp; &nbsp;Comments 2000+</div>
+								</div>
+								<h5 class="card-footer cn-center"> From Facebook</h5>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- normal size footer card ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal text-centers br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title size-20</b>&quot;&gt;Congrats, Justin Seg&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-subtitle size-14</b>&quot;&gt;Winner of Competition&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text size-14</b>&quot;&gt;Facebook announced one competition of most liked post in 1 hour...&lt;/<b class="dv">p</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text text-primary size-12</b>&quot;&gt;Likes 5000+ Comments 2000+ &lt;/<b class="dv">p</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer cn-center</b>&quot;&gt;From Facebook&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- header footer card -->
+				<div class="doc-data" id="header-footer-card">
+					<hr class="type-1">
+					<h3>Header Footer Card</h3>
+					<p>Mixing of Header & Footer makes good cards and informative card for it.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						The structure of the card need to follow first.<br>
+						<span>.card</span> > <span>.card-header</span>, <span>.card-body</span>, <span>.card-footer</span>
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card normal br-default">
+								<h5 class="card-header cn-center"> Facebook</h5>
+								<div class="card-body">
+									<div class="card-title size-20 text-success Sans-Bold">Congrats, Justin Seg</div>
+									<div class="card-subtitle size-14 Sans-Medium">Winner of Competition</div>
+									<div class="card-text size-14">Facebook announced one competition of most liked post in 1 hour. Justin Seg is winner of the competition.</div>
+									<div class="card-text text-primary size-12 Sans-Medium">Likes 5000+ &nbsp; &nbsp;Comments 2000+</div>
+								</div>
+								<h5 class="card-footer cn-center"> Posted 20 minutes ago.</h5>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- normal size header card ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal text-centers br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header cn-center</b>&quot;&gt;Facebook&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-title size-20</b>&quot;&gt;Congrats, Justin Seg&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-subtitle size-14</b>&quot;&gt;Winner of Competition&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text size-14</b>&quot;&gt;Facebook announced one competition of most liked post in 1 hour...&lt;/<b class="dv">p</b>&gt;</span>
+								    <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">card-text text-primary size-12</b>&quot;&gt;Likes 5000+ Comments 2000+ &lt;/<b class="dv">p</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer cn-center</b>&quot;&gt;Posted 20 minutes ago.&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- colored card -->
+				<div class="doc-data" id="colored-card">
+					<hr class="type-1">
+					<h3>Colored Card</h3>
+					<p>We already created colored cards for all the properties. It include various customization for card.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Add <span>.bg-*</span> class with <span>.card</span> class to apply colored cards.<br>
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<!-- primary color -->
+							<div class="card bg-primary normal">
+								<div class="card-header Open text-white">Header</div>
+								<div class="card-body my2 text-light">
+									<div class="card-title Open-Black">primary</div>
+									<div class="card-text Open">It sets primary background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-white">Footer</div>
+							</div>
+							<!-- secondary color -->
+							<div class="card bg-secondary normal">
+								<div class="card-header Open text-white">Header</div>
+								<div class="card-body my2 text-light">
+									<div class="card-title Open-Black">secondary</div>
+									<div class="card-text Open">It sets secondary background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-white">Footer</div>
+							</div>
+							<!-- dark color -->
+							<div class="card bg-dark normal">
+								<div class="card-header Open text-white">Header</div>
+								<div class="card-body my2 text-light">
+									<div class="card-title Open-Black">dark</div>
+									<div class="card-text Open">It sets dark background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-white">Footer</div>
+							</div>
+							<!-- light color -->
+							<div class="card bg-light normal">
+								<div class="card-header Open 14 text-dark">Header</div>
+								<div class="card-body my2 text-black">
+									<div class="card-title Open-Black">light</div>
+									<div class="card-text Open">It sets light background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open4 text-dark">Footer</div>
+							</div>
+							<!-- warning color -->
+							<div class="card bg-warning normal">
+								<div class="card-header Open text-white">Header</div>
+								<div class="card-body my2 text-light">
+									<div class="card-title Open-Black">warning</div>
+									<div class="card-text Open">It sets warning background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-white">Footer</div>
+							</div>
+							<!-- danger color -->
+							<div class="card bg-danger normal">
+								<div class="card-header Open text-white">Header</div>
+								<div class="card-body my2 text-light">
+									<div class="card-title Open-Black">danger</div>
+									<div class="card-text Open">It sets danger background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-white">Footer</div>
+							</div>
+							<!-- success color -->
+							<div class="card bg-success normal">
+								<div class="card-header Open text-white">Header</div>
+								<div class="card-body my2 text-light">
+									<div class="card-title Open-Black">success</div>
+									<div class="card-text Open">It sets success background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-white">Footer</div>
+							</div>
+							<!-- info color -->
+							<div class="card bg-info normal">
+								<div class="card-header Open text-white">Header</div>
+								<div class="card-body my2 text-light">
+									<div class="card-title Open-Black">info</div>
+									<div class="card-text Open">It sets info background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-white">Footer</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- primary color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-primary</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- secondary color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-secondary</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- dark color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-dark</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- light color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-light</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- warning color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-warning</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- danger color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-danger</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>		
+								<span class="cmt">&lt;!--- success color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-success</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- info color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card bg-info</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- light card -->
+				<div class="doc-data" id="light-card">
+					<hr class="type-1">
+					<h3>Light Card</h3>
+					<p>We already created light cards for all the properties. It include various customization for card.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Add <span>.light-bg-*</span> class with <span>.card</span> class to apply light cards.<br> Add <span>.active-*</span> class to set dark/active colors for text.
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<!-- primary color -->
+							<div class="card lt-bg-primary normal">
+								<div class="card-header Open active-primary">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">primary</div>
+									<div class="card-text Open">It sets primary background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open active-primary">Footer</div>
+							</div>
+							<!-- secondary color -->
+							<div class="card lt-bg-secondary normal">
+								<div class="card-header Open active-secondary">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">secondary</div>
+									<div class="card-text Open">It sets secondary background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open active-secondary">Footer</div>
+							</div>
+							<!-- warning color -->
+							<div class="card lt-bg-warning normal">
+								<div class="card-header Open active-warning">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">warning</div>
+									<div class="card-text Open">It sets warning background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open active-warning">Footer</div>
+							</div>
+							<!-- danger color -->
+							<div class="card lt-bg-danger normal">
+								<div class="card-header Open active-danger">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">danger</div>
+									<div class="card-text Open">It sets danger background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open active-danger">Footer</div>
+							</div>
+							<!-- success color -->
+							<div class="card lt-bg-success normal">
+								<div class="card-header Open active-success">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">success</div>
+									<div class="card-text Open">It sets success background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open active-success">Footer</div>
+							</div>
+							<!-- info color -->
+							<div class="card lt-bg-info normal">
+								<div class="card-header Open active-info">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">info</div>
+									<div class="card-text Open">It sets info background color for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open active-info">Footer</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- primary color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card lt-bg-primary</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header active-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer active-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- secondary color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card lt-bg-secondary</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header active-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer active-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- warning color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card lt-bg-warning</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header active-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer active-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- danger color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card lt-bg-danger</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header active-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer active-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>		
+								<span class="cmt">&lt;!--- success color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card lt-bg-success</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header active-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer active-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- info color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card lt-bg-info</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header active-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer active-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- bordered card -->
+				<div class="doc-data" id="bordered-card">
+					<hr class="type-1">
+					<h3>Bordered Card</h3>
+					<p>You can also apply border to the cards for all the properties. It include various color options.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Add <span>.br-*</span> class with <span>.card</span> class to apply border to the cards.<br> Add <span>.active-*</span> class to set dark/active colors for text.<br> Add<span>.text-*</span> class to set primarily colors for text.<br> Add<span>.light-*</span> class to set light colors for text.
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="cardEx">
+							<!-- without border color -->
+							<div class="card normal">
+								<div class="card-header Open text-black">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">No Border</div>
+									<div class="card-text Open">It sets no-borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-black">Footer</div>
+							</div>
+							<!-- default color -->
+							<div class="card br-default normal">
+								<div class="card-header Open text-default">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">default</div>
+									<div class="card-text Open">It sets default borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-default">Footer</div>
+							</div>
+							<!-- primary color -->
+							<div class="card br-primary normal">
+								<div class="card-header Open text-primary">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">primary</div>
+									<div class="card-text Open">It sets primary borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-primary">Footer</div>
+							</div>
+							<!-- secondary color -->
+							<div class="card br-secondary normal">
+								<div class="card-header Open text-secondary">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">secondary</div>
+									<div class="card-text Open">It sets secondary borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-secondary">Footer</div>
+							</div>
+							<!-- dark color -->
+							<div class="card br-dark normal">
+								<div class="card-header Open text-dark">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">dark</div>
+									<div class="card-text Open">It sets dark borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-dark">Footer</div>
+							</div>
+							<!-- light color -->
+							<div class="card br-light normal">
+								<div class="card-header Open text-light">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">light</div>
+									<div class="card-text Open">It sets light borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-light">Footer</div>
+							</div>
+							<!-- warning color -->
+							<div class="card br-warning normal">
+								<div class="card-header Open text-warning">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">warning</div>
+									<div class="card-text Open">It sets warning borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-warning">Footer</div>
+							</div>
+							<!-- danger color -->
+							<div class="card br-danger normal">
+								<div class="card-header Open text-danger">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">danger</div>
+									<div class="card-text Open">It sets danger borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-danger">Footer</div>
+							</div>
+							<!-- success color -->
+							<div class="card br-success normal">
+								<div class="card-header Open text-success">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">success</div>
+									<div class="card-text Open">It sets success borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-success">Footer</div>
+							</div>
+							<!-- info color -->
+							<div class="card br-info normal">
+								<div class="card-header Open text-info">Header</div>
+								<div class="card-body my2 text-dark">
+									<div class="card-title Open-Black">info</div>
+									<div class="card-text Open">It sets info borders for card. This is longable text and you can write anything here and makeup the card's content.</div>
+								</div>
+								<div class="card-footer Open text-info">Footer</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- default color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-default</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- dark color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-dark</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-dark</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-dark</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- light color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-light</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- primary color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-primary</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- secondary color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-secondary</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- warning color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-warning</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- danger color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-danger</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>		
+								<span class="cmt">&lt;!--- success color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-success</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span class="cmt">&lt;!--- info color ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card br-info</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-header text-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-footer text-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- shadow card -->
+				<div class="doc-data" id="shadow-card">
+					<hr class="type-1">
+					<h3>Shadow Card</h3>
+					<p>Card contains various styling and box-shadow is important style for any class to look more sticky and creates more styling.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Card does not contain any box-shadow bydefault.<br>
+						Add <span>.shadow</span> class with <span>.card</span> class to apply default shadow effect.<br>
+						Add <span>.shadow-large</span> class with <span>.card</span> class to apply Large shadow effect.
+					</p>
+					<p class="Sans text-muted mt2">
+						The below example is timeline card and example of <span>instagram feed page</span>. The complete package of timeline or post page. Header class content use flex property with space adjustment for <span>image - text </span> and set size of image as per card size. the posted image is work as image card with card body. Card body includes title, texts, links, hr. We can use here footer for comment module and add one link button in footer class. 
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<!-- with shadow -->
+							<div class="card my2 normal text-left">
+								<div class="card-header Sans-Medium size-14">
+									<img src="/docs/assets/dummy/d2.jpg">
+									Raw Man
+								</div>
+								<img src="/docs/assets/nature/n2.jpg">
+							</div><br>
+							<div class="card my2 normal text-left shadow-small">
+								<div class="card-header Sans-Medium size-14">
+									<img src="/docs/assets/dummy/d2.jpg">
+									Raw Man
+								</div>
+								<img src="/docs/assets/nature/n1.jpg">
+							</div><br>
+							<div class="card my2 normal text-left shadow-normal">
+								<div class="card-header Sans-Medium size-14">
+									<img src="/docs/assets/dummy/d2.jpg">
+									Raw Man
+								</div>
+								<img src="/docs/assets/nature/n1.jpg">
+							</div><br>
+							<!-- with shadow-large -->
+							<div class="card my2 normal text-left shadow-large">
+								<div class="card-header Sans-Medium size-14">
+									<img src="/docs/assets/dummy/d2.jpg">
+									Raw Man
+								</div>
+								<img src="/docs/assets/nature/n1.jpg">
+							</div><br>
+							<!-- with shadow-large -->
+							<div class="card my2 normal text-left shadow-exlarge">
+								<div class="card-header Sans-Medium size-14">
+									<img src="/docs/assets/dummy/d2.jpg">
+									Raw Man
+								</div>
+								<img src="/docs/assets/nature/n1.jpg">
+							</div><br>
+							<!-- with shadow-huge -->
+							<div class="card my2 normal text-left shadow-huge">
+								<div class="card-header Sans-Medium size-14">
+									<img src="/docs/assets/dummy/d2.jpg">
+									Raw Man
+								</div>
+								<img src="/docs/assets/nature/n1.jpg">
+							</div><br>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- without shadow --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- without shadow small --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal shadow-small</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- without shadow normal --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal shadow-normal</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- without shadow large --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal shadow-large</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- without shadow exlarge --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal shadow-exlarge</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- without shadow huge --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal shadow-huge</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- sizing -->
+				<div class="doc-data" id="sizing">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>Card size is important thing which sets the </p>
+					<div class="board">
+						<div class="bd-ex text-center d-block" id="cardEx">
+							<div class="card">
+								<img src="/docs/assets/india/taj-mahal.jpg">
+								<div class="card-body" body-overlay="transparent">
+									<div class="card-title Sans-Black size-22 text-light">
+										100% Card Width 
+									</div>
+								</div>
+							</div>
+							<div class="card exlarge">
+								<img src="/docs/assets/india/taj-mahal.jpg">
+								<div class="card-body" body-overlay="transparent">
+									<div class="card-title Sans-Black size-20 text-light">
+										Extra Large Size Card 
+									</div>
+								</div>
+							</div>
+							<div class="card large">
+								<img src="/docs/assets/india/taj-mahal.jpg">
+								<div class="card-body" body-overlay="transparent">
+									<div class="card-title Sans-Black size-18 text-light">
+										Large Size Card 
+									</div>
+								</div>
+							</div>
+							<div class="card normal">
+								<img src="/docs/assets/india/taj-mahal.jpg">
+								<div class="card-body" body-overlay="transparent">
+									<div class="card-title Sans-Black size-16 text-light">
+										Normal Size Card 
+									</div>
+								</div>
+							</div><br>
+							<div class="card small">
+								<img src="/docs/assets/india/taj-mahal.jpg">
+								<div class="card-body" body-overlay="transparent">
+									<div class="card-title Sans-Black size-14 text-light">
+										Small Size Card
+									</div>
+								</div>
+							</div><br>
+							<div class="card exsmall">
+								<img src="/docs/assets/india/taj-mahal.jpg">
+								<div class="card-body" body-overlay="transparent">
+									<div class="card-title Sans-Black size-12 text-light">
+										Extra Small Size Card
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="sizingBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip6">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card exsmall</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card small</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card normal</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card large</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card exlarge</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- component card layout-->
+				<div class="tag cmp" id="card-layout">
+					<h1>Layout</h1>
+					<p>In the card layout, We include a few options for layout series of card with responsive layout. The all layout uses grid layout for cards. It include various options, styling, alignments, spacing, positions for cards.</p>
+					<p class="cl">Use the <span>.card-container</span> class to create the card container.</p>
+				</div>
+				<!-- example layout -->
+				<div class="doc-data" id="example-layout">
+					<hr class="type-1">
+					<h3>Example</h3>
+					<p>The card layout create with grid system and allow 4 cards in one row. It arranges with responsive manner for the card width.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Create <span>.card-container</span> class to apply the layout.<br>
+						Add <span>card-col=""</span> attribute in <span>.card-container</span> class to set number of cards in one row.
+					</p>
+					<p class="Sans text-muted">
+					Cards layout also set in <span>.row</span> class with the use of <span>.col-*</span> class with responsive layout.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card-container" card-col="2">
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- card container with 2 column --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-container</b>&quot; <b class="cl">card-col</b>=&quot;<b class="cn">2</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<p class="Sans mt2 size-16 text-muted">In the above example, the <span>.card-container</span> class set for a mobile-site first responsive layout. You can use <span>.col-*</span> classes for card layout and design.</p>
+					<!-- 3 coloumn container -->
+					<div class="my3"><hr class="type-1"></div>
+					<p class="Sans text-muted">
+						<b class="Sans-Semibold">Note: </b> The card container use grid layout with <span>grid-template-column</span> which sets auto width of card so make sure you should not add any <span>sizing</span> class for cards.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card-container" card-col="3">
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- card container with 3 column --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-container</b>&quot; <b class="cl">card-col</b>=&quot;<b class="cn">2</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>	
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<!-- 4 coloumn contaienr -->
+					<div class="my5"><hr class="type-1"></div>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card-container" card-col="4">
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+								<div class="card text-left shadow">
+									<img src="/docs/assets/brand/macbook.jpg">
+									<div class="card-body">
+										<div class="card-title size-14 Sans-Medium">New Macbook Air</div>
+										<div class="card-subtitle size-14 Sans-Medium">Power. It's in the Air.</div>
+										<div class="card-text Sans-Medium size-14 text-primary">#macbookair #apple #M1chip</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="headercardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- card container with 4 column --- &gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-container</b>&quot; <b class="cl">card-col</b>=&quot;<b class="cn">2</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card</b>&quot;&gt; ... &lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- alignment -->
+				<div class="doc-data" id="alignment-layout">
+					<hr class="type-1">
+					<h3>Aignment</h3>
+					<p>Card contains 3 types of alignment for relative positions.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						Add <span>.text-left </span> class to set left alignment.<br>
+						Add <span>.text-center </span> class to set center alignment.<br>
+						Add <span>.text-right </span> class to set right alignment.
+ 					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="cardEx">
+							<div class="card text-left br-default normal">
+						        <div class="card-body">
+						        	<h3 class="card-title">Title</h3>
+						        	<h4 class="card-subtitle">subtitle</h4>
+						        	<hr>
+						            <p class="card-text ">It's easy to use it as a card-text for texting anything to describe this card and title.</p>
+						            <div class="card-link">
+						            	<button type="button" class="btn cl-btn-primary">Submit</button>
+						            </div>
+						         </div>
+						    </div><br>
+						    <div class="card text-center br-default normal">
+						        <div class="card-body">
+						        	<h3 class="card-title">Title</h3>
+						        	<h4 class="card-subtitle">subtitle</h4>
+						        	<hr>
+						            <p class="card-text ">It's easy to use it as a card-text for texting anything to describe this card and title.</p>
+						            <div class="card-link">
+						            	<button type="button" class="btn cl-btn-primary">Submit</button>
+						            </div>
+						         </div>
+						    </div><br>
+						    <div class="card text-right br-default normal">
+						        <div class="card-body">
+						        	<h3 class="card-title">Title</h3>
+						        	<h4 class="card-subtitle">subtitle</h4>
+						        	<hr>
+						            <p class="card-text ">It's easy to use it as a card-text for texting anything to describe this card and title.</p>
+						            <div class="card-link">
+						            	<button type="button" class="btn cl-btn-primary">Submit</button>
+						            </div>
+						         </div>
+						    </div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- left align ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card text-left</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- center align ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card text-center</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- right align ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card text-right</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card-body</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- responsive layout table -->
+				<div class="doc-data" id="responsive">
+					<h2 class="Sans-Bold mb1">Responsive Layout</h2>
+					<p class="text-muted size-16 Sans mb3">It is made with a responsive layout that supports the mobile-first site, tablet-first sites with butterflycss.</p>
+					<div class="container">
+						<table class="hr-table" id="table-class">
+							<thead>
+								<tr>
+									<th>Class</th>
+									<th>< 728px</th>
+									<th>728px ></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>card-col="2"</td>
+									<td>100%</td>
+									<td>Auto</td>
+								</tr>
+								<tr>
+									<td>card-col="3"</td>
+									<td>100%</td>
+									<td>auto</td>
+								</tr>
+								<tr>
+									<td>card-col="4"</td>
+									<td>50%</td>
+									<td>auto</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/buttongrp/" class="btn btn-link large"><i class="fas fa-long-arrow-alt-left mr1"></i>Button Group</a>
+					<a href="/docs/standard/footer/" class="btn btn-link large">Footer<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Cards</a>
+				<a href="#example-card" class="ml1">Example</a>
+				<a href="#simple-card" class="ml1">Simple Card</a>
+				<a href="#image-card" class="ml1">Image Card</a>
+				<a href="#overlay-card" class="ml1">Overlay Card</a>
+				<a href="#horizontal-card" class="ml1">Horizontal Card</a>
+				<a href="#header-footer">Header Footer</a>
+				<a href="#example-header" class="ml1">Example</a>
+				<a href="#header-card" class="ml1">Header Card</a>
+				<a href="#footer-card" class="ml1">Footer Card</a>
+				<a href="#header-footer-card" class="ml1">Header Footer Card</a>
+				<a href="#colored-card">Colored Card</a>
+				<a href="#light-card">Light Card</a>
+				<a href="#bordered-card">Bordered Card</a>
+				<a href="#shadow-card">Shadow Card</a>
+				<a href="#sizing">Sizing</a>
+				<a href="#card-layout">Layout</a>
+				<a href="#example-layout" class="ml1">Example</a>
+				<a href="#alignment-layout" class="ml1">Alignment</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>

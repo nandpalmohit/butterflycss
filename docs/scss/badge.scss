@@ -1,0 +1,85 @@
+@import 'colors';
+
+
+.badge{
+    display: inline-block;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    color: $white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 6px;
+    // cursor: pointer;
+}
+.badge.small {
+    padding: 4px 8px;
+    font-size: 12px !important;
+}
+.badge.large {
+    padding: 12px 16px;
+    font-size: 16px !important;
+}
+
+/* badge colors*/
+.cl-badge-default{
+    background-color: $default;
+    color: $active_secondary;
+}
+.cl-badge-primary{
+    background-color: $primary;
+}
+.cl-badge-secondary{
+    background-color: $secondary;
+}
+.cl-badge-dark{
+    background-color: $dark;
+}
+.cl-badge-light{
+    background-color: $light;
+    color: $black;
+}
+.cl-badge-warning{
+    background-color: $warning;
+}
+.cl-badge-danger{
+    background-color: $danger;
+}
+.cl-badge-success{
+    background-color: $success;
+}
+.cl-badge-info{
+    background-color: $info;
+}
+
+/* badge light colors  */
+.lt-badge-default {
+    background-color: $light_default;
+    color: $active_light;
+}
+.lt-badge-primary {
+    background-color: $light_primary;
+    color: $active_primary;
+}
+.lt-badge-secondary {
+    background-color: $light_secondary;
+    color: $active_secondary;
+}
+.lt-badge-warning {
+    background-color: $light_warning;
+    color: $active_warning;
+}
+.lt-badge-danger {
+    background-color: $light_danger;
+    color: $active_danger;
+}
+.lt-badge-success {
+    background-color: $light_success;
+    color: $active_success;
+}
+.lt-badge-info {
+    background-color: $light_info;
+    color: $active_info;
+}

@@ -1,0 +1,101 @@
+// colors
+:root{
+	--bc-default: #e0e1e2;
+	--bc-link: #1f4bdb;
+	--bc-primary: #0053db;
+	--bc-secondary: #778899 ;
+	--bc-dark: #393939;
+	--bc-light: #f7f7f7;
+	--bc-danger: #fa2349;
+	--bc-warning: #ffa500;
+	--bc-info: #07a9df;
+	--bc-success: #3ab509;
+	--bc-black: #000;
+	--bc-white : #fff;
+	--bc-muted :#636363;
+	--bc-grey: #AAAAAA;
+	--bc-silver: #DDDDDD;
+	--bc-maroon: #85144b;
+	--bc-navy: #03045e;
+	--bc-orange: #FF851B;
+	--bc-pink: #ffafcc;
+	--bc-purple: #B10DC9;
+	--bc-red: #FF4136;
+	--bc-teal: #008080;
+	--bc-green: #008000;
+	--bc-yellow: #FFDC00;
+	--bc-light-default: rgba(237, 240, 240,0.3);
+	--bc-light-primary: #dcf0f5;
+	--bc-light-secondary: #f2f4f5;
+	--bc-light-warning : #ffedcc;
+	--bc-light-danger: #fce9ec;
+	--bc-light-info: #d9f5ff;
+	--bc-light-success: #d1ffbf;
+	--bc-light-extreme: #e6e6e6;
+	--bc-transparent-black:rgba(0, 0, 0, 0.01);
+}
+// used for bg color, btn color, alert,
+$default: var(--bc-default);
+$primary: var(--bc-primary);
+$secondary: var(--bc-secondary);
+$dark: var(--bc-dark);
+$light: var(--bc-light);
+$warning: var(--bc-warning);
+$danger: var(--bc-danger);
+$success: var(--bc-success);
+$info: var(--bc-info);
+$black: var(--bc-black);
+$white: var(--bc-white);
+$muted: var(--bc-muted);
+$link: var(--bc-link);
+
+// dark colors
+//used for border colors, bg colors and hover effect
+$default_h:#d9dbdb;
+$primary_h:#004ac2;
+$secondary_h:#637180;
+$dark_h:#1f1f1f;
+$light_h:#f2f2f2;
+$danger_h:#d91e3f;
+$warning_h: #e69500;
+$success_h:#329c08;
+$info_h: #0699c9;
+$white_h: #fafafa;
+$black_h: #0e0f12;
+$link_h: #1b42c2;
+$ccc: #cccccc;
+// active colors
+$active_default: #cfd1d1;
+$active_primary: #003a99;
+$active_secondary: #4f5a66;
+$active_dark : #000000;
+$active_light : #e6e6e6;
+$active_warning : #b37400;
+$active_danger: #a61730;
+$active_success: #2a8207;
+$active_info: #057296;
+$active_link :  #1839a8;
+
+// light colors
+$light_default: var(--bc-light-default);
+$light_primary: var(--bc-light-primary);
+$light_secondary: var(--bc-light-secondary);
+$light_warning: var(--bc-light-warning);
+$light_danger: var(--bc-light-danger);
+$light_success: var(--bc-light-success);
+$light_info: var(--bc-light-info);
+$light_extreme: var(--bc-light-extreme);
+
+// more colors
+$transparent: rgba(0,0,0,0);
+$grey: var(--bc-grey);
+$silver: var(--bc-silver);
+$maroon: var(--bc-maroon);
+$navy: var(--bc-navy);
+$orange: var(--bc-orange);
+$pink: var(--bc-pink);
+$purple: var(--bc-purple);
+$red: var(--bc-red);
+$teal: var(--bc-teal);
+$yellow: var(--bc-yellow);
+$transparent_black: var(--bc-transparent-black);

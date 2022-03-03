@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Inputs Component · Butterfly</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/forms.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+	<!-- Butterfly js -->
+	<script type="text/javascript" src="/js/butterfly.js"></script>
+</head>
+
+<body>
+<div class="container" id="Main">
+	<div class="navbar" id="Nav">
+		<img src="/assets/logo/butterfly-2.png" class="logoicon">
+		<a class="logotext" href="/">Butterfly.css</a>
+	</div>
+	<!-- sidebar -->
+	<div class="sidebar" id="SideBar">
+		<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+		<div class="link" id="Components">
+			<h3>Components</h3>
+			<a href="/docs/standard/alert/">Alert</a>
+			<a href="/docs/standard/badge/">Badge</a>
+			<a href="/docs/standard/bojo/">Bojo</a>
+			<a href="/docs/standard/button/">Button</a>
+			<a href="/docs/standard/buttongrp/">Button Group</a>
+			<a href="/docs/standard/card/">Card</a>
+			<a href="/docs/standard/footer/">Footer</a>
+			<a href="/docs/standard/grid/">Grid</a>
+			
+			<a href="/docs/standard/inputs/">Input Types</a>
+			<a href="/docs/standard/navbar/">Navbar</a>
+			<a href="/docs/standard/progress/" class="active">Progress</a>
+			<a href="/docs/standard/table/">Table</a>
+		</div>
+		<div class="link" id="Elements">
+			<h3>Elements</h3>
+			<a href="/docs/elements/align/">Alignment</a>
+			<a href="/docs/elements/border/">Border</a>
+			<a href="/docs/elements/color/">Color</a>
+			<a href="/docs/elements/heading/">Heading</a>
+			<a href="/docs/elements/list/">List</a>
+			<a href="/docs/elements/margin/">Margin</a>
+			<a href="/docs/elements/padding/">Padding</a>
+			<a href="/docs/elements/textstyle/">Text Styles</a>
+		</div>
+			<div class="link" id="Layout">
+			<h3>Layout</h3>
+			<a href="/docs/layout/container/">Container</a>
+		</div>
+		<div class="link" id="Modules">
+			<h3>Modules</h3>
+			<a href="/docs/modules/bojo/">Bojo</a>
+			<a href="/docs/modules/contact/">Contact</a>
+			<a href="/docs/modules/forms/">Forms</a>
+			<a href="/docs/modules/footers/">Footers</a>
+			<a href="/docs/modules/headers/">Headers</a>
+			<a href="/docs/modules/services/">Services</a>
+			<a href="/docs/modules/skills/">Skills</a>
+		</div>
+	</div>
+	<!-- main data -->
+	<div class="content" id="Content">
+		<main class="divcontainer" id="Data">
+			<!-- sidebar open -->
+			<div class="icon-sidebar" id="openSideBar">
+				<i class="fas fa-bars" onclick="openSideBar()"></i>
+			</div>
+			<!-- component name -->
+			<div class="tag" id="alertbox">
+				<h1>Input types</h1>
+				<p>Controls the form by adding text, button, password, checkbox, lists and more with custome design. </p>
+				<p class="cl">Use the <shadow>.input</shadow> class to create the input.</p>
+			</div>
+			<!-- simple card -->
+			<div class="doc-data" id="simple-card">
+				<hr class="type-1">
+				<h3>Default Progressbar</h3>
+				<div class="board" id="btn1">
+					<div class="bd-ex" id="example">
+						<div class="progress">
+							<label class="label-progress">Progress</label>
+  							<div class="pgbar" style="width: 0%"></div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Progress</label>
+  							<div class="pgbar" style="width: 20%">20%</div>
+						</div><div class="progress">
+							<label class="label-progress">Progress</label>
+  							<div class="pgbar" style="width: 40%">40%</div>
+						</div><div class="progress">
+							<label class="label-progress">Progress</label>
+  							<div class="pgbar" style="width: 60%">60%</div>
+						</div><div class="progress">
+							<label class="label-progress">Progress</label>
+  							<div class="pgbar" style="width: 80%">80%</div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Progress</label>
+  							<div class="pgbar" style="width: 100%">100%</div>
+						</div>
+					</div>
+					<div class="bd-code">
+						<h4><i class="fab fa-html5"></i></h4>
+						<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+					</div>
+					<div class="bd-text">
+						<pre id="simpleCard">
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-progress</b>&quot;&gt;</span>Progress<span>&lt;/<b class="dv">label</b>&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 0%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-progress</b>&quot;&gt;</span>Progress<span>&lt;/<b class="dv">label</b>&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 20%</b>&quot;&gt; 20% &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+						</pre>
+					</div>
+				</div>
+			</div>
+			<!-- checkbox -->
+			<div class="doc-data" id="simple-card">
+				<hr class="type-1">
+				<h3>Colored Progressbar</h3>
+				<div class="board" id="btn1">
+					<div class="bd-ex" id="example">
+						<div class="progress">
+							<label class="label-progress">Primary</label>
+  							<div class="pgbar bg-primary" style="width: 80%"></div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Secondary</label>
+  							<div class="pgbar bg-secondary" style="width: 80%"></div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Warning</label>
+  							<div class="pgbar bg-warning" style="width: 80%"></div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Danger</label>
+  							<div class="pgbar bg-danger" style="width: 80%"></div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Success</label>
+  							<div class="pgbar bg-success" style="width: 80%"></div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Info</label>
+  							<div class="pgbar bg-info" style="width: 80%"></div>
+						</div>
+						<div class="progress">
+							<label class="label-progress">Dark</label>
+  							<div class="pgbar bg-dark" style="width: 80%"></div>
+						</div>
+					</div>
+					<div class="bd-code">
+						<h4><i class="fab fa-html5"></i></h4>
+						<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+					</div>
+					<div class="bd-text">
+						<pre id="simpleCard">
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar bg-primary</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 80%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar bg-secondary</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 80%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-progress</b>&quot;&gt;</span>warning<span>&lt;/<b class="dv">label</b>&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar bg-warning</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 80%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-progress</b>&quot;&gt;</span>danger<span>&lt;/<b class="dv">label</b>&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar bg-danger</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 80%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-progress</b>&quot;&gt;</span>success<span>&lt;/<b class="dv">label</b>&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar bg-success</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 80%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-progress</b>&quot;&gt;</span>info<span>&lt;/<b class="dv">label</b>&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar bg-info</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 80%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-progress</b>&quot;&gt;</span>dark<span>&lt;/<b class="dv">label</b>&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar bg-dark</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 80%</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+						</pre>
+					</div>
+				</div>
+			</div>
+			<!-- checkbox -->
+			<div class="doc-data" id="simple-card">
+				<hr class="type-1">
+				<h3>Sizing</h3>
+				<div class="board" id="btn1">
+					<div class="bd-ex" id="example">
+						<div class="progress" style="height: 2px">
+							<div class="pgbar" style="width: 100px;"></div>
+						</div>
+						<div class="progress" style="height: 10px">
+							<div class="pgbar" style="width: 100px;"></div>
+						</div>
+						<div class="progress" style="height: 20px">
+							<div class="pgbar" style="width: 100px;"></div>
+						</div>
+					</div>
+					<div class="bd-code">
+						<h4><i class="fab fa-html5"></i></h4>
+						<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+					</div>
+					<div class="bd-text">
+						<pre id="simpleCard">
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot; <b class="cl">style</b>=&quot;<b class="js">height: 2px</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 100px;</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot; <b class="cl">style</b>=&quot;<b class="js">height: 10px</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 100px;</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">progress</b>&quot; <b class="cl">style</b>=&quot;<b class="js">height: 20px</b>&quot;&gt;</span>
+							  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">pgbar</b>&quot; <b class="cl">style</b>=&quot;<b class="js">width: 100px;</b>&quot;&gt; &lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<!-- scroller -->
+	<div class="scroller">
+		<div class="scrollspy Karla">
+			<b>On this page</b>
+			<hr class="type-1">
+			<a href="#">Cards</a>
+			<a href="#simple-card" class="ml1">Simple Card</a>
+			<a href="#profile-card" class="ml1">Profile Card</a>
+			<a href="#background-card" class="ml1">Background Card</a>
+			<a href="#horizontal-card" class="ml1">Horizontal Card</a>
+			<a href="#header-card" class="ml1">Header Card</a>
+			<a href="#card-sizing" class="ml1">Sizing</a>
+		</div>
+	</div>
+
+</div>
+
+</body>
+<script type="text/javascript">
+	// simple card
+	document.getElementById('simplecardBtn').addEventListener('click', copyFunction1);
+	function copyFunction1() {
+		const copyText = document.getElementById("simpleCard").textContent;
+		const textArea = document.createElement('textarea');
+	  	textArea.textContent = copyText;
+	  	document.body.append(textArea);
+	  	textArea.select();
+	  	document.execCommand("copy");
+	  	document.getElementById('tip1').innerHTML = "Copied to clipboard";
+	  	document.getElementById('tip1').style.width = "200px";
+	}
+	// profileCard
+	document.getElementById('profilecardBtn').addEventListener('click', copyFunction2);
+	function copyFunction2() {
+		const copyText = document.getElementById("profileCard").textContent;
+		const textArea = document.createElement('textarea');
+	  	textArea.textContent = copyText;
+	  	document.body.append(textArea);
+	  	textArea.select();
+	  	document.execCommand("copy");
+	  	document.getElementById('tip2').innerHTML = "Copied to clipboard";
+	  	document.getElementById('tip2').style.width = "200px";
+	}
+	// bgCard
+	document.getElementById('bgcardBtn').addEventListener('click', copyFunction3);
+	function copyFunction3() {
+		const copyText = document.getElementById('bgCard').textContent;
+		const textArea = document.createElement('textarea');
+	  	textArea.textContent = copyText;
+	  	document.body.append(textArea);
+	  	textArea.select();
+	  	document.execCommand("copy");
+	  	document.getElementById('tip3').innerHTML = "Copied to clipboard";
+	  	document.getElementById('tip3').style.width = "200px";
+	}
+	// hrCard
+	document.getElementById('hrcardBtn').addEventListener('click', copyFunction4);
+	function copyFunction4() {
+		const copyText = document.getElementById("hrCard").textContent;
+		const textArea = document.createElement('textarea');
+	  	textArea.textContent = copyText;
+	  	document.body.append(textArea);
+	  	textArea.select();
+	  	document.execCommand("copy");
+	  	document.getElementById('tip4').innerHTML = "Copied to clipboard";
+	  	document.getElementById('tip4').style.width = "200px";
+	}
+	// headerCard
+	document.getElementById('headercardBtn').addEventListener('click', copyFunction5);
+	function copyFunction5() {
+		const copyText = document.getElementById("headerCard").textContent;
+		const textArea = document.createElement('textarea');
+	  	textArea.textContent = copyText;
+	  	document.body.append(textArea);
+	  	textArea.select();
+	  	document.execCommand("copy");
+	  	document.getElementById('tip5').innerHTML = "Copied to clipboard";
+	  	document.getElementById('tip5').style.width = "200px";
+	}
+	// sizingCard
+	document.getElementById('sizingBtn').addEventListener('click', copyFunction6);
+	function copyFunction6() {
+		const copyText = document.getElementById("sizingCard").textContent;
+		const textArea = document.createElement('textarea');
+	  	textArea.textContent = copyText;
+	  	document.body.append(textArea);
+	  	textArea.select();
+	  	document.execCommand("copy");
+	  	document.getElementById('tip6').innerHTML = "Copied to clipboard";
+	  	document.getElementById('tip6').style.width = "200px";
+	}
+</script>
+
+</html>

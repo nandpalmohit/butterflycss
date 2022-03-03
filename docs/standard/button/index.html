@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Button · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main container -->
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/">Alertbox</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/" class="active">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component button -->
+				<div class="tag" id="button">
+					<h1>Button</h1>
+					<p>Use it to perform action in pages, forms and more with multiple styles, colors and sizing.</p>
+					<p class="cl">Use the <span>.btn</span> class for every single button.</p>
+				</div>
+				<!-- button example -->
+				<div class="doc-data" id="example-btn">
+					<hr class="type-1">
+					<h3>Button Example</h3>
+					<p>Responsive Buttons indicate a possible user action with predefined styles.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add <span>.btn</span> class to apply Button styles.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<button class="btn cl-btn-primary">Button</button>
+							<a class="btn cl-btn-primary">Link</a>
+							<input type="button" class="btn cl-btn-primary" value="Input">
+							<input type="submit" class="btn cl-btn-primary" value="Submit">
+							<input type="reset" class="btn cl-btn-primary" value="Reset">
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt;...&lt;/<b class="dv">a</b>&gt;</span>
+								<span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">button</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot; <b class="cl">value</b>=&quot;<b class="cn"></b>&quot;&gt;</span>
+								<span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">submit</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot; <b class="cl">value</b>=&quot;<b class="cn"></b>&quot;&gt;</span>
+								<span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">reset</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot; <b class="cl">value</b>=&quot;<b class="cn"></b>&quot;&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<div class="alertbox lt-alert-info Sans line-15">You can use all properties and styling with multiple tags include a button, input components that support events and button appearance.</div>
+				</div>
+				<!-- colored buttons -->
+				<div class="doc-data" id="colored-btn">
+					<hr class="type-1">
+					<h3>Colored Buttons</h3>
+					<p>Colored Buttons are a more attractive component.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.cl-btn-*</span> class to apply.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<button class="btn cl-btn-default">default</button>
+							<button class="btn cl-btn-primary">primary</button>
+							<button class="btn cl-btn-secondary">secondary</button>
+							<button class="btn cl-btn-dark">dark</button>
+							<button class="btn cl-btn-light">light</button>
+							<button class="btn cl-btn-warning">warning</button>
+							<button class="btn cl-btn-danger">danger</button>
+							<button class="btn cl-btn-success">success</button>
+							<button class="btn cl-btn-info">info</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-secondary</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-warning</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-danger</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-success</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-info</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>			
+				<!-- outline buttons -->
+				<div class="doc-data" id="outline-btn">
+					<hr class="type-1">
+					<h3>Outline Buttons</h3>
+					<p>It covers transparent background with mutiple border colors.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.ot-btn-*</span> class to apply. You can add background colors with the use of <span>.bg-*</span> class.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<button class="btn ot-btn-default">default</button>
+							<button class="btn ot-btn-primary">primary</button>
+							<button class="btn ot-btn-secondary">secondary</button>
+							<button class="btn ot-btn-dark">dark</button>
+							<button class="btn ot-btn-light">light</button>
+							<button class="btn ot-btn-warning">warning</button>
+							<button class="btn ot-btn-danger">danger</button>
+							<button class="btn ot-btn-success">success</button>
+							<button class="btn ot-btn-info">info</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip2">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-default</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-secondary</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-warning</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-danger</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-success</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-info</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- link button -->
+				<div class="doc-data" id="link-btn">
+					<hr class="type-1">
+					<h3>Link Buttons</h3>
+					<p>After all link is also main purpose for use as reference, links, informative so we build link button.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.btn-link</span> class to apply.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<button class="btn btn-link">Button Link</button>
+							<a class="btn btn-link"> Link</a>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip2">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt;button link&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt;link&lt;/<b class="dv">a</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">
+						The link buttons are more usefull to add links, references, social connectivity and more so we create this class for <span>&lt;button&gt;</span> and <span>&lt;a&gt;</span> tag.<br>
+						In <span>&lt;button&gt;</span> tag set transparent background color as default but set the background color for hover and active state. <br>
+						In <span>&lt;a&gt;</span> tag set transparent background color as default for all the state.
+					</p>
+				</div>
+				<!-- ripple buttons -->
+				<div class="doc-data" id="ripple-btn">
+					<hr class="type-1">
+					<h3>Ripple Buttons</h3>
+					<p>Ripple Buttons are part of modern design trend. The Button presenting effect.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add <span>.ripple</span> 		class to apply Ripple effect.<br>
+						Add <span>ripple-for="dark"</span> attribute for dark ripple effect.<br>
+						Add <span>ripple-for="light"</span> attribute for light ripple effect.
+					</p>
+					<div class="board" id="btn3">
+						<div class="bd-ex" id="example">
+							<button class="btn ripple cl-btn-default" ripple-for="dark">default</button>
+							<button class="btn ripple cl-btn-primary" ripple-for="light">primary</button>
+							<button class="btn ripple cl-btn-secondary" ripple-for="light">secondary</button>
+							<button class="btn ripple cl-btn-dark" ripple-for="light">dark</button>
+							<button class="btn ripple cl-btn-light" ripple-for="dark">light</button>
+							<button class="btn ripple cl-btn-warning" ripple-for="light">warning</button>
+							<button class="btn ripple cl-btn-danger" ripple-for="light">danger</button>
+							<button class="btn ripple cl-btn-success" ripple-for="light">success</button>
+							<button class="btn ripple cl-btn-info" ripple-for="light">info</button>
+							<button class="btn ripple ot-btn-default" ripple-for="dark">default</button>
+							<button class="btn ripple ot-btn-primary" ripple-for="dark">primary</button>
+							<button class="btn ripple ot-btn-secondary" ripple-for="dark">secondary</button>
+							<button class="btn ripple ot-btn-dark" ripple-for="dark">dark</button>
+							<button class="btn ripple ot-btn-warning" ripple-for="dark">warning</button>
+							<button class="btn ripple ot-btn-danger" ripple-for="dark">danger</button>
+							<button class="btn ripple ot-btn-success" ripple-for="dark">success</button>
+							<button class="btn ripple ot-btn-info" ripple-for="dark">info</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip3">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<!-- colored btn -->
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-default</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-secondary</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-dark</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-light</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-warning</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-danger</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-success</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-info</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple btn-link</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<!-- outline button -->
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-default</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-secondary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-dark</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-warning</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-danger</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-success</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-info</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">
+						Ripple effect only allow <span>button component</span> to use it so button makes it as a unique effect with <span>modern design trend</span>. Also note that buttons have different styling and coloring so add ripple with its effect which is <span>dark or light</span> to create more attractive buttons.
+					</p>
+				</div>
+				<!-- rounded buttons -->
+				<div class="doc-data" id="rounded-btn">
+					<hr class="type-1">
+					<h3>Rounded Buttons</h3>
+					<p class="alertbox form-alert-default doc-alert">Add <span>.rounded-*</span>to make the button rounded.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<button class="btn rounded-10 cl-btn-primary">Rounded-10</button>
+							<button class="btn rounded-20 cl-btn-primary">Rounded-20</button>
+							<button class="btn rounded-30 cl-btn-primary">Rounded-30</button>
+							<button class="btn rounded-10 ot-btn-primary">Rounded-10</button>
+							<button class="btn rounded-20 ot-btn-primary">Rounded-20</button>
+							<button class="btn rounded-30 ot-btn-primary">Rounded-30</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip4">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary rounded-10</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary rounded-20</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary rounded-30</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary rounded-10</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary rounded-20</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary rounded-30</b>&quot;&gt;...&lt;/<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">Rounded Corners are easior on the eyes. It makes good for user as well designed components structure. You can add <span>.rounded-*</span> class with multiple elements like a, badges, buttons, inputs.</p>
+				</div>
+				<!-- button sizes -->
+				<div class="doc-data" id="sizing-btn">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>Sizing is more important thing for buttons to change everytime as per layout designs.</p>
+					<p class="alertbox form-alert-default doc-alert">Add <span>.small, .large, .exlarge</span>to change the button size.</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<button class="btn small cl-btn-primary">Small button</button>
+							<button class="btn small ot-btn-primary">Small button</button>
+							<button class="btn cl-btn-primary">Regular button</button>
+							<button class="btn ot-btn-primary">Regular button</button>
+							<button class="btn large cl-btn-primary">Large button</button>
+							<button class="btn large ot-btn-primary">Large button</button>
+							<button class="btn exlarge cl-btn-primary">Extra Large button</button>
+							<button class="btn exlarge ot-btn-primary">Extra Large button</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip5">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary small</b>&quot;&gt;Small button&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt;Regular Button&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary large</b>&quot;&gt;Large Button&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary exlarge</b>&quot;&gt;Extra Large Button&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary small</b>&quot;&gt;Small button&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt;Regular Button&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary large</b>&quot;&gt;Large Button&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary exlarge</b>&quot;&gt;Extra Large Button&lt;/<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- block button -->
+				<div class="doc-data" id="block-btn">
+					<hr class="type-1">
+					<h3>Block Buttons</h3>
+					<p>Block Buttons set all the button width to 100% size.</p>
+					<p class="alertbox form-alert-default doc-alert">Add <span>.block</span>to change the button width to Block.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<button class="btn small cl-btn-primary block">Small size block</button>
+							<button class="btn cl-btn-primary block">Regular size block</button>
+							<button class="btn large cl-btn-primary block">Large size block</button>
+							<button class="btn exlarge cl-btn-primary block">Extra Large size block</button><br>
+							<button class="btn small ot-btn-primary block">Small size block</button>
+							<button class="btn ot-btn-primary block">Regular size block</button>
+							<button class="btn large ot-btn-primary block">Large size block</button>
+							<button class="btn exlarge ot-btn-primary block">Extra Large size block</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip6">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary small block</b>&quot;&gt;Small size block&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary block</b>&quot;&gt;Regular size block&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary large block</b>&quot;&gt;Large size block&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary exlarge block</b>&quot;&gt;Extra Large size block&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary small block</b>&quot;&gt;Small size block&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary block</b>&quot;&gt;Regular size block&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary large block</b>&quot;&gt;Large size block&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary exlarge block</b>&quot;&gt;Extra Large size block&lt;/<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- spacefix -->
+				<div class="spacefix"></div>
+				<!-- component icon -->
+				<div class="tag cmp" id="icon">
+					<h1>Icon</h1>
+					<p>The combination of icons and buttons creates multiple styling.</p>
+					<p class="cl">Use the <span>.icon</span> class for every icon button, link.</p>
+				</div>
+				<!-- icon example -->
+				<div class="doc-data" id="example-icon">
+					<hr class="type-1">
+					<h3>Icon Example</h3>
+					<p>The icons contains multiple styling to choose the right styling with the use of buttons, links, effects, colors and sizing.</p>
+					<p class="alertbox form-alert-default doc-alert">Add <span>.icon</span>to create the icon. You can use it with <span>&lt;div&gt;, &lt;span&gt;, &lt;a&gt;, &lt;p&gt; </span>and more tags easily.</p>
+					<div class="alertbox lt-alert-primary line-15 doc-alert py2">
+						<i class="fab fa-font-awesome-flag mx1"></i>
+						In the example below, we use <b onclick="location.href='https://fontawesome.com'">Font Awesome 6</b> icons. You can use it or download it for free.<br>
+					</div>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<div class="icon d-inline"><i class="fab fa-google" aria-hidden="true"></i></div>
+							<span class="icon d-inline"><i class="fab fa-twitter" aria-hidden="true"></i></span>
+							<a class="icon d-inline"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+							<p class="icon d-inline"><i class="fab fa-github" aria-hidden="true"></i></p>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!-- div tag --&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">icon</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!-- span tag --&gt;</span>
+								<span>&lt;<b class="dv">span</b> <b class="cl">class</b>=&quot;<b class="cn">icon</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;/<b class="dv">span</b>&gt;</span>
+								<span class="cmt">&lt;!-- a tag --&gt;</span>
+								<span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">icon</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;/<b class="dv">a</b>&gt;</span>
+								<span class="cmt">&lt;!-- p tag --&gt;</span>
+								<span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">icon</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;/<b class="dv">p</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- icon button -->
+				<div class="doc-data" id="btn-icon">
+					<hr class="type-1">
+					<h3>Icon Buttons</h3>
+					<p>Icon Buttons helps to creating links and reference to the social media, apps and more.</p>
+					<p class="alertbox form-alert-default doc-alert">Firstly add <span>.btn .icon</span>class for icons and then add <span>style=""</span>to change the background colors for styling the icons.</p>
+					<div class="alertbox lt-alert-info Open line-15 pd2 mt3">
+					<i class="fa fa-check-circle mx1"></i>
+					We already build up all the social link icons which are predefined and apply with buttons.</div>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<!-- google -->
+							<button class="btn icon" style="background-color: #DD4B39"><i class="fa fa-google" aria-hidden="true"></i></button>
+							<!-- github -->
+							<button class="btn icon" style="background-color: #212121"><i class="fab fa-github"></i></button>
+							<!-- facebook -->
+							<button class="btn icon" style="background-color: #4267B2"><i class="fab fa-facebook-f"></i></button>
+							<!-- instagram -->
+							<button class="btn icon" style="background-color: #E1306C"><i class="fab fa-instagram" aria-hidden="true"></i></button>
+							<!-- twitter -->
+							<button class="btn icon" style="background-color: #1DA1F2"><i class="fab fa-twitter" aria-hidden="true"></i></button>
+							<!-- dribbble -->
+							<button class="btn icon" style="background-color: #EA4C89"><i class="fab fa-dribbble" aria-hidden="true"></i></button>
+							<!-- tumblr -->
+							<button class="btn icon" style="background-color: #001935"><i class="fab fa-tumblr" aria-hidden="true"></i></button>
+							<!-- linkedin -->
+							<button class="btn icon" style="background-color: #007BB6"><i class="fab fa-linkedin" aria-hidden="true"></i></button>
+							<!-- whatsapp -->
+							<button class="btn icon" style="background-color: #34Bf49"><i class="fab fa-whatsapp" aria-hidden="true"></i></button>
+							<!-- snapchat -->
+							<button class="btn icon" style="background-color: #FFFC00"><i class="fab fa-snapchat-ghost" aria-hidden="true"></i></button>
+							<!-- pinterest -->
+							<button class="btn icon" style="background-color: #E60023"><i class="fab fa-pinterest-p" aria-hidden="true"></i></button>
+							<!-- reddit -->
+							<button class="btn icon" style="background-color: #FF4400"><i class="fab fa-reddit-alien" aria-hidden="true"></i></button>
+							<!-- youtube -->
+							<button class="btn icon" style="background-color: #CC0000"><i class="fab fa-youtube" aria-hidden="true"></i></button>
+							<!-- quora -->
+							<button class="btn icon" style="background-color: #B92B27"><i class="fab fa-quora" aria-hidden="true"></i></button>
+							<!-- flickr -->
+							<button class="btn icon" style="background-color: #000000"><i class="fab fa-flickr" aria-hidden="true"></i></button>
+							<!-- skype -->
+							<button class="btn icon" style="background-color: #1FA5FF"><i class="fab fa-skype" aria-hidden="true"></i></button>
+							<!-- telegram -->
+							<button class="btn icon" style="background-color: #0088CC"><i class="fab fa-telegram-plane" aria-hidden="true"></i></button>
+							<!-- amazon -->
+							<button class="btn icon" style="background-color: #232F3E"><i class="fab fa-amazon" aria-hidden="true"></i></button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip7">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!-- google icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #DD4B39</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- github icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #212121</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-github</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- facebook icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #4267B2</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-facebook-f</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- instagram icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #E1306C</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-instagram</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- twitter icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #1DA1F2</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-twitter</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- dribbble icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #EA4C89</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-dribbble</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- tumblr icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #001935</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-tumblr</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- linkedin icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #007BB6</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-linkedin</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- whatsapp icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #34BF49</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-whatsapp</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- snapachat icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #FFFC00</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-snapachat-ghost</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- pinterest icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #E60023</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-pinterest-p</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- reddit icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #FF4400</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-reddit-alien</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- youtube icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #CC0000</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-youtube</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- quora icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #B92B27</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-quora</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- flickr icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #000000</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-flickr</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- skype icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #1FA5FF</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-skype</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- telegram icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #0088CC</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-telegram-plane</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!-- amazon icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #232F3E</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-amazon</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+
+							</pre>
+							<b class="link">Embed or Download this icons by <u onclick="window.open('https://fontawesome.com/')" class="text-link">font-awesome.</u></b>
+						</div>
+					</div>
+				</div>
+				<!-- rounded icon -->
+				<div class="doc-data" id="rounded-icon">
+					<hr class="type-1">
+					<h3>Rounded Icon</h3>
+					<p>Rounded Icon Buttons is styling for the icons, links and buttons.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You can add <span> .circle </span> class with button to create a rounded icons.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<!-- google -->
+							<button class="btn icon circle" style="background-color: #DD4B39"><i class="fa fa-google" aria-hidden="true"></i></button>
+							<!-- github -->
+							<button class="btn icon circle" style="background-color: #212121"><i class="fab fa-github"></i></button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip7">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- Google Icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon ripple</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #DD4B39</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!--- Github Icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon ripple</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #212121</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-github</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- icon with text -->
+				<div class="doc-data" id="text-icon">
+					<hr class="type-1">
+					<h3>Icons with Text</h3>
+					<p>Need to setup a combination of text and icons in button.</p>
+					<p class="alertbox form-alert-default doc-alert">You can add <span> .icon </span> class with in button and simply add the text.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<!-- google -->
+							<button class="btn icon" style="background-color: #DD4B39"><i class="fa fa-google mr1" aria-hidden="true"></i>Google</button>
+							<!-- github -->
+							<button class="btn icon" style="background-color: #212121"><i class="fab fa-github mr1"></i>Github</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip7">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- Google Icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon ripple</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #DD4B39</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google mr1</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt; Google </span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!--- Github Icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon ripple</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #212121</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-github mr1</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt; Github </span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">
+						You can set the sizing of button with the use of sizing classes.
+					</p>
+				</div>
+				<!-- ripple icon -->
+				<div class="doc-data" id="ripple-icon">
+					<hr class="type-1">
+					<h3>Ripple Icon</h3>
+					<p>Ripple Icons make more effective for the icons.</p>
+					<p class="alertbox form-alert-default doc-alert Open">
+						You can add <span> .ripple </span> class with button to create a nice, ripple effect icons.</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<!-- google icon-->
+							<button class="btn icon ripple" ripple-for="dark" style="background-color: #DD4B39"><i class="fa fa-google" aria-hidden="true"></i></button>
+							<!-- google circle icon-->
+							<button class="btn icon circle ripple" ripple-for="dark" style="background-color: #DD4B39"><i class="fa fa-google" aria-hidden="true"></i></button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip7">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- Google Icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon ripple</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #DD4B39</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+								<span class="cmt">&lt;!--- Circle Icon --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon circle ripple</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #DD4B39</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								<span>&lt;<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>	
+				</div>
+				<div class="tag-info">
+					<div class="alertbox lt-alert-danger Open line-15 mt5">
+						All the buttons have some specific states use in like active, hover, disabled states and we style it with proper mixing so you can use it with just a class.
+					</div>
+				</div>
+				<!-- hover states -->
+				<div class="doc-data" id="hover-state">
+					<hr class="type-1">
+					<h3>Hover State</h3>
+					<p>Button contains hover state which enable when cursor hovers to any links, buttons.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span> .hover </span> class in the button tag
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<!-- hover state-->
+							<button class="btn hover cl-btn-default">default</button>
+							<button class="btn hover cl-btn-primary">primary</button>
+							<button class="btn hover cl-btn-secondary">secondary</button>
+							<button class="btn hover cl-btn-dark">dark</button>
+							<button class="btn hover cl-btn-light">light</button>
+							<button class="btn hover cl-btn-warning">warning</button>
+							<button class="btn hover cl-btn-danger">danger</button>
+							<button class="btn hover cl-btn-success">success</button>
+							<button class="btn hover cl-btn-info">info</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip7">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- Hover state button --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default hover</b>&quot;&gt;Default&lt;<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>	
+				</div>
+				<!-- active states -->
+				<div class="doc-data" id="active-state">
+					<hr class="type-1">
+					<h3>Active State</h3>
+					<p>Button contains active state which enable when any links, buttons are pressed.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span> .hover </span> class in the button tag
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<!-- active state-->
+							<button class="btn active cl-btn-default">default</button>
+							<button class="btn active cl-btn-primary">primary</button>
+							<button class="btn active cl-btn-secondary">secondary</button>
+							<button class="btn active cl-btn-dark">dark</button>
+							<button class="btn active cl-btn-light">light</button>
+							<button class="btn active cl-btn-warning">warning</button>
+							<button class="btn active cl-btn-danger">danger</button>
+							<button class="btn active cl-btn-success">success</button>
+							<button class="btn active cl-btn-info">info</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip7">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- active state button --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default active</b>&quot;&gt;Default&lt;<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>	
+				</div>
+				<!-- disable states -->
+				<div class="doc-data" id="disable-state">
+					<hr class="type-1">
+					<h3>Disabled State</h3>
+					<p>Button also contain disabled state which look inactive button.</p>
+					<p class="alertbox form-alert-default doc-alert">
+						You need to add <span> .disabled </span> class in the <span>button</span> tag.
+					</p>
+					<div class="board">
+						<div class="bd-ex" id="example">
+							<!-- disable state-->
+							<button class="btn disabled cl-btn-default">default</button>
+							<button class="btn disabled cl-btn-primary">primary</button>
+							<button class="btn disabled cl-btn-secondary">secondary</button>
+							<button class="btn disabled cl-btn-dark">dark</button>
+							<button class="btn disabled cl-btn-light">light</button>
+							<button class="btn disabled cl-btn-warning">warning</button>
+							<button class="btn disabled cl-btn-danger">danger</button>
+							<button class="btn disabled cl-btn-success">success</button>
+							<button class="btn disabled cl-btn-info">info</button>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip7">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- disabled state button --&gt;</span>
+								<span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default disabled</b>&quot;&gt;Default&lt;<b class="dv">button</b>&gt;</span>
+							</pre>
+						</div>
+					</div>	
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/bojo/" class="btn btn-link large"><i class="fas fa-long-arrow-alt-left mr1"></i>Bojo</a>
+					<a href="/docs/standard/buttongrp/" class="btn btn-link large">Button Group<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Button</a>
+				<a href="#example-btn" class="ml1">Example</a>
+				<a href="#colored-btn" class="ml1">Colored buttons</a>
+				<a href="#outline-btn" class="ml1">Outline buttons</a>
+				<a href="#link-btn" class="ml1">Link buttons</a>
+				<a href="#ripple-btn" class="ml1">Ripple buttons</a>
+				<a href="#rounded-btn" class="ml1">Rounded buttons</a>
+				<a href="#sizing-btn" class="ml1">Sizing</a>
+				<a href="#block-btn" class="ml1">Block buttons</a>
+				<a href="#icon">Icon</a>
+				<a href="#example-icon" class="ml1">Example</a>
+				<a href="#btn-icon" class="ml1">Icon buttons</a>
+				<a href="#rounded-icon" class="ml1">Rounded icon</a>
+				<a href="#text-icon" class="ml1">Icon with text</a>
+				<a href="#ripple-icon" class="ml1">Ripple icon</a>
+				<a href="#hover-state">Hover state</a>
+				<a href="#active-state">Active state</a>
+				<a href="#disable-state">Disable state</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+// import colors
+@import 'colors';
+
+// btn grp
+.btn-grp {
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	vertical-align: middle;
+	text-align: center;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	transition: 0.3s;
+}
+.btn-grp a, .btn-grp button{
+	cursor: pointer;
+}
+.btn-grp:hover{
+	transition: 0.3s;
+	border-radius: 6px;
+	box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,0.05);	
+}
+.btn-grp .btn{
+	border-radius: 0px;
+	box-shadow: none;
+}
+.btn-grp > .btn:first-child {
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+}
+.btn-grp > .btn:last-child {
+	border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+}
+// outline button group
+.btn-grp > .btn[class*=ot-btn-] {
+	transition: 0.3s ease-in;
+	border-width: 2px 0px !important;
+}
+.btn-grp > .btn[class*=ot-btn-]:first-child {
+	border-left: 2px solid !important;
+}
+.btn-grp > .btn[class*=ot-btn-]:last-child {
+	border-right: 2px solid !important;
+}
+.btn-grp > .btn[class*=ot-btn-]:hover, .btn-grp > .btn[class*=ot-btn-]:focus {
+	background-color: $light_h;
+	transition: 0.3s;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.btn-grp > .btn[class*=ot-btn-]:active {
+	background-color: $active_light;
+}
+// vertical
+.btn-grp-vertical{
+	display: inline-flex;
+	display: -webkit-inline-flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	position: relative;
+	vertical-align: middle;
+}
+.btn-grp-vertical .btn{
+	position: relative;
+	border-radius: 0px;
+	width: 100%;
+	box-shadow: none;
+}
+.btn-grp-vertical>.btn:first-child {
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
+.btn-grp-vertical>.btn:last-child {
+	border-bottom-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+.btn-grp-vertical > .btn[class*=ot-btn-]:first-child {
+	border-top: 2px solid !important;
+}
+.btn-grp-vertical > .btn[class*=ot-btn-]:last-child {
+	border-bottom: 2px solid !important;
+}
+.btn-grp-vertical > .btn[class*=ot-btn-] {
+	transition: 0.3s ease-in;
+	border-width: 0 2px !important;
+}
+.btn-grp-vertical > .btn[class*=ot-btn-]:hover, .btn-grp-vertical > .btn[class*=ot-btn-]:focus {
+	background-color: $light_h;
+	transition: 0.3s;
+}
+.btn-grp-vertical > .btn[class*=ot-btn-]:active {
+	background-color: $active_light;
+}

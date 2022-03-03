@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Components · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main class -->
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/">Alertbox</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- introduction -->
+				<div class="tag" id="introduction">
+					<h1 class="Sans-Heavy mb1">Butterflycss Components</h1>
+					<p class="text-black size-18 Sans-Medium mb3">Ultimate custom ready-to-use components with responsive layouts.</p>
+					<div class="container bg-orange my5 pd3 rounded-10 shadow-normal">
+						<div class="row g2">
+							<div class="col-el-8 pt1">
+								<h3 class="Sans-Semibold text-white line-13">Become a Butterflycss sponsor or donator and support open source.</h3>
+							</div>
+							<div class="col-el-4 pt1">
+								<a href="https://www.buymeacoffee.com/butterflycss" class="btn cl-btn-light large Sans-Bold block" ripple-for="dark">Donate Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- class -->
+				<div class="doc-data tag-info" id="class">
+					<hr class="type-1">
+					<h3 class="Sans-Bold mb1">Class</h3>
+					<p class="text-muted size-16 Sans mb3">Every component has some primary classes which you need to add first and there are some sizes and colors available for each components.<br><br>
+					For example, The <span>button</span> uses <span>.btn</span> class as the main class and simply adds <span>.cl-btn-*</span> class for color options. The primary classes mainly used for creating the design, layout, model and mixing of elements with multiple sizes and color options.<br><br>
+					The available color options for the components are <span>default</span>, <span>primary</span>, <span>secondary</span>, <span>warning</span>, <span>danger</span>, <span>success</span>, <span>info</span>, <span>dark</span>, <span>light</span>. All the components use these colors as primary colors. <br><br>
+					Some components provide different different sizing options to apply it as per layout-based. The available size options are <span>exsmall</span>, <span>small</span>, <span>normal</span>, <span>large</span>, <span>exlarge</span>.
+					</p>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/resources/" class="btn btn-link large "><i class="fas fa-long-arrow-alt-left mr1"></i> Resources</a>
+					<a href="/docs/standard/alert/" class="btn btn-link large">Alertbox<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Get Started</a>
+				<a href="#quick-start">Quick Start</a>
+				<a href="#html-template">HTML template</a>
+				<a href="#download">Download</a>
+				<a href="#">Get Started</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

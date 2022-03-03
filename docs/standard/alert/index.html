@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Alertbox · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main class -->
+	<div class="container" id="Main">
+		<!-- navbar -->
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/" class="active">Alertbox</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="alertbox">
+					<h1>Alertbox</h1>
+					<p>Provide valuable, actionable, and informable feedback or message for the users with a flexible range, colors and types for it.</p>
+					<p class="cl">Use the <span>.alertbox</span> class for alertbox.</p>
+				</div>
+				<!-- colored alert box -->
+				<div class="doc-data" id="cl-alert-box">
+					<hr class="type-1">
+					<h3>Colored Alert box</h3>
+					<p>The colored alerts provide colorfully messages and custom colors for alert.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.cl-alert-*</span> class to apply.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="alertbox cl-alert-default">Default Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-primary">Primary Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-secondary">Secondary Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-dark">Dark Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-light">Light Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-warning">Warning Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-danger">Danger Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-success">Success Alerts - <b>Action Here!</b></div>
+							<div class="alertbox cl-alert-info">Info Alerts - <b>Action Here!</b></div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox cl-alert-default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox cl-alert-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox cl-alert-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox cl-alert-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox cl-alert-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox cl-alert-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox cl-alert-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>			
+				<!-- light alert box -->
+				<div class="doc-data" id="lt-alert-box">
+					<hr class="type-1">
+					<h3>Light Alert box</h3>
+					<p>The light alerts provide light background messages and custom colors for alert.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.lt-alert-*</span> class to apply.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="alertbox lt-alert-default">Default Alerts - <b>Action Here!</b></div>
+							<div class="alertbox lt-alert-primary">Primary Alerts - <b>Action Here!</b></div>
+							<div class="alertbox lt-alert-secondary">Secondary Alerts - <b>Action Here!</b></div>
+							<div class="alertbox lt-alert-warning">Warning Alerts - <b>Action Here!</b></div>
+							<div class="alertbox lt-alert-danger">Danger Alerts - <b>Action Here!</b></div>
+							<div class="alertbox lt-alert-success">Success Alerts - <b>Action Here!</b></div>
+							<div class="alertbox lt-alert-info">Info Alerts - <b>Action Here!</b></div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- form alert box -->
+				<div class="doc-data" id="form-alert-box">
+					<hr class="type-1">
+					<h3>Form Alert box</h3>
+					<p>The form alerts provide big messages with title, subtitle, information with multiple colors for alerts.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.form-alert-*</span> class to apply.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="alertbox form-alert-default"><h4>Default Form Box</h4>
+								<p>Write anything want to display it in your form with multiple colors.<br>This is default alert box</p>
+							</div>
+							<div class="alertbox form-alert-primary"><h4>Primary Form Box</h4>
+								<p>Write anything want to display it in your form with multiple colors.<br>This is primary alert box</p>
+							</div>
+							<div class="alertbox form-alert-secondary"><h4>secondary Form Box</h4>
+								<p>Write anything want to display it in your form with multiple colors.<br>This is secondary alert box</p>
+							</div>
+							<div class="alertbox form-alert-warning"><h4>Warning Form Box</h4>
+								<p>Write anything want to display it in your form with multiple colors.<br>This is warning alert box</p>
+							</div>
+							<div class="alertbox form-alert-danger"><h4>Danger Form Box</h4>
+								<p>Write anything want to display it in your form with multiple colors.<br>This is danger alert box</p>
+							</div>
+							<div class="alertbox form-alert-success"><h4>Success Form Box</h4>
+								<p>Write anything want to display it in your form with multiple colors.<br>This is success alert box</p>
+							</div>
+							<div class="alertbox form-alert-info"><h4>Info Form Box</h4>
+								<p>Write anything want to display it in your form with multiple colors.<br>This is info alert box</p>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- default ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-default</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">h4</b>&gt;Form alert box&lt;/<b class="dv">h4</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- primary ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-primary</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">h4</b>&gt;Form alert box&lt;/<b class="dv">h4</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- secondary ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-secondary</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">h4</b>&gt;Form alert box&lt;/<b class="dv">h4</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- warning ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-warning</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">h4</b>&gt;Form alert box&lt;/<b class="dv">h4</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- danger ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-danger</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">h4</b>&gt;Form alert box&lt;/<b class="dv">h4</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- success ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-success</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">h4</b>&gt;Form alert box&lt;/<b class="dv">h4</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- info ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-info</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">h4</b>&gt;Form alert box&lt;/<b class="dv">h4</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- dismissable alert box -->
+				<div class="doc-data" id="dismissable-alert-box">
+					<hr class="type-1">
+					<h3>Closing Alert Box</h3>
+					<p>Flexible component for dismissable alerts to popup the message and feedback with closable alert.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to use <span>.alert-dismiss</span> class to apply closable alertbox. You can use any classes for this alertbox.<br> It uses <span>onclick() </span>event for closing the button.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<div class="alertbox cl-alert-primary alert-dismiss">
+								<strong>Note -</strong>This is colored dismissable alertbox.
+								<button class="close" id="dismissable" onclick="this.parentElement.style.display='none';">&#10006;</button>
+							</div>
+							<div class="alertbox lt-alert-primary alert-dismiss">
+								<strong>Note -</strong>This is light dismissable alertbox.
+								<button class="close" id="dismissable" onclick="this.parentElement.style.display='none';">&#10006;</button>
+							</div>
+							<div class="alertbox form-alert-primary alert-dismiss">
+								<h3>Note -</h3>
+								<p>This is form dismissable alertbox.</p>
+								<button class="close" id="dismissable" onclick="this.parentElement.style.display='none';">&#10006;</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-primary alert-dismiss</b>&quot;&gt;</span>
+								<span class="mg1">&lt;<b class="dv">h3</b>&gt;Note -&lt;/<b class="dv">h3</b>&gt;</span>
+								<span class="mg1">&lt;<b class="dv">p</b>&gt;This is form dismissable alertbox.&lt;/<b class="dv">p</b>&gt;</span>
+								<span class="mg1">&lt;<b class="dv">button</b> <b class="cl">class</b>="<b class="cn">close</b>" <b class="cl">onclick</b>="<b class="js">this.parentElement.style.display='none';</b>"&gt; &#10006; &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/alert/" class="btn btn-link large"><i class="fas fa-long-arrow-alt-left mr1"></i> Alertbox</a>
+					<a href="/docs/standard/badge/" class="btn btn-link large">Badge<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Alertbox</a>
+				<a href="#cl-alert-box" class="ml1">Colored alertbox</a>
+				<a href="#lt-alert-box" class="ml1">Light alertbox</a>
+				<a href="#form-alert-box" class="ml1">Form alertbox</a>
+				<a href="#dismissable-alert-box" class="ml1">Closing alertbox</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

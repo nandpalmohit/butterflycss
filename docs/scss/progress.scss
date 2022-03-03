@@ -1,0 +1,31 @@
+@import 'colors';
+
+.progress {
+	display: flex;
+	overflow: hidden;
+	font-size: 12px;
+	background-color: $light;
+	border-radius: 6px;
+	margin: 16px 0px 16px 0px;
+	padding: 0px;
+	height: 16px;
+}
+.pgbar {
+	border: 0px;
+	transition: width 1s ease;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	color: white;
+	background-color: $link;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.label-progress{
+	padding: 0px 16px 0px 0px;
+	font-size: 14px;
+	background-color: white;
+	font-weight: 500;
+}

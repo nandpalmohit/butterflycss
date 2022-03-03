@@ -1,0 +1,151 @@
+/*----container css----*/
+.container {
+	max-width: 100%;
+	height: 100%;
+	margin: 0;
+}
+.divcontainer {
+	max-width: 95%;
+	margin: 0px auto;
+}	
+.subcontainer {
+	max-width: 90%;
+	margin: 0 auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	box-sizing: border-box;
+}
+[class*=col-], [class*=col]{
+	width: 100%;
+}
+@media screen and (min-width: 728px){
+	.container {
+		max-width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+	.divcontainer {
+		max-width: 90%;
+		margin: 0 auto;
+	}	
+	.subcontainer {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.col{
+		flex: 1 0 0%;
+	}
+	.col-2 {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	.col-3 {
+		flex: 0 0 30%;
+		width: 30%;
+	}
+	.col-4 {
+		flex: 0 0 40%;
+		width: 40%;
+	}
+	.col-5 {
+		flex: 0 0 50%;
+		width: 50%;
+	}
+	.col-6 {
+		flex: 0 0 60%;
+		width: 60%;
+	}
+	.col-8 {
+		flex: 0 0 80%;
+		width: 80%;
+	}
+	.col-el-3{
+		flex: 0 0 25%;
+		width: 25%;
+	}
+	.col-el-4{
+		flex: 0 0 33.333%;
+		width: 33.333%;
+	}
+	.col-el-6{
+		flex: 0 0 50%;
+		width: 50%;
+	}
+	.col-el-8{
+		flex: 0 0 66.666%;
+		width: 66.666%;
+	}
+	.col-el-9{
+		flex: 0 0 75%;
+		width: 75%;
+	}
+	.gx1{
+		--bc-gutter-x: 5px;
+	}
+	.gx2{
+		--bc-gutter-x: 10px;
+	}
+	.gx3{
+		--bc-gutter-x: 15px;
+	}
+	.gx4{
+		--bc-gutter-x: 20px;
+	}
+	.gx5{
+		--bc-gutter-x: 30px;
+	}
+	.gy1{
+		--bc-gutter-y: 5px;
+	}
+	.gy2{
+		--bc-gutter-y: 10px;
+	}
+	.gy3{
+		--bc-gutter-y: 15px;
+	}
+	.gy4{
+		--bc-gutter-y: 20px;
+	}
+	.gy5{
+		--bc-gutter-y: 30px;
+	}
+	.g1{
+		--bc-gutter-x: 5px;
+		--bc-gutter-y: 5px;
+	}
+	.g2{
+		--bc-gutter-x: 10px;
+		--bc-gutter-y: 10px;
+	}
+	.g3{
+		--bc-gutter-x: 15px;
+		--bc-gutter-y: 15px;
+	}
+	.g4{
+		--bc-gutter-x: 20px;
+		--bc-gutter-y: 20px;
+	}
+	.g5{
+		--bc-gutter-x: 30px;
+		--bc-gutter-y: 30px;
+	}
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0px;
+		box-sizing: border-box;
+		margin-top: calc(var(--bc-gutter-y)*-1);
+		margin-left: calc(var(--bc-gutter-x)/-2);
+		margin-right: calc(var(--bc-gutter-x)/-2);
+	}
+	.row>*{
+		max-width: 100%;
+		width: 100%;
+		padding-left: calc(var(--bc-gutter-x)/2);
+		padding-right: calc(var(--bc-gutter-x)/2);
+		padding-top: calc(var(--bc-gutter-y));
+	}
+}

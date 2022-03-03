@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Forms · Butterfly</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/form.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/docs/css/inputs.css"> -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterfly.css</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="Components">
+				<h3>Components</h3>
+				<a href="/docs/standard/alert/">Alert</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				<a href="/docs/standard/grid/">Grid</a>
+				
+				<a href="/docs/standard/inputs/">Input Types</a>
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="forms">
+				<h3>Forms</h3>
+				<a href="/docs/forms/overview/" class="active">Overview</a>
+				<a href="/docs/forms/examples/">Examples</a>
+				<a href="/docs/forms/checks/">Checkbox</a>
+				<a href="/docs/forms/file/">File</a>
+				<a href="/docs/forms/float-input/">Floating Input</a>
+				<a href="/docs/forms/input-group/">Input Group</a>
+				<a href="/docs/forms/picker/">Picker</a>
+				<a href="/docs/forms/range/">Range</a>
+				<a href="/docs/forms/radios/">Radio Button</a>
+				<a href="/docs/forms/select/">Select</a>
+				<a href="/docs/forms/switch/">Switch</a>
+				<a href="/docs/forms/textarea/">Textarea</a>
+			</div>
+			<div class="link" id="Elements">
+				<h3>Elements</h3>
+				<a href="/docs/elements/align/">Alignment</a>
+				<a href="/docs/elements/border/">Border</a>
+				<a href="/docs/elements/color/">Color</a>
+				<a href="/docs/elements/heading/">Heading</a>
+				<a href="/docs/elements/list/">List</a>
+				<a href="/docs/elements/margin/">Margin</a>
+				<a href="/docs/elements/padding/">Padding</a>
+				<a href="/docs/elements/textstyle/">Text Styles</a>
+			</div>
+				<div class="link" id="Layout">
+				<h3>Layout</h3>
+				<a href="/docs/layout/container/">Container</a>
+			</div>
+			<div class="link" id="Modules">
+				<h3>Modules</h3>
+				<a href="/docs/modules/bojo/">Bojo</a>
+				<a href="/docs/modules/contact/">Contact</a>
+				<a href="/docs/modules/forms/">Forms</a>
+				<a href="/docs/modules/footers/">Footers</a>
+				<a href="/docs/modules/headers/">Headers</a>
+				<a href="/docs/modules/services/">Services</a>
+				<a href="/docs/modules/skills/">Skills</a>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="alertbox">
+					<h1>Forms</h1>
+					<p>Butterfly Forms is predesigned and fully styled as new generation form components. Guidelines for form styles, layout options, custom components and wide variety of examples.<br>The basic use of form is to collect data from user and interact with user. Be sure to have basic knoweldge of input types.</p>
+					<p class="cl">HTML5 supports new type of form controls, such as <span>date</span> and <span>time</span>, <span>email</span>, <span>number</span>, <span>search</span> etc.<br>
+					Butterfly supports the following native <b>HTML form elements:</b> <span>&lt;form&gt;</span>, <span>&lt;input&gt;</span>, <span>&lt;button&gt;</span>, <span>&lt;label&gt;</span> and <span>&lt;textarea&gt;</span>.</p>
+				</div>
+				<!-- list -->
+				<div class="container">
+					<ul class="disc mx5">
+						<li class="my05"><a class="text-Primary" href="">Checkbox</a></li>
+						<li class="my05"><a class="text-Primary" href="">File</a></li>
+						<li class="my05"><a class="text-Primary" href="">Input fields</a></li>
+						<li class="my05"><a class="text-Primary" href="">Select</a></li>
+						<li class="my05"><a class="text-Primary" href="">Radio</a></li>
+						<li class="my05"><a class="text-Primary" href="">Range</a></li>
+					</ul>
+				</div>
+				<!-- login example -->
+				<div class="doc-data" id="login-example">
+					<hr class="type-1">
+					<h3>Basic Example</h3>
+					<p>Here's quick example to demonstrate the styles and layout. The form controls and layout creates responsive form design.</p>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple login form which include email and password input fields with one button and one link. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="form-control">
+									<label for="ExampleEmail">Enter Email</label>
+									<input type="email" id="ExampleEmail" name="email" class="form-input">
+									<small id="emailHelp" class="text-muted">We'll never share your email with anyone else.</small>
+								</div>
+								<div class="form-control">
+									<label for="ExamplePass">Enter Password</label>
+									<input type="password" id="ExamplePass" name="password" class="form-input" >
+								</div>
+								<div class="form-control text-center my2">
+									<a class="btn btn-link">Forgot Password?</a>
+								</div>
+								<div class="form-control text-center">
+									<button class="btn cl-btn-primary">Login to your accounts</button>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span>&lt;<b class="dv">form</b>&gt;</span>
+								  <span class="cmt">&lt;!--- email input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">ExampleEmail</b>&quot;&gt; Enter Email &lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExampleEmail</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">email</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">small</b> <b class="cl">class</b>=&quot;<b class="cn">text-secondary</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">emailHelp</b>&quot;&gt;We'll never share your email with anyone else.&lt;/<b class="dv">small</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- password input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">ExamplePass</b>&quot;&gt; Enter Password &lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">Password</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExamplePass</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">password</b>&quot;&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- forget link ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control my2 text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Forgot Password? &lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+ 								  <span class="cmt">&lt;!--- login button ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary ripple</b>&quot;&gt; Login to your account &lt;/<b class="dv">button</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">form</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- signup example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>Signup Example</h3>
+					<p>It display the signup form with the use of layout and addition register buttons.</p>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form class="Open subcontainer mt2">
+								<div class="row g1">
+									<div class="col">
+										<div class="form-control">
+											<label for="ExampleFname">First Name</label>
+											<input type="text" id="ExampleFname" name="fname" class="form-input">
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-control">
+											<label for="ExampleLname">Last Name </label>
+											<input type="text" id="ExampleLname" name="lname" class="form-input">
+										</div>
+									</div>
+								</div>
+								<div class="form-control">
+									<label for="ExampleEmail">Enter Email</label>
+									<input type="email" id="ExampleEmail" name="email" class="form-input">
+									<small id="emailHelp" class="text-secondary">We'll never share your email with anyone else.</small>
+								</div>
+								<div class="form-control">
+									<label for="ExamplePass">Enter Password</label>
+									<input type="password" id="ExamplePass" name="password" class="form-input">
+									<small id="emailHelp" class="text-secondary">Enter atleast 8 character for your password.</small>
+								</div>
+								<div class="form-control text-center my3">
+									<div class="checkbox-group">
+										<input type="checkbox" id="ExampleCond">
+										<label for="ExampleCond" class="checkbox-label text-dark">Allow all the terms and conditions</label>
+									</div>
+								</div>
+								<div class="form-control text-center">
+									<button class="btn cl-btn-primary block ripple">Sign Up For Free</button>
+								</div>
+								<div class="form-control text-center mt3">
+									<a class="btn btn-link"><span class="text-dark">Already a Member?</span> Login Now</a>									
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span>&lt;<b class="dv">form</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-5</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!--- text input ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">ExampleFname</b>&quot;&gt; First Name &lt;/<b class="dv">label</b>&gt;</span>
+								        <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExampleFname</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">fname</b>&quot;&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-5</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!--- text input ---&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">ExampleLname</b>&quot;&gt; Last Name &lt;/<b class="dv">label</b>&gt;</span>
+								        <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExampleLname</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">lname</b>&quot;&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+  								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- email input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">ExampleEmail</b>&quot;&gt; Enter Email &lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">email</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExampleEmail</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">email</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">small</b> <b class="cl">class</b>=&quot;<b class="cn">text-secondary</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">emailHelp</b>&quot;&gt;We'll never share your email with anyone else.&lt;/<b class="dv">small</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- password input ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">label</b> <b class="cl">for</b>=&quot;<b class="cn">ExamplePass</b>&quot;&gt; Enter Password &lt;/<b class="dv">label</b>&gt;</span>
+								    <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">Password</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">form-input</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExamplePass</b>&quot; <b class="cl">name</b>=&quot;<b class="cn">password</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">small</b> <b class="cl">class</b>=&quot;<b class="cn">text-secondary</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">passHelp</b>&quot;&gt;Enter atleast 8 character for your password.&lt;/<b class="dv">small</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span class="cmt">&lt;!--- condition checkbox ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control my3 text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-group</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">checkbox</b>&quot; <b class="cl">id</b>=&quot;<b class="cn">ExampleCond</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">checkbox-label</b>&quot; <b class="cl">for</b>=&quot;<b class="cn">ExampleCond</b>&quot;&gt; Allow all the terms and conditions.&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+ 								  <span class="cmt">&lt;!--- signup button ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary block ripple</b>&quot;&gt; Sign up for free &lt;/<b class="dv">button</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+ 								  <span class="cmt">&lt;!--- login button ---&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">form-control text-center</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt;&lt;<b class="dv">span</b> <b class="cl">class</b>=&quot;<b class="cn">text-dark</b>&quot;&gt; Already a Member? &lt;/<b class="dv">span</b>&gt; Login Now. &lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">form</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- radio example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>Radio button</h3>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form>
+								<div class="form-control inline">
+									<div class="radio-group">
+										<input type="radio" name="gender" id="ExampleAge" value="Male" placeholder="">
+										<label for="ExampleAge" class="radio-label">Male</label>
+									</div>
+									<div class="radio-group">
+										<input type="radio" name="gender" id="ExampleAge2" value="Male" placeholder="">
+										<label for="ExampleAge2" class="radio-label">Male</label>
+									</div>
+									<div class="radio-group" disabled>
+										<input type="radio" name="gender" id="ExampleAge" value="Male" placeholder="">
+										<label for="ExampleAge" class="radio-label">Male</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- switch example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>Switch</h3>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form>
+								<div class="form-control">
+									<div class="checkbox-group">
+								  		<input type="checkbox" class="switch" id="ExampleSwitch" name="" value="">
+								  		<label class="switch-label" for="ExampleSwitch"> Checked Toggle </label>
+									</div>
+									<div class="checkbox-group">
+								  		<input type="checkbox" class="switch" id="ExampleSwitch" name="" value="">
+								  		<label class="switch-label" for="ExampleSwitch"> Checked Toggle </label>
+									</div>
+									<div class="checkbox-group" disabled>
+								  		<input type="checkbox" class="switch" id="ExampleSwitch" checked disabled>
+								  		<label class="switch-label" for="ExampleSwitch"> Checked Toggle </label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- floating input example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>Floating Input</h3>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form>
+								<div class="form-control">
+									<div class="float-group">
+										<input type="text" class="float-input" required="required">
+										<label class="float-label">Full Name</label>
+									</div>
+									<div class="wrap-group">
+										<input type="text" class="wrap-input" required="required">
+										<label class="wrap-label">Full Name</label>
+									</div>
+									<hr class="type-1">
+									<div class="float-group">
+										<input type="text" class="float-input rounded" required="required">
+										<label class="float-label">Full Name</label>
+									</div>
+									<div class="wrap-group">
+										<input type="text" class="wrap-input rounded" required="required">
+										<label class="wrap-label">Full Name</label>
+									</div>
+									<hr class="type-1">
+									<div class="float-group">
+										<input type="text" class="float-input large" required="required">
+										<label class="float-label">Full Name</label>
+									</div>
+									<div class="wrap-group">
+										<input type="text" class="wrap-input large" required="required">
+										<label class="wrap-label">Full Name</label>
+									</div>
+									<hr class="type-1">
+									<div class="float-group">
+										<input type="text" class="float-input small" placeholder="name" required="required">
+										<label class="float-label">Full Name</label>
+									</div>
+									<div class="wrap-group">
+										<input type="text" class="wrap-input small" placeholder="name" required="required">
+										<label class="wrap-label">Full Name</label>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- select option example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>Select Input</h3>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form>
+								<div class="form-control">
+									<label for="ExSelectGroup" class="select-label">Select Your Category for human</label>
+									<select name="category" class="select-group" id="ExSelectGroup">
+										<option value="Option" selected disabled="">Select Your Category</option>
+										<option value="A">A</option>
+										<option value="B">B</option>
+										<option value="C">C</option>
+										<option value="D">D</option>
+									</select>
+								</div>
+								<div class="form-control">
+									<label for="ExSelectGroupDisable" class="select-label">Select Your Category for human</label>
+									<select name="category" class="select-group" id="ExSelectGroupDisable" disabled>
+										<option value="Option" selected disabled="">Select Your Category</option>
+										<option value="A" selected disabled>aaaaaaa</option>
+										<option value="B">B</option>
+										<option value="C">C</option>
+										<option value="D">D</option>
+									</select>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- input group example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>Input Group</h3>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form>
+								<div class="form-group">
+									<input id="ExGroup1" type="text" class="group-input">
+									<label for="ExGroup1" class="group-label">
+										<i class="fas fa-envelope"></i>
+									</label>
+								</div><br>
+								<div class="form-group">
+									<label for="ExGroup1" class="group-label">
+										<i class="fas fa-envelope"></i>
+									</label>
+									<input id="ExGroup1" type="text" class="group-input">
+									<label for="ExGroup1" class="group-label">
+										<i class="fas fa-key"></i>
+									</label>
+									<input id="ExGroup1" type="text" class="group-input">
+								</div>
+								<hr class="type-1">
+								<div class="form-group small">
+									<label for="ExGroup1" class="group-label">Name</label>
+									<input id="ExGroup1" type="text" class="group-input">
+								</div><br>
+								<div class="form-group">
+									<label for="ExGroup1" class="group-label">Name</label>
+									<input id="ExGroup1" type="text" class="group-input">
+								</div><br>
+								<div class="form-group large">
+									<label for="ExGroup1" class="group-label">Name</label>
+									<input id="ExGroup1" type="text" class="group-input">
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- range example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>Range Input</h3>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form>
+								<div class="range-group">
+									<label class="range-label">Range</label>
+									<input type="range" class="range-input" required="required">
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- File example -->
+				<div class="doc-data" id="signup-example">
+					<hr class="type-1">
+					<h3>File Input</h3>
+					<div class="alertbox lt-alert-primary pd2">
+						The below example is simple signup form which include text, email, tel, number input fields with multiple links and buttons. 
+					</div>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<form>
+								<div class="file-group">
+									<input type="file" class="file-input">
+									<label class="file-label">Upload your file here</label>
+								</div>	
+								<div class="wrap-group">
+									<input type="password" class="wrap-input" required="required" placeholder="Password">
+									<label class="wrap-label">Password</label>
+								</div>
+								<div class="wrap-group">
+									<input type="number" class="wrap-input" required="required">
+									<label class="wrap-label">Age</label>
+								</div>
+								<div class="wrap-group">
+									<input type="tel" class="wrap-input" required="required">
+									<label class="wrap-label">Mobile No</label>
+								</div>
+								<div class="wrap-group">
+									<input type="date" class="wrap-input" required="required">
+									<label class="wrap-label">Birth Date</label>
+								</div>
+								<div class="wrap-group">
+									<input type="datetime-local" class="wrap-input" required="required">
+									<label class="wrap-label">Date & Time</label>
+								</div>
+							</form>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Cards</a>
+				<a href="#simple-card" class="ml1">Simple Card</a>
+				<a href="#profile-card" class="ml1">Profile Card</a>
+				<a href="#background-card" class="ml1">Background Card</a>
+				<a href="#horizontal-card" class="ml1">Horizontal Card</a>
+				<a href="#header-card" class="ml1">Header Card</a>
+				<a href="#card-sizing" class="ml1">Sizing</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

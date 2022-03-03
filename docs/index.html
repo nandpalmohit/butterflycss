@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Getting Started · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main class -->
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'" class="active">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+				<h3 onclick="location.href='/docs/standard/'">Components</h3>
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- getting started -->
+				<div class="tag" id="introduction">
+					<h1 class="Sans-Heavy mb1">Getting Started with Butterflycss</h1>
+					<p class="text-black size-18 Sans-Medium mb3">Get started with Butterfly, the free and open-source library for building responsive, mobile-first sites, tablet-sites.</p>
+					<div class="container bg-teal my5 pd3 rounded-10 shadow-normal">
+						<div class="row">
+							<div class="col-el-8 py1">
+								<h3 class="Sans-Semibold text-light line-13">Beautiful and attractive themes made by creators of Butterflycss for free</h3>
+							</div>
+							<div class="col-el-4 py1">
+								<a href="/theme/" class="btn cl-btn-light large Sans-Bold ripple block" ripple-for="dark">Browse Themes</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- quick start -->
+				<div class="doc-data tag-info" id="quick-start">
+					<!-- quick start -->
+					<hr class="type-1">
+					<h2 class="Sans-Bold mb1">Quick Start</h2>
+					<p class="text-muted size-16 Sans mb3">Looking to quickly add Butterflycss to your project? We have multiple options by using <span>.css</span> file.<br> The css file named as <span>butterfly.css</span>, which include all the components, elements, forms, layouts, modules within one file. You can access this all scss files by <span>github</span> pages.<br><br>The butterflycss is purely precompiled code and we created less css file which is <span>butterfly.min.css</span>. If you want to customize the code than you need to include <span>butterfly.css</span>.</p>
+					<div class="alertbox lt-alert-default mg0">We build the library with pure css files so we don't need to import any javascript file in the project.</div>
+					<!-- butterflycss file -->
+					<h2 class="Sans-Bold mb1 mt4">You need only 1 file to handle css to use Butterflycss.</h2>
+					<p class="text-muted size-16 Sans mb3">Butterflycss is a <b class="Sans-Bold text-dark">CSS Library.</b>This means it provides CSS classes to help you style your HTML code.<br>To use Butterflycss, you can use the pre-compiled <span>.css</span> file either <span>link with your HTML page</span> or <span>download</span> the Source code.</p>
+					<!-- css @import -->
+					<h2 class="mt3 Sans-Bold mb1">CSS</h2>
+					<p class="text-muted size-16 mb2">Import the css file directly from <span>jsDelivr</span>.</p>
+					<div class="tag-code mt1 mb4">
+						<pre class="i-code">
+							<code>
+								<span><b class="cl">@import</b>&quot;<b class="cn">https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css</b>&quot;;</span></code>
+						</pre>
+					</div>
+					<!-- html link -->
+					<h2 class="mt3 Sans-Bold">HTML Link</h2>
+					<p class="text-muted cl size-16 mt1 mb2">Import the css file directly from <span>jsDelivr</span>.</p>
+					<div class="tag-code mt1">
+						<pre class="i-code">
+							<code>
+								<span>&lt;<b class="dv">link</b> <b class="cl">href</b>=&quot;<b class="cn">https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css</b>&quot;&gt;</span></code>
+						</pre>
+					</div>
+				</div>
+				<!-- html template -->
+				<div class="doc-data tag-info" id="html-template">
+					<hr class="type-1">
+					<h2 class="Sans-Bold mb1">HTML starter template</h2>
+					<p class="text-muted size-16">To use the library, Be sure to have your pages set up with the latest design and development standard. It means you have to work with the <span>HTML5</span> doctype and include the <span>responsive viewport meta tag</span> to properly handle responsive styles on all the device.</p>
+					<div class="tag-code mt2">
+						<pre class="i-code">
+							<code>
+								<span class="cmt">&lt;!doctype HTML&gt;</span>
+								<span>&lt;<b class="dv">html</b>&gt;</span>
+								<span>&lt;<b class="dv">head</b>&gt;</span>
+								  <span class="cmt">&lt;!--- required meta tags for responsive ---&gt;</span>
+								  <span>&lt;<b class="dv">meta</b> <b class="cl">charset</b>=&quot;<b class="cn">UTF-8</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">meta</b> <b class="cl">name</b>=&quot;<b class="cn">viewport</b>&quot; <b class="cl">content</b>=&quot;<b class="cn">width=device-width, initial-scale=1.0</b>&quot;&gt;</span>
+								  <span class="cmt">&lt;!--- Butterflycss link ---&gt;</span>
+								  <span>&lt;<b class="dv">link</b> <b class="cl">href</b>=&quot;<b class="cn">https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css</b>&quot; <b class="cl">rel</b>=&quot;<b class="cn">stylesheet</b>&quot;&gt;</span>
+								  <span class="cmt">&lt;!---...---&gt;</span>
+								<span>&lt;/<b class="dv">head</b>&gt;</span>
+								<span>&lt;<b class="dv">body</b>&gt;</span>
+								  <span>&lt;<b class="dv">h1</b>&gt;Hello World!&lt;/<b class="dv">h1</b>&gt;</span>
+								<span>&lt;/<b class="dv">body</b>&gt;</span>
+								<span>&lt;/<b class="dv">html</b>&gt;</span></code>
+						</pre>
+					</div>
+					<p class="text-muted size-16 mt2">For next steps, Visit the <a href="/docs/layout/" title="">layout</a> to set the laying out for the page, <a href="/docs/components/" title="">components</a> to design the webpages with customization, <a href="/docs/elements/" title="">elements</a> to build project with less memory, and readymade<a href="/docs/module/" title=""> module</a> design the perfect.<br> Also the <a href="/theme/" title="">BC Themes</a> are more covered with ready content of the webpages and examples.</p>
+				</div>
+				<!-- download source -->
+				<div class="doc-data tag-info" id="download">
+					<hr class="type-1">
+					<h2 class="Sans-Bold mb1">Download</h2>
+					<p class="text-muted size-16 Sans">Download Butterflycss to get the compiled css, source code, or include it with your projects</p>
+					<!-- quick start -->
+					<h2 class="Sans-Bold mt3">Compiled CSS</h2>
+					<p class="text-muted size-16 Sans mt1">Download ready-to-use compiled code of the latest version to easily drop into your projects.</p>
+					<button class="btn cl-btn-primary">Download CSS</button>
+					<!-- css @import -->
+					<h2 class="Sans-Bold mt3">Download Source</h2>
+					<p class="text-muted cl size-16 mt1 mb1">Download our source files and documentation and compile with your own pipeline.</p>
+					<p class="text-danger Sans">It might be unsuitable for your own purpose and it should be included all the docs for developers. </p>
+					<button class="btn cl-btn-danger">Download Source</button>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/alert/" class="btn btn-link large disabled"></a>
+					<a href="/docs/introduction/" class="btn btn-link large">Introduction<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Get Started</a>
+				<a href="#quick-start">Quick Start</a>
+				<a href="#html-template">HTML template</a>
+				<a href="#download">Download</a>
+				<a href="#">Get Started</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

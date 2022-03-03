@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Footer · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main container -->
+	<div class="container" id="Main">
+		<!-- navbar -->
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/">Alertbox</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/" class="active">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="alertbox">
+					<h1>Footer</h1>
+					<p>A footer typically contains information about the author of the section, copyright data or links to related documents.</p>
+					<p class="cl">Use the <span>&lt;footer class="footer"&gt;</span> tag to create the footer element.</p>
+				</div>
+				<!-- example -->
+				<div class="doc-data" id="example">
+					<hr class="type-1">
+					<h3>Example</h3>
+					<p class="text-muted">Footer is a part of navigation bar that holds the links, forms, buttons, icons, compony info and more documentation with responsive layout.<br><br>
+					The below footer is an example of butterflycss designed footer which holds tha data of links, buttons, compony information, copyright content, license document and icons.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<footer class="footer bg-light">
+								<div class="divcontainer">
+									<div class="row mt2">
+										<div class="col-el-4">
+											<h4>Getting Started</h4>
+											<a href="" class="link-data size-14 line-15">Introduction</a>
+											<a href="" class="link-data size-14 line-15">Browser Support</a>
+											<a href="" class="link-data size-14 line-15">Resources</a>
+											<a href="" class="link-data size-14 line-15">Download CSS</a>
+											<a href="" class="link-data size-14 line-15">How to use</a>
+										</div>
+										<div class="col-el-4">
+											<h4>Documentation</h4>
+											<a href="" class="link-data size-14 line-15">Components</a>
+											<a href="" class="link-data size-14 line-15">Elements</a>
+											<a href="" class="link-data size-14 line-15">Layout</a>
+											<a href="" class="link-data size-14 line-15">Modules</a>
+											<a href="" class="link-data size-14 line-15">Classes</a>
+										</div>
+										<div class="col-el-4">
+											<h4>Customization</h4>
+											<a href="" class="link-data size-14 line-15">Colors</a>
+											<a href="" class="link-data size-14 line-15">Spacing</a>
+											<a href="" class="link-data size-14 line-15">Fonts</a>
+											<a href="" class="link-data size-14 line-15">BC Components</a>
+											<a href="" class="link-data size-14 line-15">BC Themes</a>
+										</div>
+									</div>
+									<hr class="type-1">
+									<div class="row my2">
+										<div class="col-el-4">
+											<h1 class="Grand text-dark size-36">Butterflycss</h1>
+										</div>
+										<div class="col-el-8">
+											<div class="text-muted d-inline-block size-14">Created and designed with love by <a class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterflycss.</div>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-light</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">divcontainer</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row mt2</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!-- get started links --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Getting Started&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Introduction&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Browser Support&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Resources&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Download CSS&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;How to use&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- documentation links --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Documentation&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Components&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Elements&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Layout&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Modules&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Classes&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- customization links --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Customization&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Colors&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Spacing&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Fonts&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Components&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data line-15 size-14</b>&quot;&gt;Themes&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">hr</b> <b class="cl">class</b>=&quot;<b class="cn">type-1</b>&quot;&gt;</span>
+								    <span class="cmt">&lt;!-- copyright doc --&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row my2</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h1</b>&gt;Butterflycss&lt;/<b class="dv">h1</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-8</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">d-inline-block size-14 text-muted</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">Footers can hold multiple components, elements, modules with layout. Call to action section is a part of footer which stores the subscribe form, register form, news letter form or buttons.</p>
+				</div>
+				<!-- copyrights -->
+				<div class="doc-data" id="copyrights">
+					<hr class="type-1">
+					<h3>Copyrights</h3>
+					<p>Copyrights hold the authors name, company rights, license, source data, year of publication and more.</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<footer class="footer bg-light text-center">
+								<div class="text-muted Sans pd1">Copyrights &copy; 2021: <a href="" class="d-inline-block text-black">Butterflycss.</a></div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-light text-center</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">Sans text-muted pd1</b>&quot;&gt;
+								    Copyrights&copy; 2021: 
+								    &lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">text-black d-inline-block</b>&quot;&gt;Butterflycss.&lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">The footer sets display to the <span>block</span> so we need set the layout of <span>anchor tag</span>, <span>span tag</span>, <span>p tag</span> to <span>inline block</span> for one line. Also you can add icons links in copyrights.<br><br> You can change the background color as well as text color with multiple options.</p>
+				</div>
+				<!-- text -->
+				<div class="doc-data" id="text">
+					<hr class="type-1">
+					<h3>Text</h3>
+					<p>Allow compony information, some documentation, work docs and more. To lookup for styling check out <span>typography</span> and <span>text utilities</span>.</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<footer class="footer bg-light text-center">
+								<div class="container pd1">
+									<div class="row">
+										<div class="col-el-6">
+											<h1 class="Grand size-40 pt1">Butterflycss</h1>
+										</div>
+										<div class="col-el-6">
+											<p class="text-dark line-15">It's lightweight and free open source library to create a responsive design for customize mobile-sites and tablet-sites with Butterflycss.</p>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-light text-center</b>&quot;&gt;</span>
+								  <span class="cmt">&lt;!-- container --&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">container pd1</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!-- heading --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h1</b> <b class="cl">class</b>=&quot;<b class="cn">size-40 pt1 Grand</b>&quot;&gt;Butterflycss&lt;/<b class="dv">h1</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- text --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-6</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">text-dark line-15</b>&quot;&gt;It's lightweight and free open source library...&lt;/<b class="dv">p</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">The footer sets display to the <span>block</span> so we need set the layout of <span>div tag</span>, <span>anchor tag</span>, <span>span tag</span>, <span>p tag</span> to <span>inline block</span> for one line.<br><br> You can change the background color as well as text color with multiple options.</p>
+				</div>
+				<!-- links -->
+				<div class="doc-data" id="links">
+					<hr class="type-1">
+					<h3>Links</h3>
+					<p>Links are more preferred for footers, navigations, social media links and more.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add <span>.link-data</span> class to apply link effect. It is only working with <span>anchor</span> tag.</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<footer class="footer bg-light text-center">
+								<div class="container">
+									<div class="row">
+										<div class="col-el-4 pd1">
+											<h3>Heading</h3>
+											<a href="" class="link-data text-dark">Link 1</a>
+											<a href="" class="link-data text-dark">Link 2</a>
+											<a href="" class="link-data text-dark">Link 3</a>
+											<a href="" class="link-data text-dark">Link 4</a>
+										</div>
+										<div class="col-el-4 pd1">
+											<h3>Heading</h3>
+											<a href="" class="link-data text-dark">Link 1</a>
+											<a href="" class="link-data text-dark">Link 2</a>
+											<a href="" class="link-data text-dark">Link 3</a>
+											<a href="" class="link-data text-dark">Link 4</a>
+										</div>
+										<div class="col-el-4 pd1">
+											<h3>Heading</h3>
+											<a href="" class="link-data text-dark">Link 1</a>
+											<a href="" class="link-data text-dark">Link 2</a>
+											<a href="" class="link-data text-dark">Link 3</a>
+											<a href="" class="link-data text-dark">Link 4</a>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-light text-center</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">container</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Heading&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 1&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 2&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 3&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 4&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Heading&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 1&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 2&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 3&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 4&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Heading&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 1&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 2&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 3&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-dark</b>&quot;&gt;Link 4&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">You need to use <span>.row</span> class and <span>.col-*</span> class for responsive layout and build your footer design easily.<br><br>You can set the <span>link color</span> with the use of <span>.text-*</span> classes and set background color with <span>.bg-*</span> classes. Also you can use <span>buttons</span> for additional purpose.</p>
+				</div>
+				<!-- buttons -->
+				<div class="doc-data" id="buttons">
+					<hr class="type-1">
+					<h3>Buttons</h3>
+					<p>You can add buttons in footer. Check out <span>button component</span> for more styling.</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<footer class="footer bg-light text-center">
+								<div class="container pd1">
+									<!-- google -->
+									<button class="btn icon circle" style="background-color: #DD4B39"><i class="fa fa-google" aria-hidden="true"></i></button>
+									<!-- github -->
+									<button class="btn icon circle" style="background-color: #212121"><i class="fab fa-github"></i></button>
+									<!-- facebook icon -->
+									<button class="btn icon circle" style="background-color: #4267B2">
+										<i class="fab fa-facebook" aria-hidden="true"></i>
+									<button>
+									<!-- instagram icon -->
+									<button class="btn icon circle" style="background-color: #E1306C">
+										<i class="fab fa-instagram" aria-hidden="true"></i>
+									<button>
+								</div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-light text-center</b>&quot;&gt;</span>
+								  <span class="cmt">&lt;!-- container --&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">container pd1</b>&quot;&gt;</span>
+								    <span class="cmt">&lt;!-- google icon --&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #DD4B39</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-google</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;<b class="dv">button</b>&gt;</span>
+								    <span class="cmt">&lt;!-- github icon --&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #212121</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-github</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;<b class="dv">button</b>&gt;</span>
+								    <span class="cmt">&lt;!-- facebook icon --&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #4267B2</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-facebook</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;<b class="dv">button</b>&gt;</span>
+								    <span class="cmt">&lt;!-- instagram icon --&gt;</span>
+								    <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn icon</b>&quot; <b class="cl">style=</b>&quot;<b class="cn">background-color: #E1306C</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-instagram</b>&quot; <b class="cl">aria-hidden</b>=&quot;<b class="cn">true</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;<b class="dv">button</b>&gt;</span>
+								  <span>&lt;<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">You can change the icons by <span>font awesome</span> and also change the background color or text color for buttons.<br><br>Check out <span>button component</span> for more styling.</p>
+				</div>
+				<!-- icons -->
+				<div class="doc-data" id="icons">
+					<hr class="type-1">
+					<h3>Icons</h3>
+					<p>You can add icons and button icons in footer.</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<footer class="footer bg-light text-center">
+								<div class="container pd1">
+									<a href="" class="btn btn-link text-black size-18 circle">
+										<i class="fab fa-facebook"></i>
+									</a>
+									<a href="" class="btn btn-link text-black size-18 circle">
+										<i class="fab fa-twitter"></i>
+									</a>
+									<a href="" class="btn btn-link text-black size-18 circle">
+										<i class="fab fa-instagram"></i>
+									</a>
+									<a href="" class="btn btn-link text-black size-18 circle">
+										<i class="fab fa-whatsapp"></i>
+									</a>
+									<a href="" class="btn btn-link text-black size-18 circle">
+										<i class="fab fa-github"></i>
+									</a>
+									<a href="" class="btn btn-link text-black size-18 circle">
+										<i class="fab fa-linkedin"></i>
+									</a>
+								</div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-light text-center</b>&quot;&gt;</span>
+								  <span class="cmt">&lt;!-- container --&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">container pd1</b>&quot;&gt;</span>
+								    <span class="cmt">&lt;!-- facebook icon  --&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link text-black size-18</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-facebook</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;/<b class="dv">a</b>&gt;</span>
+								    <span class="cmt">&lt;!-- twitter icon  --&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link text-black size-18</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-twitter</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;/<b class="dv">a</b>&gt;</span>
+								    <span class="cmt">&lt;!-- instagram icon  --&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link text-black size-18</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-instagram</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;/<b class="dv">a</b>&gt;</span>
+								    <span class="cmt">&lt;!-- whatsapp icon  --&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link text-black size-18</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-whatsapp</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;/<b class="dv">a</b>&gt;</span>
+								    <span class="cmt">&lt;!-- github icon  --&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link text-black size-18</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-github</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;/<b class="dv">a</b>&gt;</span>
+								    <span class="cmt">&lt;!-- linkedin icon  --&gt;</span>
+								    <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link text-black size-18</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">i</b> <b class="cl">class</b>=&quot;<b class="cn">fab fa-linkedin</b>&quot;&gt;&lt;/<b class="dv">i</b>&gt;</span>
+								    <span>&lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- images -->
+				<div class="doc-data" id="images">
+					<hr class="type-1">
+					<h3>Images</h3>
+					<p>You can add images or cards in footer easily.</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<footer class="footer bg-light text-center">
+								<div class="container pd1">
+									<div class="row g2">
+										<div class="col-el-3">
+											<div class="card shadow-large filter-cnt">
+												<img src="/docs/assets/nature/n5.jpg" width="100%">
+											</div>
+										</div>
+										<div class="col-el-3">
+											<div class="card shadow-large filter-cnt">
+												<img src="/docs/assets/nature/n3.jpg" width="100%">
+											</div>
+										</div>
+										<div class="col-el-3">
+											<div class="card shadow-large filter-cnt">
+												<img src="/docs/assets/nature/n4.jpg" width="100%">
+											</div>
+										</div>
+										<div class="col-el-3">
+											<div class="card shadow-large filter-cnt">
+												<img src="/docs/assets/nature/n2.jpg" width="100%">
+											</div>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-light text-center</b>&quot;&gt;</span>
+								  <span class="cmt">&lt;!-- container --&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">container pd1</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row g2</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!-- image 1 --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-3</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card shadow-large filter-cnt</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">width</b>=&quot;<b class="cn">100%</b>&quot;&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- image 2 --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-3</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card shadow-large filter-cnt</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">width</b>=&quot;<b class="cn">100%</b>&quot;&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- image 3 --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-3</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card shadow-large filter-cnt</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">width</b>=&quot;<b class="cn">100%</b>&quot;&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- image 4 --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-3</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">card shadow-large filter-cnt</b>&quot;&gt;</span>
+								          <span>&lt;<b class="dv">img</b> <b class="cl">src</b>=&quot;<b class="cn">...</b>&quot; <b class="cl">width</b>=&quot;<b class="cn">100%</b>&quot;&gt;</span>
+								        <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">The footer builded with <span>responsive layout</span> and you can use <span>.col-*</span> classes as per your need with it.<br><br>
+					You can use filter classes like <span>.filter-cnt</span>, <span>.filter-brt</span> or more to apply filter when image is hover and you can change the background color.</p>
+				</div>
+				<!-- colors -->
+				<div class="doc-data" id="colors">
+					<hr class="type-1">
+					<h3>Colors</h3>
+					<p class="text-muted">The footer set its background color with the use <span>background</span> class which is builded with multiple color options.</p>
+					<div class="board">
+						<div class="bd-ex">
+							<footer class="footer bg-info">
+								<div class="divcontainer">
+									<div class="row mt2">
+										<div class="col-el-4">
+											<h4 class="text-white">Getting Started</h4>
+											<a href="" class="link-data size-14 text-white">Introduction</a>
+											<a href="" class="link-data size-14 text-white">Browser Support</a>
+											<a href="" class="link-data size-14 text-white">Resources</a>
+											<a href="" class="link-data size-14 text-white">Download CSS</a>
+											<a href="" class="link-data size-14 text-white">How to use</a>
+										</div>
+										<div class="col-el-4">
+											<h4 class="text-white">Documentation</h4>
+											<a href="" class="link-data size-14 text-white">Components</a>
+											<a href="" class="link-data size-14 text-white">Elements</a>
+											<a href="" class="link-data size-14 text-white">Layout</a>
+											<a href="" class="link-data size-14 text-white">Modules</a>
+											<a href="" class="link-data size-14 text-white">Classes</a>
+										</div>
+										<div class="col-el-4">
+											<h4 class="text-white">Customization</h4>
+											<a href="" class="link-data size-14 text-white">Colors</a>
+											<a href="" class="link-data size-14 text-white">Spacing</a>
+											<a href="" class="link-data size-14 text-white">Fonts</a>
+											<a href="" class="link-data size-14 text-white">BC Components</a>
+											<a href="" class="link-data size-14 text-white">BC Themes</a>
+										</div>
+									</div>
+									<hr class="hr-light">
+									<div class="row my2">
+										<div class="col-el-4">
+											<h1 class="Grand text-white bold-400 size-36">Butterflycss</h1>
+										</div>
+										<div class="col-el-8">
+											<div class="text-light d-inline-block size-14">Created and designed with love by <a class="text-white">Nandpal Mohit</a> with the help of <span class="text-white">code contributors</span>. Code license Under <a class="text-white">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterflycss.</div>
+										</div>
+									</div>
+								</div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-info</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">divcontainer</b>&quot;&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row mt2</b>&quot;&gt;</span>
+								      <span class="cmt">&lt;!-- get started links --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Getting Started&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Introduction&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Browser Support&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Resources&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Download CSS&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;How to use&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- documentation links --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Documentation&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Components&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Elements&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Layout&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Modules&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Classes&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span class="cmt">&lt;!-- customization links --&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h4</b>&gt;Customization&lt;/<b class="dv">h4</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Colors&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Spacing&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Fonts&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Components&lt;/<b class="dv">a</b>&gt;</span>
+								        <span>&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">link-data text-white size-14</b>&quot;&gt;Themes&lt;/<b class="dv">a</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;<b class="dv">hr</b> <b class="cl">class</b>=&quot;<b class="cn">type-1</b>&quot;&gt;</span>
+								    <span class="cmt">&lt;!-- copyright doc --&gt;</span>
+								    <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">row my2</b>&quot;&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-4</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">h1</b>&gt;Butterflycss&lt;/<b class="dv">h1</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">col-el-8</b>&quot;&gt;</span>
+								        <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">d-inline-block size-14 text-muted</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+								      <span>&lt;/<b class="dv">div</b>&gt;</span>
+								    <span>&lt;/<b class="dv">div</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>	
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2"><span>.bg-*</span> class used for default color options, <span>.cl-bg-*</span> class used for dark color options., <span>.lt-bg-*</span> class used for light color options.<br><br> Check out <span>background element</span> for more styling.</p>
+				</div>
+				<!-- alignment -->
+				<div class="doc-data" id="alignment">
+					<hr class="type-1">
+					<h3>Alignment</h3>
+					<p>Set the alignment of footer to  <span>left</span>, <span>center</span>, <span>right</span> align with the use of <span>.text-*</span> class.</p>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<footer class="footer bg-default text-left">
+								<div class="text-muted Sans pd1">Copyrights &copy; 2021: <a href="" class="d-inline-block text-black">Butterflycss.</a></div>
+							</footer>
+							<br>
+							<footer class="footer bg-default text-center">
+								<div class="text-muted Sans pd1">Copyrights &copy; 2021: <a href="" class="d-inline-block text-black">Butterflycss.</a></div>
+							</footer>
+							<br>
+							<footer class="footer bg-default text-right">
+								<div class="text-muted Sans pd1">Copyrights &copy; 2021: <a href="" class="d-inline-block text-black">Butterflycss.</a></div>
+							</footer>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!-- left alignment --&gt;</span>
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-default text-left</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">Sans text-muted pd1</b>&quot;&gt;
+								    Copyrights&copy; 2021: 
+								    &lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">text-black d-inline-block</b>&quot;&gt;Butterflycss.&lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>
+								<span class="cmt">&lt;!-- center alignment --&gt;</span>
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-default text-center</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">Sans text-muted pd1</b>&quot;&gt;
+								    Copyrights&copy; 2021: 
+								    &lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">text-black d-inline-block</b>&quot;&gt;Butterflycss.&lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>
+								<span class="cmt">&lt;!-- right alignment --&gt;</span>
+								<span>&lt;<b class="dv">footer</b> <b class="cl">class</b>=&quot;<b class="cn">footer bg-default text-right</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">Sans text-muted pd1</b>&quot;&gt;
+								    Copyrights&copy; 2021: 
+								    &lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">text-black d-inline-block</b>&quot;&gt;Butterflycss.&lt;/<b class="dv">a</b>&gt;</span>
+								  <span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;/<b class="dv">footer</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- position -->
+				<div class="doc-data" id="position">
+					<hr class="type-1">
+					<h3>Position</h3>
+					<p>Set the position of footer to the <span>top</span>, <span>bottom</span> position with the use of <span>.fixed-*</span> class.<br><br> You can set position to the absolute with <span>.absolute-*</span> class to the <span>top</span>, <span>bottom</span> position.
+					</p>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/card/" class="btn btn-link large"><i class="fas fa-long-arrow-alt-left mr1"></i>Card</a>
+					<a href="/docs/standard/navbar/" class="btn btn-link large">Navbar<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Footer</a>
+				<a href="#example" class="ml1">Example</a>
+				<a href="#copyrights" class="ml1">Copyrights</a>
+				<a href="#text" class="ml1">Text</a>
+				<a href="#links" class="ml1">Links</a>
+				<a href="#buttons" class="ml1">Buttons</a>
+				<a href="#icons" class="ml1">Icons</a>
+				<a href="#images" class="ml1">Images</a>
+				<a href="#colors" class="ml1">Colors</a>
+				<a href="#alignment" class="ml1">Alignment</a>
+				<a href="#position" class="ml1">Position</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

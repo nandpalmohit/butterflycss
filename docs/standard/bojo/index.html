@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Bojo · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main class -->
+	<div class="container" id="Main">
+		<!-- navbar class -->
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/">Alertbox</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/" class="active">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="bojo">
+					<h1>Bojo</h1>
+					<p>Lightweight and flexible component to represent the pages, sections, marketing and messages.</p>
+					<p class="cl">Use the <span>.bojo</span> class for Bojo.</p>
+				</div>
+				<!-- bojo example -->
+				<div class="doc-data" id="example">
+					<hr class="type-1">
+					<h3>Example</h3>
+					<p>It represents the pages as a banner, cover.</p>
+					<p class="alertbox form-alert-default doc-alert">The bojo provides <span>.bojo</span> class with 100% of width and you need to use it for creating the bojo component. Also, you can add multiple components and elements with a different range of sizes, styles and colors.</p>
+					<div class="board" id="bojo1">
+						<div class="bd-ex" id="example">
+							<div class="bojo text-center bg-light" id="bojo">
+								<h1 class="Sans-Black mb1 size-46" >Hello There !</h1>
+								<p class="Sans-Medium size-18 pb1">You can create anything anywhere with flexible and make an attractive page.</p>
+								<hr class="type-1">
+								<button class="btn cl-btn-primary Sans mt1">Learn More</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">bojo text-center bg-light</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">h1</b> <b class="cl">class</b>=&quot;<b class="cn">Sans-Black size-46 mb1</b>&quot;&gt; Hello There ! &lt;/<b class="dv">h1</b>&gt;</span>
+								  <span>&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">Sans-Medium size-18 pb1</b>&quot;&gt; You can create anything ... &lt;/<b class="dv">p</b>&gt;</span>
+								  <span>&lt;<b class="dv">hr</b> <b class="cl">class</b>=&quot;<b class="cn">type-1</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary Sans mt1</b>&quot;&gt; Learn More &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>	
+				<!-- bojo sizing -->
+				<div class="doc-data" id="sizing">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>It covers different different sizing bojo.</p>
+					<p class="alertbox form-alert-default doc-alert">The bojo provide <span>.sub-bojo</span>for 80% size bojo,<span>.div-bojo</span>for 90% size bojo. No need to add the class for 100% size bojo.</p>
+
+					<div class="board" id="bojo1">
+						<div class="bd-ex" id="example">
+							<div class="bojo sub-bojo text-center bg-default">
+								<p class="Sans text-black">.sub-bojo covers 80% of width for your page.</p>
+							</div>
+							<div class="bojo div-bojo text-center bg-default">
+								<p class="Sans text-black">.div-bojo covers 90% of width for your page.</p>
+							</div>
+							<div class="bojo text-center bg-default">
+								<p class="Sans text-black">.bojo covers 100% of width for your page.</p>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg" id="tip2">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!-- sub bojo --&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">bojo sub-bojo text-center</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">Sans size-18</b>&quot;&gt; It covers 80% of width for your page. &lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!-- div bojo --&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">bojo div-bojo text-center</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">Sans size-18</b>&quot;&gt; It covers 90% of width for your page. &lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!-- bojo --&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">bojo text-center</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">p</b> <b class="cl">class</b>=&quot;<b class="cn">Sans size-18</b>&quot;&gt; It covers 100% of width for your page. &lt;/<b class="dv">p</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>			
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/badge/" class="btn btn-link large"><i class="fas fa-long-arrow-alt-left mr1"></i> Badge</a>
+					<a href="/docs/standard/button/" class="btn btn-link large">Button<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Bojo</a>
+				<a href="#example" class="ml1">Example</a>
+				<a href="#sizing" class="ml1">Sizing</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>

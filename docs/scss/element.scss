@@ -1,0 +1,35 @@
+ul.circle li{
+	list-style-type: circle;
+}
+ul.armenian li{
+	list-style-type: armenian;
+}
+ul.decimal li{
+	list-style-type: decimal;
+}
+ul.disc li{
+	list-style-type: disc;
+}
+ul li a{
+	text-decoration: none;
+}
+
+header.header{
+	background: none;
+}
+
+.top-header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.header-brand{
+	position: relative;
+	display: flex;
+	display: -webkit-flex;
+	flex: auto;
+	padding: 10px;
+	max-width: 50%;
+}

@@ -1,0 +1,47 @@
+@import 'colors';
+
+footer{
+	padding: 10px;
+}
+.footer a,p{
+	line-height: 26px;
+	text-decoration: none;
+}
+.footer a.link-data{
+	opacity: 0.8;
+	text-decoration: none;
+	color: $dark;
+	display: block;
+}
+.footer a.link-data:hover{
+	opacity: 1;
+}
+.footer h3, .footer h4{
+	margin-bottom: 10px;
+}
+.footer hr{
+	margin: 10px 0px;
+	border: none;
+	width: 100%;
+	height: 1px;
+}
+.footer.box{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+	border: none;
+}
+.footer.box:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.fixed-top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.fixed-bottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

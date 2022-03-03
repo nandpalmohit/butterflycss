@@ -1,0 +1,376 @@
+// colors
+@import 'colors';
+
+button, input[type="button"], input[type="submit"], input[type="reset"], [role="button"]{
+	font-weight: 500;
+	cursor: pointer;
+	-webkit-appearance: button;
+	display: inline-block;
+	width: auto;
+}
+
+// btn style
+.btn{
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid transparent;
+ 	padding: 10px 16px;
+ 	font-size: 14px;
+	border-radius: 6px;
+	text-decoration: none;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+	-webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+	background-color: transparent;
+	color: black;
+	transition: .3s ease-out;
+	align-items: center;
+}
+.btn:hover{
+	transition: .3s ease-out;
+	border: 1px solid transparent;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1), 0 4px 15px 0 rgba(0,0,0,0.08);
+	-webkit-box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1), 0 4px 15px 0 rgba(0,0,0,0.08);
+}
+.btn:disabled,.btn.disabled{
+	opacity: 0.7;
+	text-align: center;
+	vertical-align: middle;
+	border: 0px;
+	border-radius: 6px;
+	cursor: context-menu;
+	box-shadow: none;
+	pointer-events: none;
+}
+button:focus{
+	outline: none;
+}
+// btn size
+.btn.small {
+ 	padding: 8px 14px;
+	font-size: 12px;
+}
+.btn.large {
+ 	padding: 14px 20px;
+	font-size: 16px;
+}
+.btn.exlarge{
+ 	padding: 16px 22px;
+	font-size: 18px;
+}
+.btn.block {
+	display: block;
+	width: 100%;
+}
+// icons
+.btn.icon{
+	color: $white;
+	background-color: none;
+	padding: 10px 12px;
+}
+.icon{
+	padding: 10px 12px;
+	background-color: none;
+	cursor: pointer;
+}
+
+// colored btn 
+// default
+.cl-btn-default{
+	background-color: $default;
+	color: $active_secondary;
+}
+.btn.cl-btn-default:hover,.btn.cl-btn-default:focus,.btn.cl-btn-default.hover{
+	background-color: $default_h;
+	color: $active_secondary;
+}
+.btn.cl-btn-default:active,.btn.cl-btn-default.active{
+	background-color: $active_default;
+}
+// primary
+.cl-btn-primary{
+	background-color: $primary;
+	color: $white;
+}
+.btn.cl-btn-primary:hover,.btn.cl-btn-primary:focus,.btn.cl-btn-primary.hover{
+	background-color: $primary_h;
+	color: $white;
+}
+.btn.cl-btn-primary:active,.btn.cl-btn-primary.active{
+	background-color: $active_primary;
+}
+// secondary
+.cl-btn-secondary{
+	background-color: $secondary;
+	color: $white;
+}
+.btn.cl-btn-secondary:hover,.btn.cl-btn-secondary:focus,.btn.cl-btn-secondary.hover{
+	background-color: $secondary_h;
+	color: $white;
+}
+.btn.cl-btn-secondary:active,.btn.cl-btn-secondary.active{
+	background-color: $active_secondary;
+}
+// dark
+.cl-btn-dark{
+	background-color: $dark;
+	color: $white;
+}
+.btn.cl-btn-dark:hover,.btn.cl-btn-dark:focus,.btn.cl-btn-dark.hover{
+	background-color: $dark_h;
+	color: $white;
+}
+.btn.cl-btn-dark:active,.btn.cl-btn-dark.active{
+	background-color: $active_dark;
+}
+// light
+.cl-btn-light{
+	background-color: $light;
+	color: $black;
+}
+.btn.cl-btn-light:hover,.btn.cl-btn-light:focus,.btn.cl-btn-light.hover{
+	background-color: $light_h;
+	color: $black;
+}
+.btn.cl-btn-light:active,.btn.cl-btn-light.active{
+	background-color: $active_light;
+}
+// warning
+.cl-btn-warning{
+	background-color: $warning;
+	color: $white;
+}
+.btn.cl-btn-warning:hover,.btn.cl-btn-warning:focus,.btn.cl-btn-warning.hover{
+	background-color: $warning_h;
+	color: $white;
+}
+.btn.cl-btn-warning:active,.btn.cl-btn-warning.active{
+	background-color: $active_warning;
+}
+// danger
+.cl-btn-danger{
+	background-color: $danger;
+	color: $white;
+}
+.btn.cl-btn-danger:hover,.btn.cl-btn-danger:focus,.btn.cl-btn-danger.hover{
+	background-color: $danger_h;
+	color: $white;
+}
+.btn.cl-btn-danger:active,.btn.cl-btn-danger.active,{
+	background-color: $active_danger;
+}
+// success
+.cl-btn-success{
+	background-color: $success;
+	color: $white;
+}
+.btn.cl-btn-success:hover,.btn.cl-btn-success:focus,.btn.cl-btn-success.hover{
+	background-color: $success_h;
+	color: $white;
+}
+.btn.cl-btn-success:active,.btn.cl-btn-success.active{
+	background-color: $active_success;
+}
+// info
+.cl-btn-info{
+	background-color: $info;
+	color: $white;
+}
+.btn.cl-btn-info:hover,.btn.cl-btn-info:focus,.btn.cl-btn-info.hover{
+	background-color: $info_h;
+	color: $white;
+}
+.btn.cl-btn-info:active,.btn.cl-btn-info.active{
+	background-color: $active_info;
+}
+
+$ring_colors: ("primary":$primary,"secondary": $secondary,"default": $default,"warning": $warning,"danger": $danger,"success": $success,"info": $info, "dark":$dark, "light":$light, "transparent": $transparent);
+
+@each $ring, $colors in $ring_colors {
+
+	.ring-small.ring-#{$ring}:focus{
+		box-shadow: 0 0 0 1px $white, 0 0 0 2px $colors;
+	}
+	.ring-large.ring-#{$ring}:focus{
+		box-shadow: 0 0 0 2px $white, 0 0 0 6px $colors;
+	}
+	.ring-#{$ring}:focus{
+		box-shadow: 0 0 0 2px $white, 0 0 0 4px $colors;
+	}
+}
+// link with custom colors
+.btn-link{
+	color: $link;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+button.btn.btn-link:hover,button.btn.btn-link:focus,button.btn.btn-link.hover{
+	background-color: $light_default;
+	color: $link_h;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+button.btn.btn-link:active,button.btn.btn-link.active{
+	background-color: $light_h;
+	color: $active_link;
+
+}
+a.btn.btn-link:hover,a.btn.btn-link:focus,a.btn.btn-link.hover{
+	background-color: transparent;
+	color: $link_h;
+	box-shadow: none;
+	-webkit-box-shadow:none;
+}
+a.btn.btn-link:active,a.btn.btn-link.active{
+	background-color: transparent;
+	color: $active_link;
+}
+
+// outline btn
+.btn[class*=ot-btn-] {
+	box-shadow: 0px 4px 5px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0px 4px 5px rgba(0,0,0,0.05);
+}
+.btn[class*=ot-btn-]:hover, .btn[class*=ot-btn-].hover{
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.btn[class*=ot-btn-]:active,.btn[class*=ot-btn-].active {
+	background-color: $light_default;
+}
+// default
+.ot-btn-default{
+	background-color: transparent;
+	border: 2px solid $default;
+	color: $active_secondary;
+}
+.ot-btn-default:hover,.ot-btn-default:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $default_h;
+	color: $black;
+}
+// primary
+
+.ot-btn-primary{
+	background-color: transparent;
+	border: 2px solid $primary;
+	color: $primary;
+}
+.ot-btn-primary:hover,.ot-btn-primary:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $primary_h;
+	color: $primary_h;
+}
+// secondary
+.ot-btn-secondary{
+	background-color: transparent;
+	border: 2px solid $secondary;
+	color: $secondary;
+}
+.ot-btn-secondary:hover,.ot-btn-secondary:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $secondary_h;
+	color: $secondary_h;
+}
+// dark
+.ot-btn-dark{
+	background-color: transparent;
+	border: 2px solid $dark;
+	color: $dark;
+}
+.ot-btn-dark:hover,.ot-btn-dark:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $dark_h;
+	color: $dark_h;
+}
+.ot-btn-light{
+	background-color: transparent;
+	border: 2px solid $light;
+	color: $light;
+}
+.ot-btn-light:hover,.ot-btn-light:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $light_h;
+	color: $light_h;
+}
+// warning
+.ot-btn-warning{
+	background-color: transparent;
+	border: 2px solid $warning;
+	color: $warning;
+}
+.ot-btn-warning:hover,.ot-btn-warning:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $warning_h;
+	color: $warning_h;
+}
+// danger
+.ot-btn-danger{
+	background-color: transparent;
+	border: 2px solid $danger;
+	color: $danger;
+}
+.ot-btn-danger:hover,.ot-btn-danger:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $danger_h;
+	color: $danger_h;
+}
+// info
+.ot-btn-info{
+	background-color: transparent;
+	border: 2px solid $info;
+	color: $info;
+}
+.ot-btn-info:hover,.ot-btn-info:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $info_h;
+	color: $info_h;
+}
+// success
+.ot-btn-success{
+	background-color: transparent;
+	border: 2px solid $success;
+	color: $success;
+}
+.ot-btn-success:hover,.ot-btn-success:focus{
+	background-color: rgba(0,0,0,0.01);
+	border: 2px solid $success_h;
+	color: $success_h;
+}
+.ot-btn-success:active{
+	background-color: $light_success;
+}
+
+// effect
+button.ripple{
+	position:relative;
+	overflow:hidden;
+	transform:translate3d(0,0,0)
+}
+button.ripple:after{
+	background-image:radial-gradient(circle,#ccc 10%,transparent 10.01%);
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	pointer-events:none;
+	background-repeat:no-repeat;
+	background-position:50%;
+	transform:scale(10,10);
+	opacity:0;
+	transition:transform .6s,opacity 1s;
+}
+button[ripple-for="dark"]:after{
+	background-image:radial-gradient(circle,#000 10%,transparent 10.01%);
+}
+button[ripple-for="light"]:after{
+	background-image:radial-gradient(circle,#fff 10%,transparent 10.01%);
+}
+button.ripple:active:after{
+	transform:scale(0,0);
+	opacity:.25;
+	transition:0s
+}

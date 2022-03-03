@@ -1,0 +1,177 @@
+@import 'colors';
+
+
+// alertbox
+.alertbox {
+	position: relative;
+	display: block;
+	padding: 14px 16px;
+	margin: 7px;
+	border: 1px solid $default;
+	border-radius: 6px;
+	line-height: 1.5;
+}
+// dark-alertbox colors
+.cl-alert-default{
+	background-color: $default;
+	color: $active_secondary;
+	border: 1px solid $default_h;
+}
+.cl-alert-primary{
+	background-color: $primary;
+	color: $white;
+	border: 1px solid $primary_h;
+}
+.cl-alert-secondary{
+	background-color: $secondary;
+	color: $white;
+	border: 1px solid $secondary;
+}
+.cl-alert-dark{
+	background-color: $dark;
+	color: $white;
+	border: 1px solid $dark_h;
+}
+.cl-alert-light{
+	background-color: $light;
+	color: $black;
+	border: 1px solid $light_h;
+}
+.cl-alert-warning{
+	background-color: $warning;
+	color: $white;
+	border: 1px solid $warning_h;
+}
+.cl-alert-danger{
+	background-color: $danger;
+	color: $white;
+	border: 1px solid $danger_h;
+}
+.cl-alert-info{
+	background-color: $info;
+	color: $white;
+	border: 1px solid $info_h;
+}
+.cl-alert-success{
+	background-color: $success;
+	color: $white;
+	border: 1px solid $success_h;
+}
+
+// light-alertbox
+.lt-alert-default{
+	background-color: $light_default;
+	color: $secondary_h;
+	border: 1px solid $light_default;
+}
+.lt-alert-primary{
+	background-color: $light_primary;
+	color: $active_primary;
+	border: 1px solid $light_primary;
+}
+.lt-alert-secondary{
+	background-color: $light_secondary;
+	color: $active_secondary;
+	border: 1px solid $light_secondary;
+}
+.lt-alert-warning{
+	background-color: $light_warning;
+	color: $active_warning;
+	border: 1px solid $light_warning;
+}
+.lt-alert-danger{
+	background-color: $light_danger;
+	color: $active_danger;
+	border: 1px solid $light_danger;
+}
+.lt-alert-info{
+	background-color: $light_info;
+	color: $active_info;
+	border: 1px solid $light_info;
+}
+.lt-alert-success{
+	background-color: $light_success;
+	color: $active_success;
+	border: 1px solid $light_success;
+}
+
+// form alert box
+.form-alert-default{
+	padding: 20px;
+	color: $secondary;
+	background-color: $light_default;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $default_h;
+}
+.form-alert-primary{
+	padding: 20px;
+	color: $active_primary;
+	background-color: $light_primary;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $primary_h;
+}
+.form-alert-secondary{
+	padding: 20px;
+	color: $active_secondary;
+	background-color: $secondary;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $secondary_h;
+}
+.form-alert-warning{
+	padding: 20px;
+	color: $active_warning;
+	background-color: $light_warning;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $warning_h;
+}
+.form-alert-secondary{
+	padding: 20px;
+	color: $active_secondary;
+	background-color: $light_secondary;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $secondary_h;
+}
+.form-alert-danger{
+	padding: 20px;
+	color: $active_danger;
+	background-color: $light_danger;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $danger_h;
+}
+.form-alert-success{
+	padding: 20px;
+	color: $active_success;
+	background-color: $light_success;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $success_h;
+}
+.form-alert-info{
+	padding: 20px;
+	color: $active_info;
+	background-color: $light_info;
+	border-width: 0px 0px 0px 6px;
+	border-left-color: $info_h;
+}
+// dismiss alert
+.alert-dismiss{
+	padding-right: 40px;
+}
+.alert-dismiss button.close{
+	text-align: center;
+	color: inherit;
+	border: 0px;
+	float: right;
+	font-weight: 700;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	margin-right: 20px;
+	font-size: 16px;
+	opacity: 0.7;
+}
+.alert-dismiss button.close:hover{
+	opacity: 1;
+	transition:.3s;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Alertbox Component · Butterfly css</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/forms.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+	<!-- Butterfly js -->
+	<script type="text/javascript" src="/js/butterfly.js"></script>
+</head>
+
+<body>
+<div class="container" id="Main">
+	<div class="navbar" id="Nav">
+		<img src="/assets/logo/butterfly-2.png" class="logoicon">
+		<a class="logotext" href="/">Butterfly.css</a>
+	</div>
+	<!-- sidebar -->
+	<div class="sidebar" id="SideBar">
+		<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+		<div class="link" id="Components">
+			<h3>Components</h3>
+			<a href="/docs/standard/alert/" class="active">Alert</a>
+			<a href="/docs/standard/badge/">Badge</a>
+			<a href="/docs/standard/bojo/">Bojo</a>
+			<a href="/docs/standard/button/">Button</a>
+			<a href="/docs/standard/buttongrp/">Button Group</a>
+			<a href="/docs/standard/card/">Card</a>
+			<a href="/docs/standard/footer/">Footer</a>
+			<a href="/docs/standard/grid/">Grid</a>
+			
+			<a href="/docs/standard/inputs/">Input Types</a>
+			<a href="/docs/standard/navbar/">Navbar</a>
+			<a href="/docs/standard/progress/">Progress</a>
+			<a href="/docs/standard/table/">Table</a>
+		</div>
+		<div class="link" id="Elements">
+			<h3>Elements</h3>
+			<a href="/docs/elements/align/">Alignment</a>
+			<a href="/docs/elements/border/">Border</a>
+			<a href="/docs/elements/color/">Color</a>
+			<a href="/docs/elements/heading/">Heading</a>
+			<a href="/docs/elements/list/">List</a>
+			<a href="/docs/elements/margin/">Margin</a>
+			<a href="/docs/elements/padding/">Padding</a>
+			<a href="/docs/elements/textstyle/">Text Styles</a>
+		</div>
+			<div class="link" id="Layout">
+			<h3>Layout</h3>
+			<a href="/docs/layout/container/">Container</a>
+		</div>
+		<div class="link" id="Modules">
+			<h3>Modules</h3>
+			<a href="/docs/modules/bojo/">Bojo</a>
+			<a href="/docs/modules/contact/">Contact</a>
+			<a href="/docs/modules/forms/">Forms</a>
+			<a href="/docs/modules/footers/">Footers</a>
+			<a href="/docs/modules/headers/">Headers</a>
+			<a href="/docs/modules/services/">Services</a>
+			<a href="/docs/modules/skills/">Skills</a>
+		</div>
+	</div>
+	<!-- main data -->
+	<div class="content">
+		<main class="divcontainer" id="Data">
+			<!-- sidebar open -->
+			<div class="icon-sidebar" id="openSideBar">
+				<i class="fas fa-bars" onclick="openSideBar()"></i>
+			</div>
+			<!-- component name -->
+			<div class="tag" id="alertbox">
+				<h1>Alertbox</h1>
+				<p>Provide valuable, actionable, and informable feedback or message for the users with flexible range, colors and types for it.</p>
+				<p class="cl">Use the <shadow>.alertbox</shadow> class for alertbox.</p>
+			</div>
+			<!-- colored alert box -->
+			<div class="doc-data" id="colored-alert-box">
+				<hr class="type-1">
+				<h3>Colored Alert box</h3>
+				<p>The colored alerts provide colorfull messages and custom colors for alert.</p>
+				<p class="alertbox form-alert-default doc-alert">You need to use <span>.colored-alert-*</span> class to apply colored alertbox.</p>
+				<div class="board">
+					<div class="bd-ex">
+						<table>
+							<tr>
+								<th>Field 1</th>
+								<th>Field 2</th>
+								<th>Field 3</th>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+						</table>
+					</div>
+					<div class="bd-code">
+						<h4><i class="fab fa-html5"></i></h4>
+						<button class="btn btn-rg btn-white js-codeBtn" id="js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+					</div>
+					<div class="bd-text">
+						<pre id="js-htmlCode" class="js-htmlCode">
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox colored-alert-default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox colored-alert-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox colored-alert-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox colored-alert-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox colored-alert-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox colored-alert-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox colored-alert-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+						</pre>
+					</div>
+				</div>
+			</div>			
+			<!-- light alert box -->
+			<div class="doc-data" id="lt-alert-box">
+				<hr class="type-1">
+				<h3>Light Alert box</h3>
+				<p>The light alerts provide light background messages and custom colors for alert.</p>
+				<p class="alertbox form-alert-default doc-alert">You need to use <span>.lt-alert-*</span> class to apply colored alertbox.</p>
+				<div class="board">
+					<div class="bd-ex">
+						<table class="box-table">
+							<tr>
+								<th>Field 1</th>
+								<th>Field 2</th>
+								<th>Field 3</th>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+						</table>
+					</div>
+					<div class="bd-code">
+						<h4><i class="fab fa-html5"></i></h4>
+						<button class="btn btn-rg btn-white js-codeBtn" id="js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+					</div>
+					<div class="bd-text">
+						<pre id="js-htmlCode" class="js-htmlCode">
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-default</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-primary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-secondary</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-light</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-warning</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-danger</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-success</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox lt-alert-info</b>&quot;&gt;...&lt;/<b class="dv">div</b>&gt;</span>
+						</pre>
+					</div>
+				</div>
+			</div>
+			<!-- form alert box -->
+			<div class="doc-data" id="form-alert-box">
+				<hr class="type-1">
+				<h3>Form Alert box</h3>
+				<p>The form alerts provide big messages with title, subtitle, information with multiple colors for alerts.</p>
+				<p class="alertbox form-alert-default doc-alert">You need to use <span>.form-alert-*</span> class to apply colored alertbox.</p>
+				<div class="board">
+					<div class="bd-ex">
+						<table class="hr-table">
+							<tr>
+								<th>Field 1</th>
+								<th>Field 2</th>
+								<th>Field 3</th>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+						</table>
+					</div>
+					<div class="bd-code">
+						<h4><i class="fab fa-html5"></i></h4>
+						<button class="btn btn-rg btn-white js-codeBtn" id="js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+					</div>
+					<div class="bd-text">
+						<pre id="js-htmlCode" class="js-htmlCode">
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-default</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- primary -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-primary</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- secondary -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-secondary</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- dark -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-dark</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- light -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-light</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- warning -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-warning</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- danger -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-danger</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- success -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-success</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+							<!-- info -->
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-info</b>&quot;&gt;</span>
+							<span class="ml2">&lt;<b class="dv">h3</b>&gt;Form alert box&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="ml2">&lt;<b class="dv">p</b>&gt;Write anything want to display it in your form with multiple colors.&lt;/<b class="dv">p</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+						</pre>
+					</div>
+				</div>
+			</div>
+			<!-- dismissable alert box -->
+			<div class="doc-data" id="dismissable-alert-box">
+				<hr class="type-1">
+				<h3>Closing alert Box</h3>
+				<p>Flexbile component for dismissable alerts to popup the message and feedback with closable alert.</p>
+				<p class="alertbox form-alert-default doc-alert">You need to use <span>alert-dismiss</span> class to apply closable alertbox. You can use any classes for this alertbox.<br> It use <span>onclick </span>event for closing the button.</p>
+				<div class="board">
+					<div class="bd-ex">
+						<table class="table">
+							<tr class="txt-white bg-info">
+								<th>Field 1</th>
+								<th>Field 2</th>
+								<th>Field 3</th>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+						</table>
+					</div>
+					<div class="bd-ex">
+						<table class="table stripped">
+							<tr>
+								<th>Field 1</th>
+								<th>Field 2</th>
+								<th>Field 3</th>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+							<tr>
+								<td>Data 1</td>
+								<td>Data 2</td>
+								<td>Data 3</td>
+							</tr>
+						</table>
+					</div>
+					<div class="bd-code">
+						<h4><i class="fab fa-html5"></i></h4>
+						<button class="btn btn-rg btn-white js-codeBtn" id="js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+					</div>
+					<div class="bd-text">
+						<pre id="js-htmlCode" class="js-htmlCode">
+							<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">alertbox form-alert-primary alert-dismiss</b>&quot;&gt;</span>
+							<span class="mg1">&lt;<b class="dv">h3</b>&gt;Note -&lt;/<b class="dv">h3</b>&gt;</span>
+							<span class="mg1">&lt;<b class="dv">p</b>&gt;This is form dismissable alertbox.&lt;/<b class="dv">p</b>&gt;</span>
+							<span class="mg1">&lt;<b class="dv">button</b> <b class="cl">class</b>="<b class="cn">close</b>" <b class="cl">onclick</b>="<b class="js">this.parentElement.style.display='none';</b>" &gt; &#10006; &lt;/<b class="dv">button</b>&gt;</span>
+							<span>&lt;/<b class="dv">div</b>&gt;</span>
+						</pre>
+					</div>
+				</div>
+			</div>
+			<!-- class for alertbox -->
+			<div class="doc-data" id="class-alert-box">
+				<hr class="type-1">
+				<h3>Alertbox Classes</h3>
+				<p>List of all the classes which is used by custom created alerts.</p>
+			</div>
+		</main>
+	</div>
+	<!-- scroller -->
+	<div class="scroller">
+		<div class="scrollspy">
+			<b>On this page</b>
+			<hr class="type-1">
+			<a href="#">Alert Box</a>
+			<a href="#colored-alert-box" class="ml1">Colored alert box</a>
+			<a href="#lt-alert-box" class="ml1">Light alert box</a>
+			<a href="#form-alert-box" class="ml1">Form alert box</a>
+			<a href="#dismissable-alert-box" class="ml1">Closing alert box</a>
+		</div>
+	</div>
+</div>
+
+<!-- script -->
+<script type="text/javascript">
+	window.onload = function () {
+
+		var htmlCode = Array.prototype.slice.call(document.querySelectorAll('.js-htmlCode'));
+		var codeBtn = Array.prototype.slice.call(document.querySelectorAll('.js-codeBtn'));
+		var tipMsg = Array.prototype.slice.call(document.querySelectorAll('.tooltip'));
+		// onclick button event occcurs.
+		codeBtn.forEach(function (btn,idx){
+			btn.addEventListener("click", function(){
+				const copyhtmlCode  = htmlCode[idx].textContent;
+				const textArea = document.createElement('textarea');
+				textArea.textContent = copyhtmlCode.trim();
+				document.body.append(textArea);
+				textArea.select();
+				try{
+					var msg = document.execCommand('copy') ? 'Copied To Clipboard' : 'Code Not Copied';
+					console.log(msg);
+					tipMsg[idx].innerHTML = msg;
+					tipMsg[idx].style.width = '200px';
+					textArea.style.display = 'none';
+				}
+				catch(err){
+					console.log('whoops, unable to copy');
+				}				
+			});
+		});
+	}
+</script>
+</body>
+</html>

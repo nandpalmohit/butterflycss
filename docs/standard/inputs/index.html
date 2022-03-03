@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Inputs Component · Butterfly</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/forms.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- Butterfly element css  -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container" id="Main">
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterfly.css</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="Components">
+				<h3>Components</h3>
+				<a href="/docs/standard/alert/">Alert</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				<a href="/docs/standard/grid/">Grid</a>
+				
+				<a href="/docs/standard/inputs/" class="active">Input Types</a>
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="Elements">
+				<h3>Elements</h3>
+				<a href="/docs/elements/align/">Alignment</a>
+				<a href="/docs/elements/border/">Border</a>
+				<a href="/docs/elements/color/">Color</a>
+				<a href="/docs/elements/heading/">Heading</a>
+				<a href="/docs/elements/list/">List</a>
+				<a href="/docs/elements/margin/">Margin</a>
+				<a href="/docs/elements/padding/">Padding</a>
+				<a href="/docs/elements/textstyle/">Text Styles</a>
+			</div>
+				<div class="link" id="Layout">
+				<h3>Layout</h3>
+				<a href="/docs/layout/container/">Container</a>
+			</div>
+			<div class="link" id="Modules">
+				<h3>Modules</h3>
+				<a href="/docs/modules/bojo/">Bojo</a>
+				<a href="/docs/modules/contact/">Contact</a>
+				<a href="/docs/modules/forms/">Forms</a>
+				<a href="/docs/modules/footers/">Footers</a>
+				<a href="/docs/modules/headers/">Headers</a>
+				<a href="/docs/modules/services/">Services</a>
+				<a href="/docs/modules/skills/">Skills</a>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component name -->
+				<div class="tag" id="alertbox">
+					<h1>Inputs</h1>
+					<p></p>
+					<p class="cl">Use the <span>.input</span> class to create the input.</p>
+				</div>
+				<!-- input text -->
+				<div class="doc-data" id="input-example">
+					<hr class="type-1">
+					<h3>Input Example</h3>
+					<div class="board" id="btn1">
+						<div class="bd-ex" id="example">
+							<div class="wrap-container">
+								<input type="text" class="input-text" required="required">
+								<label class="label-text">Full Name</label>
+							</div>
+							<div class="wrap-container">
+								<input type="text" class="input-text" required="required">
+								<label class="label-text">Email id</label>
+							</div>
+							<div class="wrap-container">
+								<input type="password" class="input-text" required="required" placeholder="Password">
+								<label class="label-text">Password</label>
+							</div>
+							<div class="wrap-container">
+								<input type="number" class="input-text" required="required">
+								<label class="label-text">Age</label>
+							</div>
+							<div class="wrap-container">
+								<input type="tel" class="input-text" required="required">
+								<label class="label-text">Mobile No</label>
+							</div>
+							<div class="wrap-container">
+								<input type="date" class="input-text" required="required">
+								<label class="label-text">Birth Date</label>
+							</div>
+							<div class="wrap-container">
+								<input type="datetime-local" class="input-text" required="required">
+								<label class="label-text">Date & Time</label>
+							</div>
+							<div class="range-container">
+								<label class="label-range">Range</label>
+								<input type="range" class="input-text" required="required">
+							</div>
+							<div class="file-container">
+								<input type="file" class="input-file">
+								<label class="label-file">Upload your file here</label>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-rg btn-white" id="simplecardBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip" id="tip1">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre id="simpleCard">
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-text</b>&quot;&gt;</span>Full Name<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">text</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-text</b>&quot;&gt;</span>Email id<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">password</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">placeholder</b>=&quot;<b class="cn">password</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-text</b>&quot;&gt;</span>Password<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">number</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-text</b>&quot;&gt;</span>Age<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">tel</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-text</b>&quot;&gt;</span>Mobile No<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">date</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-text</b>&quot;&gt;</span>Birth Date<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">wrap-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">datetime</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">required</b>&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-text</b>&quot;&gt;</span>Date Time<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>	
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">range-container</b>&quot;&gt;</span>
+								  <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-range</b>&quot;&gt;</span>Enter Range<span>&lt;/<b class="dv">label</b>&gt;</span>
+								  <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">range</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-text</b>&quot; <b class="cl">required</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">file-container</b>&quot;&gt;</span>
+								 <span>&lt;<b class="dv">input</b> <b class="cl">type</b>=&quot;<b class="cn">file</b>&quot; <b class="cl">class</b>=&quot;<b class="cn">input-file</b>&quot; <b class="cl">required</b>&gt;</span>
+								 <span>&lt;<b class="dv">label</b> <b class="cl">class</b>=&quot;<b class="cn">label-file</b>&quot;&gt;</span>Upload your file here<span>&lt;/<b class="dv">label</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>		
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Cards</a>
+				<a href="#simple-card" class="ml1">Simple Card</a>
+				<a href="#profile-card" class="ml1">Profile Card</a>
+				<a href="#background-card" class="ml1">Background Card</a>
+				<a href="#horizontal-card" class="ml1">Horizontal Card</a>
+				<a href="#header-card" class="ml1">Header Card</a>
+				<a href="#card-sizing" class="ml1">Sizing</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

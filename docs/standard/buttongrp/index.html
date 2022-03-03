@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Nandpal Mohit">
+	<meta name="description" content= "It's light weighted and attractive library for HTML, CSS" />
+	<meta name="robots" content= "index, follow">
+	<title>Button Group · Butterflycss</title>
+	<link rel="icon" type="image/x-icon" href="/assets/logo/butterflylight.png">
+	<!-- Butterfly core css -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/butterfly.css">
+	<!-- Butterfly doc css -->
+	<link rel="stylesheet" type="text/css" href="/docs/css/alert.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/badge.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/bojo.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/button.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/buttongrp.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/card.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/container.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/element.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/inputs.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/layout.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/model.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/progress.css">
+	<link rel="stylesheet" type="text/css" href="/docs/css/table.css">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/f388db172c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!-- main container -->
+	<div class="container" id="Main">
+		<!-- navbar -->
+		<div class="navbar" id="Nav">
+			<img src="/assets/logo/butterfly-2.png" class="logoicon">
+			<a class="logotext" href="/">Butterflycss</a>
+		</div>
+		<!-- sidebar -->
+		<div class="sidebar" id="SideBar">
+			<i class="fas fa-times" onclick="closeSideBar()" id="closeSideBar"></i>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/'">Getting Started</h3>
+				<h3 onclick="location.href='/docs/introduction/'">Introduction</h3>
+				<h3 onclick="location.href='/docs/browser-support/'">Browser Support</h3>
+				<h3 onclick="location.href='/docs/resources/'">Resources</h3>
+			</div>
+			<div class="link" id="components">
+				<h3 onclick="location.href='/docs/standard/'" class="active">Components</h3>
+				<a href="/docs/standard/alert/">Alertbox</a>
+				<a href="/docs/standard/badge/">Badge</a>
+				<a href="/docs/standard/bojo/">Bojo</a>
+				<a href="/docs/standard/button/">Button</a>
+				<a href="/docs/standard/buttongrp/" class="active">Button Group</a>
+				<a href="/docs/standard/card/">Card</a>
+				<a href="/docs/standard/footer/">Footer</a>
+				
+				<a href="/docs/standard/navbar/">Navbar</a>
+				<a href="/docs/standard/progress/">Progress</a>
+				<a href="/docs/standard/table/">Table</a>
+			</div>
+			<div class="link" id="docs">
+				<h3 onclick="location.href='/docs/forms/'">Forms</h3>
+				<h3 onclick="location.href='/docs/elements/'">Elements</h3>
+				<h3 onclick="location.href='/docs/layout/'">Layout</h3>
+				<h3 onclick="location.href='/docs/customization/'">Customization</h3>
+				<h3 onclick="location.href='/docs/example/'">Example</h3>
+			</div>
+		</div>
+		<!-- main data -->
+		<div class="content" id="Content">
+			<main class="divcontainer" id="Data">
+				<!-- sidebar open -->
+				<div class="icon-sidebar" id="openSideBar">
+					<i class="fas fa-bars" onclick="openSideBar()"></i>
+				</div>
+				<!-- component button group -->
+				<div class="tag" id="alertbox">
+					<h1> Button Group</h1>
+					<p>Used to perform multiple events, paging, groups with more styles, colors and sizing.</p>
+					<p class="cl">Use the <span>.btn-grp</span> class to create the button group.</p>
+				</div>
+				<!-- colored buttongrp -->
+				<div class="doc-data" id="colored-grp">
+					<hr class="type-1">
+					<h3>Colored Button Group</h3>
+					<p>Button groups are more preferred with colored buttons to attract the group.</p>
+					<p class="alertbox form-alert-default doc-alert">First add <span>.btn-grp</span> class to create the button group and then simply add colored button class (<span>.btn .cl-btn-*</span>) to create the colored button group.</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn cl-btn-default">First</button>
+								<button class="btn cl-btn-default">Second</button>
+								<button class="btn cl-btn-default">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-primary">First</button>
+								<button class="btn cl-btn-primary">Second</button>
+								<button class="btn cl-btn-primary">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-secondary">First</button>
+								<button class="btn cl-btn-secondary">Second</button>
+								<button class="btn cl-btn-secondary">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-danger">First</button>
+								<button class="btn cl-btn-danger">Second</button>
+								<button class="btn cl-btn-danger">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-warning">First</button>
+								<button class="btn cl-btn-warning">Second</button>
+								<button class="btn cl-btn-warning">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-success">First</button>
+								<button class="btn cl-btn-success">Second</button>
+								<button class="btn cl-btn-success">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-info">First</button>
+								<button class="btn cl-btn-info">Second</button>
+								<button class="btn cl-btn-info">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-dark">First</button>
+								<button class="btn cl-btn-dark">Second</button>
+								<button class="btn cl-btn-dark">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-light">First</button>
+								<button class="btn cl-btn-light">Second</button>
+								<button class="btn cl-btn-light">Last</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;!--- default ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-default</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- primary ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- secondary ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-secondary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-secondary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-secondary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- warning ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-warning</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-warning</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-warning</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- danger ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-danger</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-danger</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-danger</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- success ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-success</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-success</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-success</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- info ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-info</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-info</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-info</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- dark ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-dark</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-dark</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-dark</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- light ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-light</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-light</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-light</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">
+						You can use it with <span>&lt;a&gt;</span>, <span>&lt;button&gt;</span> tag easily. Also note that button group is mainly made for multiple events, paging numbers, groups so you can customize the group styling. 
+					</p>
+				</div>
+				<!-- outline buttongrp -->
+				<div class="doc-data" id="outline-grp">
+					<hr class="type-1">
+					<h3>Outline Button Group</h3>
+					<p>Button groups also preferred with outline buttons to atract as tags, categories, keywords.</p>
+					<p class="alertbox form-alert-default doc-alert">First add <span>.btn-grp</span> class to create the button group and then simply add colored button class (<span>.btn .ot-btn-*</span>) to create the outline button group.</p>
+					<div class="alertbox lt-alert-danger Open line-15">
+						<i class="fas fa-exclamation-circle mr1"></i>
+						Outline button group not supported default button and light button style.
+					</div>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn ot-btn-primary">First</button>
+								<button class="btn ot-btn-primary">Second</button>
+								<button class="btn ot-btn-primary">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn ot-btn-secondary">First</button>
+								<button class="btn ot-btn-secondary">Second</button>
+								<button class="btn ot-btn-secondary">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn ot-btn-dark">First</button>
+								<button class="btn ot-btn-dark">Second</button>
+								<button class="btn ot-btn-dark">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn ot-btn-danger">First</button>
+								<button class="btn ot-btn-danger">Second</button>
+								<button class="btn ot-btn-danger">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn ot-btn-warning">First</button>
+								<button class="btn ot-btn-warning">Second</button>
+								<button class="btn ot-btn-warning">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn ot-btn-success">First</button>
+								<button class="btn ot-btn-success">Second</button>
+								<button class="btn ot-btn-success">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn ot-btn-info">First</button>
+								<button class="btn ot-btn-info">Second</button>
+								<button class="btn ot-btn-info">Last</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="outlineBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span>&lt;!--- primary ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- secondary ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-secondary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-secondary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-secondary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- warning ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-warning</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-warning</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-warning</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- danger ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-danger</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-danger</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-danger</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- success ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-success</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-success</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-success</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- info ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-info</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-info</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-info</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span>&lt;!--- dark ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-dark</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-dark</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-dark</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- link buttongrp -->
+				<div class="doc-data" id="link-grp">
+					<hr class="type-1">
+					<h3>Link Button Group</h3>
+					<p>Link Group is more usefull for menubar, sidebar, navbar, footer links.</p>
+					<p class="alertbox form-alert-default doc-alert">First add <span>.btn-grp</span> class to create the button group and then simply add colored button class (<span>.btn .btn-link</span>) to create the colored button group.</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp shadow-none">
+								<button class="btn btn-link">Button 1</button>
+								<button class="btn btn-link">Button 2</button>
+								<button class="btn btn-link">Button 3</button>
+								<button class="btn btn-link">Button 4</button>
+							</div><br>
+							<div class="btn-grp shadow-none">
+								<a class="btn btn-link">Link 1</a>
+								<a class="btn btn-link">Link 2</a>
+								<a class="btn btn-link">Link 3</a>
+								<a class="btn btn-link">Link 4</a>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="outlineBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!---  button link ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Button 1&lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Button 2&lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Button 3&lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Button 4&lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- a tag link ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Link 1&lt;/<b class="dv">a</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Link 2&lt;/<b class="dv">a</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Link 3&lt;/<b class="dv">a</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">a</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Link 4&lt;/<b class="dv">a</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans text-muted mt2">
+						Link Buttons use as transparent button links and you can use it with <span>&lt;a&gt;</span>, <span>&lt;button&gt;</span> tag.
+						<span>&lt;button&gt;</span> performs hoverable, active state while <span>&lt;a&gt;</span> tag set transparent background as default for all the state.<br>
+						You can change text color as well as background color for links.
+					</p>
+				</div>
+				<!-- ripple buttongrp -->
+				<div class="doc-data" id="ripple-grp">
+					<hr class="type-1">
+					<h3>Ripple Button Group</h3>
+					<p>Ripple Button Group use for individual button effects.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add <span>.ripple</span> class to apply Ripple effect.<br>
+						Add <span>ripple-for="dark"</span> attribute for dark ripple effect.<br>
+						Add <span>ripple-for="light"</span> attribute for light ripple effect.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn ripple cl-btn-primary" ripple-for="light">First</button>
+								<button class="btn ripple cl-btn-primary" ripple-for="light">Second</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn ripple ot-btn-primary" ripple-for="dark">First</button>
+								<button class="btn ripple ot-btn-primary" ripple-for="dark">Second</button>
+							</div><br>
+							<div class="btn-grp-vertical">
+								<button class="btn ripple cl-btn-primary" ripple-for="light">First</button>
+								<button class="btn ripple cl-btn-primary" ripple-for="light">Second</button>
+							</div>
+							<div class="btn-grp-vertical">
+								<button class="btn ripple ot-btn-primary" ripple-for="dark">First</button>
+								<button class="btn ripple ot-btn-primary" ripple-for="dark">Second</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="VerticalBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- Ripple for colored ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple cl-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple cl-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- Ripple for outline ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- Ripple for colored vertical ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp-vertical</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple cl-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple cl-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">light</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- Ripple for outline vertical ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp-vertical</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- vertical buttongrp -->
+				<div class="doc-data" id="vertical-grp">
+					<hr class="type-1">
+					<h3>Vertical Button Group</h3>
+					<p>Vertical aligned group are more usefull for menubar, sidebar, linkbar.</p>
+					<p class="alertbox form-alert-default doc-alert">First add <span>.btn-grp-vertical</span> class to create the vertical button group and simply add button class (<span>.btn .cl-btn-*</span>, <span>.btn .ot-btn-*</span>, <span>.btn .btn-link</span>) to create the button group.</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp-vertical">
+								<button class="btn cl-btn-primary">First</button>
+								<button class="btn cl-btn-primary">Second</button>
+								<button class="btn cl-btn-primary">Third</button>
+								<button class="btn cl-btn-primary">Fourth</button>
+								<button class="btn cl-btn-primary">Fifth</button>
+							</div>
+							<div class="btn-grp-vertical">
+								<button class="btn ot-btn-primary">First</button>
+								<button class="btn ot-btn-primary">Second</button>
+								<button class="btn ot-btn-primary">Third</button>
+								<button class="btn ot-btn-primary">Fourth</button>
+								<button class="btn ot-btn-primary">Fifth</button>
+							</div>
+							<div class="btn-grp-vertical">
+								<button class="btn btn-link">First</button>
+								<button class="btn btn-link">Second</button>
+								<button class="btn btn-link">Third</button>
+								<button class="btn btn-link">Fourth</button>
+								<button class="btn btn-link">Fifth</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="VerticalBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- colored vertical example ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp-vertical</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- outline vertical example ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp-vertical</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- link vertical example ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp-vertical</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn btn-link</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+					<p class="Sans"> Vertical Group is just another styling for group.<br>
+					Vertical Group have same capability as other button groups so you can set all the styles include colored, outlined, linked, ripple effects, group sizing easily.</p>
+				</div>
+				<!-- sizing -->
+				<div class="doc-data" id="sizing">
+					<hr class="type-1">
+					<h3>Sizing</h3>
+					<p>Sizing is more important thing to adjust the layout alignments and styles.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add the class with <span>.btn </span> class<br>
+						Add <span>small</span> class for small size.<br>
+						Add <span>large</span> class for large size.<br>
+						Add <span>exlarge</span> class for extra large size.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn small cl-btn-primary">First</button>
+								<button class="btn small cl-btn-primary">Second</button>
+								<button class="btn small cl-btn-primary">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-primary">First</button>
+								<button class="btn cl-btn-primary">Second</button>
+								<button class="btn cl-btn-primary">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn large cl-btn-primary">First</button>
+								<button class="btn large cl-btn-primary">Second</button>
+								<button class="btn large cl-btn-primary">Last</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn exlarge cl-btn-primary">First</button>
+								<button class="btn exlarge cl-btn-primary">Second</button>
+								<button class="btn exlarge cl-btn-primary">Last</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="sizingBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- small size ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn small cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn small cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn small cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- normal size ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- large size ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn large cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn large cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn large cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- extra large size ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn exlarge cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn exlarge cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn exlarge cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<div class="tag-info mt5">
+					<div class="alertbox lt-alert-danger Open line-15 mb4">
+						All the buttons have some specific states that use in like active, hover, disabled states that we style it with proper mixing so you can use it with just a class.<br>Every button has its state. You can mix the state into one group.
+					</div>
+				</div>
+				<!-- hover state -->
+				<div class="doc-data" id="hover-state">
+					<hr class="type-1">
+					<h3>Hover state</h3>
+					<p>Hoverable states is highlighted the buttons or links easily.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add the <span>.hover </span> class.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn hover cl-btn-primary">Hoverable</button>
+								<button class="btn hover cl-btn-primary">Hoverable</button>
+								<button class="btn hover cl-btn-primary">Hoverable</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn hover cl-btn-primary">Hoverable</button>
+								<button class="btn Normal cl-btn-primary">Normal</button>
+								<button class="btn Normal cl-btn-primary">Normal</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="sizingBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- All button apply hover ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn hover cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn hover cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn hover cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- First button apply disabled ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn hover cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- active state -->
+				<div class="doc-data" id="active-state">
+					<hr class="type-1">
+					<h3>Active state</h3>
+					<p>Active states is highlighted the buttons or links as active.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add the <span>.active </span> class.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn active cl-btn-primary">Active</button>
+								<button class="btn active cl-btn-primary">Active</button>
+								<button class="btn active cl-btn-primary">Active</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn active cl-btn-primary">Active</button>
+								<button class="btn Normal cl-btn-primary">Normal</button>
+								<button class="btn Normal cl-btn-primary">Normal</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="sizingBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- All button apply active ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn active cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn active cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn active cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- First button apply active ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn active cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- disabled state -->
+				<div class="doc-data" id="disabled-state">
+					<hr class="type-1">
+					<h3>Disabled state</h3>
+					<p>Disabled states is highlighted the buttons or links as disabled.</p>
+					<p class="alertbox form-alert-default doc-alert">You need to add the <span>.disabled </span> class.
+					</p>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn disabled cl-btn-primary">disabled</button>
+								<button class="btn disabled cl-btn-primary">disabled</button>
+								<button class="btn disabled cl-btn-primary">disabled</button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn disabled cl-btn-primary">disabled</button>
+								<button class="btn Normal cl-btn-primary">Normal</button>
+								<button class="btn Normal cl-btn-primary">Normal</button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="sizingBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- All button apply disabled ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn disabled cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn disabled cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn disabled cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- First button apply disabled ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn disabled cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt;</span>	
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+				<!-- nesting -->
+				<div class="doc-data" id="nesting">
+					<hr class="type-1">
+					<h3>Nesting</h3>
+					<p>You can set muliple styles in single button group with buttons.</p>
+					<p class="alertbox form-alert-default doc-alert">You can use <span>cl-btn-*</span>, <span>ot-btn-*</span> and <span>ripple</span> class in one button group for nesting.<br>
+					You can also use states as <span>hover</span>, <span>active</span> and <span>disabled</span> class for highlight the buttons
+					</p>
+					<div class="alertbox lt-alert-danger Open line-15">
+						<i class="fas fa-exclamation-circle mr1"></i>
+						Outline button group not supported default button and light button style.
+					</div>
+					<div class="board">
+						<div class="bd-ex text-center" id="example">
+							<div class="btn-grp">
+								<button class="btn cl-btn-dark"> First </button>
+								<button class="btn cl-btn-secondary"> Second </button>
+								<button class="btn cl-btn-light"> Third </button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-primary"> First </button>
+								<button class="btn cl-btn-primary"> Second </button>
+								<button class="btn ot-btn-primary"> Third </button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn cl-btn-primary"> First </button>
+								<button class="btn cl-btn-primary"> Second </button>
+								<button class="btn ripple ot-btn-primary" ripple-for="dark"> Ripple </button>
+							</div>
+							<div class="btn-grp">
+								<button class="btn active cl-btn-primary"> First </button>
+								<button class="btn hover cl-btn-primary"> Second </button>
+								<button class="btn disabled cl-btn-primary"> Third </button>
+							</div>
+						</div>
+						<div class="bd-code">
+							<h4><i class="fab fa-html5"></i></h4>
+							<button class="btn btn-white js-codeBtn" id="outlineBtn"><i class="far fa-copy" aria-hidden="true"></i><span class="tooltip js-tipMsg">Copy Code</span></button>	
+						</div>
+						<div class="bd-text">
+							<pre class="js-htmlCode">
+								<span class="cmt">&lt;!--- Example of single style nesting ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-dark</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt; &lt;!-- dark button --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-secondary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt; &lt;!-- default button --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-light</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt &lt;!-- light button --&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- Example of multiple nesting ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt; &lt;!-- colored button --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt; &lt;!-- colored button --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ot-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt &lt;!-- outlined button --&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- Example of multiple nesting with ripple ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt; &lt;!-- colored button --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt; &lt;!-- colored button --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn ripple ot-btn-primary</b>&quot; <b class="cl">ripple-for</b>=&quot;<b class="cn">dark</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt &lt;!-- ripple outline button --&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+								<span class="cmt">&lt;!--- Example of multiple nesting with state ---&gt;</span>
+								<span>&lt;<b class="dv">div</b> <b class="cl">class</b>=&quot;<b class="cn">btn-grp</b>&quot;&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn active cl-btn-primary</b>&quot;&gt; Second &lt;/<b class="dv">button</b>&gt; &lt;!-- active --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn hover cl-btn-primary</b>&quot;&gt; First &lt;/<b class="dv">button</b>&gt; &lt;!-- hoverable --&gt;</span>
+								<span class="ml2">&lt;<b class="dv">button</b> <b class="cl">class</b>=&quot;<b class="cn">btn disabled cl-btn-primary</b>&quot;&gt; Third &lt;/<b class="dv">button</b>&gt &lt;!-- disabled --&gt;</span>
+								<span>&lt;/<b class="dv">div</b>&gt;</span>
+							</pre>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!-- footer -->
+			<footer class="footer" id="section-footer">
+				<div class="container cn-between d-flex">
+					<a href="/docs/standard/button/" class="btn btn-link large"><i class="fas fa-long-arrow-alt-left mr1"></i>Button</a>
+					<a href="/docs/standard/card/" class="btn btn-link large">Card<i class="fas fa-long-arrow-alt-right ml1"></i> </a>
+				</div>
+				<div class="container">
+					<hr class="type-1">
+					<div class="row" id="footer-license">
+						<div class="col-el-4">
+							<h1 class="Grand text-dark size-36">Butterflycss</h1>
+						</div>
+						<div class="col-el-8 text-center">
+							<div class="text-muted bold-500">Created and designed with love by <a href="https://nandpalmohit.github.io/nmportfolio/" class="text-btfly">Nandpal Mohit</a> with the help of <span class="text-btfly">code contributors</span>. Code license Under <a href="/LICENSE.txt" class="text-success">MIT</a>, Free Open Source code | 2021 Copyright&copy; Butterfly css.</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- scroller -->
+		<div class="scroller">
+			<div class="scrollspy Karla">
+				<b>On this page</b>
+				<hr class="type-1">
+				<a href="#">Button Group</a>
+				<a href="#colored-grp" class="ml1">Colored group</a>
+				<a href="#outline-grp" class="ml1">Outline group</a>
+				<a href="#link-grp" class="ml1">Link group</a>
+				<a href="#ripple-grp" class="ml1">Ripple group</a>
+				<a href="#vertical-grp" class="ml1">Vertical group</a>
+				<a href="#sizing" class="ml1">Sizing</a>
+				<a href="#hover-state">Hover state</a>
+				<a href="#active-state">Active state</a>
+				<a href="#disabled-state">Disable state</a>
+				<a href="#nesting">Nesting</a>
+			</div>
+		</div>
+	</div>
+	<!-- script -->
+	<script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>
